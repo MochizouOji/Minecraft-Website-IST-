@@ -2,13 +2,13 @@ body {
     background-image: url(./Images/Grassblock.jpg);
     text-align: center;
   }
-
-h1 {
+  
+  h1 {
     text-align: center;
-    text-emphasis-style: bold;
-    font-size: large;
-}
-
-p {
+    font-weight: bold; 
+    font-size: large; 
+  }
+  
+  p {
     text-align: center;
-}
+  }
