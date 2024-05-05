@@ -1,14 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.cdnfonts.com/css/minecraft-4');
+
 body {
-    background-image: url(./Images/Grassblock.jpg);
+    background-image: url(./Images/bg.jpg);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
   }
   
-  h1 {
+h1 {    
     text-align: center;
     font-weight: bold; 
-    font-size: large; 
   }
   
   p {
     text-align: center;
+    font-size: 30px;
   }
+
+.title {
+  font-size: 80px;
+  color: darkgrey;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  font-family: "Minecraft", sans-serif;
+  opacity: 100%;
+}
+
+.sub {
+  font-size: 20px;
+  color:green;
+  font-family: "Minecraft", sans-serif;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  opacity: 100%;
+}
+
+.Classic {
+  background-color: rgb(255,255,255,0);
+  position: fixed;
+  bottom: 80px;
+  right: 200px;
+  left: 50px;
+  top: 170px;
+  width: 300px;
+  border: 3px solid darkgrey;
+  border-radius: 10px;
+}
+
+
+h2 {
+  text-align: center;
+  padding: 5px;
+  font-family: "Minecraft", sans-serif;
+  color: darkgrey;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  font-size: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+img {
+  border-radius: 10px;
+  border: 2px solid darkgrey;
+  margin-top: 15px;
+}
+
+
+.bigclassic:hover {
+  img {
+    border: 2px solid green;
+  }
+  h2 {
+    color: green;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  }
+  .Classic {
+    border: 3px solid green;
+    background-color: darkgrey;
+    opacity: 80%
+  }
+}
