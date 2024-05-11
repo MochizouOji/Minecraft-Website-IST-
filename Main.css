@@ -87,3 +87,8 @@ img {
   }
 }
 
+<style> 
+  audio { 
+    display: none;  
+  }  
+</style>
