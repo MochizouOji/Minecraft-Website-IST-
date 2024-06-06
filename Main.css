@@ -59,10 +59,11 @@ h2 {
   font-family: "Minecraft", sans-serif;
   color: darkgrey;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-  font-size: 30px;
+  font-size: 40px;
   margin-left: 5px;
   margin-right: 5px;
-  margin-top: 21;
+  margin-top: 21px;
+  margin-bottom: 50px;
 
 }
 
@@ -92,6 +93,8 @@ img {
 }
 
 
+
+
 .Music {
   padding-top: 450px;
   padding-left: 1000px;
@@ -116,10 +119,10 @@ img {
   color: darkgrey;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   font-size: 40px;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: 21px;
-  margin-bottom: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 21px;
+  padding-bottom: 50px;
 }
 
 .bigMobs:hover {
@@ -189,6 +192,8 @@ img {
   border-radius: 10px;
 }
 
+
+
 .ummheading {
   text-align: center;
   padding: 5px;
@@ -216,6 +221,42 @@ img {
     
   }
 }
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.links {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Minecraft", sans-serif;
+  
+
+}
+.links:hover {
+  background-color: white;
+  color: black;
+}
+
+
+
+.Homelogo {
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  border-radius: 0%;
+  border: none;
+  padding: 0px;
+
+}
+
+
+
 
 
 
