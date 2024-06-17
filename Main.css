@@ -317,12 +317,12 @@ a {
   position: fixed;
   top: 0;
   z-index: 1;
-  border-radius:15px 15px 15px 15px
+  border-radius:15px 15px 15px 15px;
 }
 
 .progress-bar {
   height: 8px;
   background: #98FB98;
   width: 0%;
-  border-radius:15px 15px 15px 15px
+  border-radius:15px 15px 15px 15px;
 }
