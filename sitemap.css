@@ -80,12 +80,19 @@ body::-webkit-scrollbar {
   }
   
   .sitemap {
+    list-style-type: none;
     padding: 0;
-    margin: 20px;
+    margin: 20px auto;
     max-width: 800px;
-    text-align: left;
-  }
-  
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    opacity: 0; 
+    transition: opacity 0.6s ease;
+}
+
   .sitemap li {
     margin: 10px;
   }
@@ -102,10 +109,14 @@ body::-webkit-scrollbar {
   }
 
   .sitemap ul {
-    padding-left: 20px;
-    display:none;
-    line-height: 50px;
-  }
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 1;
+}
   
   .sitemap li ul li a {
     font-size: 16px;
@@ -128,4 +139,20 @@ body::-webkit-scrollbar {
     margin-right: 8px;
     width: 16px; 
     height: 16px; 
+}
+
+  body.loaded {
+    opacity: 1;
+}
+
+  .loaded h1 {
+    opacity: 1; 
+}
+
+  .loaded .sitemap {
+    opacity: 1; 
+}
+
+  .loaded .sitemap li {
+    opacity: 1; 
 }
