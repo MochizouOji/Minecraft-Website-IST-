@@ -27,9 +27,13 @@
 
 <h1>Sitemap</h1>
 <ul class="sitemap">
+    <button class="toggle-btn" onclick="toggleList('home-sublist')">Show</button>
+    <ul id="home-sublist">
     <li><a href="index.html"><img src="MinecraftHome.jpg" alt="Home Icon"> Homepage</a></li>
     <li>
         <a href="Versions.html"><img src="" alt=""> Versions</a>
+        <button class="toggle-btn" onclick="toggleList('versions-sublist')">Show</button>
+        <ul id="versions-sublist">
         <ul>
             <li><a href=""><img src="" alt="">1.8-Bountiful Update</a></li>
             <li><a href=""><img src="" alt="">1.9-Combat Update</a></li>
@@ -39,6 +43,8 @@
     </li>
     <li>
         <a href="Biomes.html"><img src="BiomesIcon.png" alt="Biomes Icon"> Biomes</a>
+        <button class="toggle-btn" onclick="toggleList('biomes-sublist')">Show</button>
+        <ul id="biomes-sublist">
         <ul>
             <li><a href=""><img src="" alt="Overworld Icon"> Overworld Biomes</a></li>
             <li><a href=""><img src="" alt="Nether Icon"> Nether Biomes</a></li>
@@ -47,6 +53,8 @@
     </li>
     <li>
         <a href="Mobs.html"><img src="Minecraft_mobs.png" alt="Mob Icon"> Mobs</a>
+        <button class="toggle-btn" onclick="toggleList('mobs-sublist')">Show</button>
+        <ul id="mobs-sublist">
         <ul>
             <li><a href=""><img src="" alt="Passive Icon"> Passive Mobs</a></li>
             <li><a href=""><img src="" alt="Neutral Icon"> Neutral Mobs</a></li>
@@ -54,18 +62,20 @@
             <li><a href=""><img src="" alt="Boss Icon"> Boss Mobs</a></li>
         </ul>
     </li>
-            <li>
-                <a href="GettingStarted.html"><img src="Grassblock.jpg" alt="Grassblock icon"> Getting Started</a>
-                <ul>
-                    <li><a href=""><img src="" alt="">Redstone</a></li>
-                    <li><a href=""><img src="" alt="">Craftinng</a></li>
-                    <li><a href=""><img src="" alt="Crafting Icon">Gamemodes</a></li>
-                    <li><a href=""><img src="" alt="">PvP</a></li>
-                </ul>
-            </li>
+    <li>
+        <a href="GettingStarted.html"><img src="Grassblock.jpg" alt="Grassblock icon"> Getting Started</a>
+        <button class="toggle-btn" onclick="toggleList('getting-started-sublist')">Show</button>
+        <ul id="getting-started-sublist">
+        <ul>
+            <li><a href=""><img src="" alt="Redstone Icon">Redstone</a></li>
+            <li><a href=""><img src="" alt="Crafting Icon">Craftinng</a></li>
+            <li><a href=""><img src="" alt="Gamemodes Icon">Gamemodes</a></li>
+            <li><a href=""><img src="" alt="PvP icon">PvP</a></li>
         </ul>
     </li>
-</ul>
+    
+    
+
 <script>
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
