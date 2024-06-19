@@ -122,3 +122,10 @@ body::-webkit-scrollbar {
   .sitemap li:hover > ul {
     display: block;
   }
+
+  .sitemap a img {
+    vertical-align: middle;
+    margin-right: 8px;
+    width: 16px; 
+    height: 16px; 
+}
