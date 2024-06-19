@@ -67,17 +67,17 @@
     text-align: center;
     font-family:'PT Serif';
     padding-top: 0px;
-  }
+}
 
 body::-webkit-scrollbar {
     display: none;
-  }
+}
 
   h1 {
     font-family: "Minecraft", sans-serif;
     color: #333;
     margin-top: 100px; 
-  }
+}
   
   .sitemap {
     list-style-type: none;
@@ -85,28 +85,24 @@ body::-webkit-scrollbar {
     margin: 20px auto;
     max-width: 800px;
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
     opacity: 0; 
     transition: opacity 0.6s ease;
 }
 
   .sitemap li {
     margin: 10px;
-  }
+}
   
   .sitemap a {
     color: #333;
     text-decoration: none;
     font-size: 18px;
-  }
+}
 
   .sitemap a:hover {
     text-decoration: underline;
     color: #007BFF;
-  }
+}
 
   .sitemap ul {
     display: none;
@@ -120,19 +116,19 @@ body::-webkit-scrollbar {
   
   .sitemap li ul li a {
     font-size: 16px;
-  }
+}
   
   .sitemap li ul li ul li a {
     font-size: 14px;
-  }
+}
   
   .sitemap a i {
     margin-right: 8px;
-  }
+}
     
   .sitemap li:hover > ul {
     display: block;
-  }
+}
 
   .sitemap a img {
     vertical-align: middle;
@@ -141,18 +137,3 @@ body::-webkit-scrollbar {
     height: 16px; 
 }
 
-  body.loaded {
-    opacity: 1;
-}
-
-  .loaded h1 {
-    opacity: 1; 
-}
-
-  .loaded .sitemap {
-    opacity: 1; 
-}
-
-  .loaded .sitemap li {
-    opacity: 1; 
-}
