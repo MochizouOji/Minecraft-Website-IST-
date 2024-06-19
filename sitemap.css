@@ -95,3 +95,30 @@ body::-webkit-scrollbar {
     text-decoration: none;
     font-size: 18px;
   }
+
+  .sitemap a:hover {
+    text-decoration: underline;
+    color: #007BFF;
+  }
+
+  .sitemap ul {
+    padding-left: 20px;
+    display:none;
+    line-height: 10px;
+  }
+  
+  .sitemap li ul li a {
+    font-size: 16px;
+  }
+  
+  .sitemap li ul li ul li a {
+    font-size: 14px;
+  }
+  
+  .sitemap a i {
+    margin-right: 8px;
+  }
+    
+  .sitemap li:hover > ul {
+    display: block;
+  }

@@ -19,13 +19,17 @@
           </div>
         </div>
         <title>Sitemap</title>
+        <link rel="icon" href="./Images/Grassblock.jpg">
+        <link rel="stylesheet" href="sitemap.css">
+        <script src="Javascript.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <h1>Sitemap</h1>
 <ul class="sitemap">
     <li><a href="index.html">Homepage</a>
         <ul>
-            <li><a href="Versions.html">Versions</a>
+            <li></li><a href="Versions.html"><i class="fas fa-gamepad"></i> Versions</a>
                 <ul>
                     <li><a href="">1.8-Bountiful Update</a></li>
                     <li><a href="">1.9-Combat Update</a></li>
@@ -33,14 +37,14 @@
                     <li><a href="">1.17-Caves & Cliffs Update</a></li>
                 </ul>
             </li>
-            <li><a href="Biomes.html">Biomes</a>
+            <li><a href="Biomes.html"><i class="fas fa-leaf"></i> Biomes</a>
                 <ul>
                     <li><a href="">Overworld Biomes</a></li>
                     <li><a href="">Nether Biomes</a></li>
                     <li><a href="">End Biomes</a></li>
                 </ul>
             </li>
-            <li><a href="Mobs.html">Mobs</a>
+            <li><a href="Mobs.html"><i class="fas fa-paw"></i> Mobs</a>
                 <ul>
                     <li><a href="">Passive Mobs</a></li>
                     <li><a href="">Neutral Mobs</a></li>
@@ -48,7 +52,7 @@
                     <li><a href="">Boss Mobs</a></li>
                 </ul>
             </li>
-            <li><a href="GettingStarted.html">Getting Started</a>
+            <li><a href="GettingStarted.html"><i class="fas fa-tools"></i> Getting Started</a>
                 <ul>
                     <li><a href="">Redstone</a></li>
                     <li><a href="">Crafting</a></li>
@@ -59,5 +63,16 @@
         </ul>
     </li>
 </ul>
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
 </body>
 </html>
