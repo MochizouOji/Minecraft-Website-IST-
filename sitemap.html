@@ -1,67 +1,66 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap</title>
     <link rel="icon" href="./Images/Grassblock.jpg">
-        
-        <link rel="stylesheet" href="sitemap.css">
-        <script src="sitemap.js" defer></script>
-
-        </script>
-        <div class="mainbar">
-          <div class="topnav">
-            <a href="index.html" class="links"><img src="./Images/Homelogo.png" class="Homelogo"></a>
+    <link rel="stylesheet" href="sitemap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="sitemap.js" defer></script>
+</head>
+<body>
+    <div class="mainbar">
+        <div class="topnav">
+            <a href="index.html" class="links"><img src="./Images/Homelogo.png" class="Homelogo" alt="Home"></a>
             <a href="Versions.html" class="links">Versions</a>
             <a href="Mobs.html" class="links">Mobs</a>
             <a href="Biomes.html" class="links">Biomes</a>
             <a href="GettingStarted.html" class="links">Getting Started</a>
-          </div>   
-          <div class="progress-container">
+        </div>   
+        <div class="progress-container">
             <div class="progress-bar" id="myBar"></div>
-          </div>
         </div>
-        <title>Sitemap</title>
-        <link rel="icon" href="./Images/Grassblock.jpg">
-        <link rel="stylesheet" href="sitemap.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
+    </div>
 
-<h1>Sitemap</h1>
-<ul class="sitemap">
-
-    <li><a href="index.html"><img src="MinecraftHome.jpg" alt="Home Icon"> Homepage</a></li>
-    <li>
-        <a href="Versions.html"><img src="" alt=""> Versions</a>
-        <ul>
-            <li><a href=""><img src="" alt="">1.8-Bountiful Update</a></li>
-            <li><a href=""><img src="" alt="">1.9-Combat Update</a></li>
-            <li><a href=""><img src="" alt="">1.16-Nether Update</a></li>
-            <li><a href=""><img src="" alt="">1.17-Caves & Cliffs Update</a></li>
-        </ul>
-    </li>
-    <li>
-        <a href="Biomes.html"><img src="BiomesIcon.png" alt="Biomes Icon"> Biomes</a>
-        <ul>
-            <li><a href=""><img src="" alt="Overworld Icon"> Overworld Biomes</a></li>
-            <li><a href=""><img src="" alt="Nether Icon"> Nether Biomes</a></li>
-            <li><a href=""><img src="" alt="End Icon"> End Biomes</a></li>
-        </ul>
-    </li>
-    <li>
-        <a href="Mobs.html"><img src="Minecraft_mobs.png" alt="Mob Icon"> Mobs</a>
-        <ul>
-            <li><a href=""><img src="" alt="Passive Icon"> Passive Mobs</a></li>
-            <li><a href=""><img src="" alt="Neutral Icon"> Neutral Mobs</a></li>
-            <li><a href=""><img src="" alt="Hostile Icon"> Hostile Mobs</a></li>
-            <li><a href=""><img src="" alt="Boss Icon"> Boss Mobs</a></li>
-        </ul>
-    </li>
-    <li>
-        <a href="GettingStarted.html"><img src="Grassblock.jpg" alt="Grassblock icon"> Getting Started</a>
-        <ul>
-            <li><a href=""><img src="" alt="Redstone Icon">Redstone</a></li>
-            <li><a href=""><img src="" alt="Crafting Icon">Crafting</a></li>
-            <li><a href=""><img src="" alt="Gamemodes Icon">Gamemodes</a></li>
-            <li><a href=""><img src="" alt="PvP icon">PvP</a></li>
-        </ul>
-    </li>
+    <h1>Sitemap</h1>
+    <ul class="sitemap">
+        <li><a href="index.html"><img src="MinecraftHome.jpg" alt="Home Icon"> Homepage</a></li>
+        <li>
+            <a href="Versions.html" onclick="toggleList('versionsSublist')"><img src="" alt="Versions Icon"> Versions</a>
+            <ul id="versionsSublist" style="display: none;">
+                <li><a href=""><img src="" alt="1.8 Icon">1.8 - Bountiful Update</a></li>
+                <li><a href=""><img src="" alt="1.9 Icon">1.9 - Combat Update</a></li>
+                <li><a href=""><img src="" alt="1.16 Icon">1.16 - Nether Update</a></li>
+                <li><a href=""><img src="" alt="1.17 Icon">1.17 - Caves & Cliffs Update</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="Biomes.html" onclick="toggleList('biomesSublist')"><img src="BiomesIcon.png" alt="Biomes Icon"> Biomes</a>
+            <ul id="biomesSublist" style="display: none;">
+                <li><a href=""><img src="" alt="Overworld Icon"> Overworld Biomes</a></li>
+                <li><a href=""><img src="" alt="Nether Icon"> Nether Biomes</a></li>
+                <li><a href=""><img src="" alt="End Icon"> End Biomes</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="Mobs.html" onclick="toggleList('mobsSublist')"><img src="Minecraft_mobs.png" alt="Mob Icon"> Mobs</a>
+            <ul id="mobsSublist" style="display: none;">
+                <li><a href=""><img src="" alt="Passive Icon"> Passive Mobs</a></li>
+                <li><a href=""><img src="" alt="Neutral Icon"> Neutral Mobs</a></li>
+                <li><a href=""><img src="" alt="Hostile Icon"> Hostile Mobs</a></li>
+                <li><a href=""><img src="" alt="Boss Icon"> Boss Mobs</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="GettingStarted.html" onclick="toggleList('gettingStartedSublist')"><img src="Grassblock.jpg" alt="Grassblock icon"> Getting Started</a>
+            <ul id="gettingStartedSublist" style="display: none;">
+                <li><a href=""><img src="" alt="Redstone Icon"> Redstone</a></li>
+                <li><a href=""><img src="" alt="Crafting Icon"> Crafting</a></li>
+                <li><a href=""><img src="" alt="Gamemodes Icon"> Gamemodes</a></li>
+                <li><a href=""><img src="" alt="PvP icon"> PvP</a></li>
+            </ul>
+        </li>
+    </ul>
 </body>
 </html>
