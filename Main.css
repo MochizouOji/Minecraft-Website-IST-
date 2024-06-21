@@ -8,9 +8,7 @@ body {
     height: 100%;
     text-align: center;
     font-family:'PT Serif';
-    background: url(./Images/bg.jpg);
-    object-fit:contain;
-    padding-top: 0px;
+    top: 0;
   }
 
 body::-webkit-scrollbar {
@@ -18,10 +16,26 @@ body::-webkit-scrollbar {
   }
   
 h1 {    
-    text-align: center;
-    font-weight: bold; 
-    font-family:'Nunito Sans';
+    text-align: center;    
   }
+
+.bannersection1 { 
+  background-image: url(./Images/bg.png);
+  margin: -10px -10px -10px -10px;
+  background-size: cover;
+  height: 650px;
+  padding-top: 0px;
+}
+
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
   
   p {
     text-align: center;
@@ -29,22 +43,20 @@ h1 {
   }
 
 .sub {
-  font-size: 20px;
-  color:black;
+  font-size: 25px;
+  color:white;
   font-family: "Minecraft", sans-serif;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   opacity: 100%;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
+  font-weight: normal;
 }
 
-@-webkit-keyframes glow{
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
+@-webkit-keyframes glow {
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #f7e96b, 0 0 40px #f7e96b, 0 0 50px #f7e96b, 0 0 60px #f7e96b, 0 0 70px #f7e96b, 0 0 80px #f7e96b;
+       border-color: #69c800;
+  -webkit-box-shadow: 0 0 5px #69c800;
+     -moz-box-shadow: 0 0 5px #69c800;
+          box-shadow: 0 0 5px #69c800;
   }
 }
 
@@ -56,9 +68,10 @@ h1 {
   left: 35px;
   top: 10px;
   width: 300px;
-  border: 3px solid darkgrey;
+  border: 3px solid white;
   border-radius: 10px;
   padding-bottom: 10px;
+  
 }
 
 
@@ -66,7 +79,7 @@ h2 {
   text-align: center;
   padding: 5px;
   font-family: "Minecraft", sans-serif;
-  color: darkgrey;
+  color: white;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   font-size: 40px;
   margin-left: 5px;
@@ -78,16 +91,16 @@ h2 {
 }
 
 
-img {
+.homebuttons {
   border-radius: 10px;
-  border: 2px solid darkgrey;
+  border: 2px solid white;
   margin-top: 15px;
   width: 200px;
   height: 200px;
 }
 
 .titleimg {
-  padding-top: 50px;
+  padding-top: 60px;
   margin-left: auto;
   margin-right: auto;
   width: 450px;
@@ -95,6 +108,7 @@ img {
   display: block;
   border: none;
   border-radius: 0px;
+  z-index: 0;
 }
 
 .bigclassic {
@@ -110,33 +124,39 @@ img {
     border: 2px solid green;
   }
   h2 {
-    color: green;
+    color: rgb(2, 153, 2);
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   }
   .Classic {
     border: 3px solid green;
-    background-color: darkgrey;
-    
+    background-color: rgb(169, 169, 169, 0.5);
+    -webkit-animation: glow 1.0s infinite alternate;  
+     -webkit-transition: border 0.5s linear, box-shadow 0.5s linear;
+       -moz-transition: border 0.5s linear, box-shadow 0.5s linear;
+            transition: border 0.5s linear, box-shadow 0.5s linear;
+            animation: glow 0.5s infinite alternate; 
   }
 }
+
 
 
 .Mobs {
     background-color: rgb(255,255,255,0);
     position: absolute;
-    left: 364px;
+    left: 360px;
     margin-top: -340px;
     padding-bottom: 10px;
     width: 300px;
-    border: 3px solid darkgrey;
+    border: 3px solid white;
     border-radius: 10px;
+   
 }
 
 .mobsheading {
   text-align: center;
   padding: 5px;
   font-family: "Minecraft", sans-serif;
-  color: darkgrey;
+  color: white;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   font-size: 40px;
   padding-left: 5px;
@@ -150,33 +170,37 @@ img {
     border: 2px solid green;
   }
   .mobsheading {
-    color: green;
+    color: rgb(2, 153, 2);
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   }
   .Mobs {
     border: 3px solid green;
-    background-color: darkgrey;
-    
+    background-color: rgb(169, 169, 169, 0.5);
+    -webkit-animation: glow 1.0s infinite alternate;  
+     -webkit-transition: border 0.5s linear, box-shadow 0.5s linear;
+       -moz-transition: border 0.5s linear, box-shadow 0.5s linear;
+            transition: border 0.5s linear, box-shadow 0.5s linear;
+            animation: glow 0.5s infinite alternate; 
   }
 }
 
 .biomes {
   background-color: rgb(255,255,255,0);
   position: absolute;
-  left: 690px;
+  left: 685px;
   margin-top: -340px;
   width: 300px;
-  border: 3px solid darkgrey;
+  border: 3px solid white;
   border-radius: 10px;
-
   padding-bottom: 10px;
+ 
 }
 
 .biomesheading {
   text-align: center;
   padding: 5px;
   font-family: "Minecraft", sans-serif;
-  color: darkgrey;
+  color: white;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   font-size: 40px;
   margin-left: 5px;
@@ -190,13 +214,17 @@ img {
     border: 2px solid green;
   }
   .biomesheading {
-    color: green;
+    color: rgb(2, 153, 2);
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   }
   .biomes {
     border: 3px solid green;
-    background-color: darkgrey;
-    
+    background-color: rgb(169, 169, 169, 0.5);
+    -webkit-animation: glow 1.0s infinite alternate;  
+     -webkit-transition: border 0.5s linear, box-shadow 0.5s linear;
+       -moz-transition: border 0.5s linear, box-shadow 0.5s linear;
+            transition: border 0.5s linear, box-shadow 0.5s linear;
+            animation: glow 0.5s infinite alternate; 
   }
 }
 
@@ -206,7 +234,7 @@ img {
   left: 1010px;
   margin-top: -340px;
   width: 300px;
-  border: 3px solid darkgrey;
+  border: 3px solid white;
   border-radius: 10px;
   padding-bottom: 10px;
 }
@@ -217,7 +245,7 @@ img {
   text-align: center;
   padding: 5px;
   font-family: "Minecraft", sans-serif;
-  color: darkgrey;
+  color: white;  
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   font-size: 40px;
   margin-left: 5px;
@@ -231,13 +259,17 @@ img {
     border: 2px solid green;
   }
   .ummheading {
-    color: green;
+    color: rgb(2, 153, 2);
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   }
   .umm {
     border: 3px solid green;
-    background-color: darkgrey;
-    
+    background-color: rgb(169, 169, 169, 0.5);
+    -webkit-animation: glow 1.0s infinite alternate;  
+     -webkit-transition: border 0.5s linear, box-shadow 0.5s linear;
+       -moz-transition: border 0.5s linear, box-shadow 0.5s linear;
+            transition: border 0.5s linear, box-shadow 0.5s linear;
+            animation: glow 0.5s infinite alternate; 
   }
 }
 
@@ -250,7 +282,7 @@ img {
 
 .links {
   float: left;
-  color: #f2f2f2;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -349,5 +381,10 @@ a {
   left: 0;
 }
 /*leave this navbar stuff here but i dont think we need it for homepage */
-
-/*yeah guys lets communicate on vscode from now on - Carlos */
+.synopsis {
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  font-family: "Minecraft" ,sans-serif;
+}
