@@ -38,7 +38,7 @@ h1 {
 }
   
   p {
-    text-align: center;
+    text-align: left;
     font-size: 30px;
   }
 
@@ -379,6 +379,23 @@ a {
   padding-top: 0px;
   top:0;
   left: 0;
+}
+
+footer {
+  display: block;
+  text-align: left;
+  padding: 3px;
+  background-color: #333;
+  color: white;
+  font-family: VT323, sans-serif;
+  height: 200px;
+  margin: -10px -10px -10px -10px;
+}
+
+.footerimg{ 
+  border:none;
+  border: transparent;
+  width: 750px;
 }
 /*leave this navbar stuff here but i dont think we need it for homepage */
 .synopsis {
