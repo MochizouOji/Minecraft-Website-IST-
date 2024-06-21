@@ -4,47 +4,49 @@
 @import url('https://fonts.google.com/specimen/Nunito+Sans?preview.text');
 
 body {
-    
-    height: 100%;
-    text-align: center;
-    font-family:'PT Serif';
-    top: 0;
-  }
+
+  height: 100%;
+  text-align: center;
+  font-family: 'PT Serif';
+  top: 0;
+}
 
 body::-webkit-scrollbar {
-    display: none;
-  }
-  
-h1 {    
-    text-align: center;    
-  }
+  display: none;
+}
 
-.bannersection1 { 
+h1 {
+  text-align: center;
+}
+
+.bannersection1 {
   background-image: url(./Images/bg.png);
   margin: -10px -10px -10px -10px;
   background-size: cover;
   height: 650px;
   padding-top: 0px;
+  bottom: 0;
 }
 
 
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
-}
-100% {
-    opacity: 1;
-}
-}
-  
-  p {
-    text-align: left;
-    font-size: 30px;
   }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+p {
+  text-align: left;
+  font-size: 30px;
+}
 
 .sub {
   font-size: 25px;
-  color:white;
+  color: white;
   font-family: "Minecraft", sans-serif;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   opacity: 100%;
@@ -53,15 +55,15 @@ h1 {
 
 @-webkit-keyframes glow {
   to {
-       border-color: #69c800;
-  -webkit-box-shadow: 0 0 5px #69c800;
-     -moz-box-shadow: 0 0 5px #69c800;
-          box-shadow: 0 0 5px #69c800;
+    border-color: #69c800;
+    -webkit-box-shadow: 0 0 5px #69c800;
+    -moz-box-shadow: 0 0 5px #69c800;
+    box-shadow: 0 0 5px #69c800;
   }
 }
 
 .Classic {
-  background-color: rgb(255,255,255,0);
+  background-color: rgb(255, 255, 255, 0);
   position: relative;
   bottom: 80px;
   right: 200px;
@@ -71,7 +73,7 @@ h1 {
   border: 3px solid white;
   border-radius: 10px;
   padding-bottom: 10px;
-  
+
 }
 
 
@@ -123,33 +125,35 @@ h2 {
   img {
     border: 2px solid green;
   }
+
   h2 {
     color: rgb(2, 153, 2);
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   }
+
   .Classic {
     border: 3px solid green;
     background-color: rgb(169, 169, 169, 0.5);
-    -webkit-animation: glow 1.0s infinite alternate;  
-     -webkit-transition: border 0.5s linear, box-shadow 0.5s linear;
-       -moz-transition: border 0.5s linear, box-shadow 0.5s linear;
-            transition: border 0.5s linear, box-shadow 0.5s linear;
-            animation: glow 0.5s infinite alternate; 
+    -webkit-animation: glow 1.0s infinite alternate;
+    -webkit-transition: border 0.5s linear, box-shadow 0.5s linear;
+    -moz-transition: border 0.5s linear, box-shadow 0.5s linear;
+    transition: border 0.5s linear, box-shadow 0.5s linear;
+    animation: glow 0.5s infinite alternate;
   }
 }
 
 
 
 .Mobs {
-    background-color: rgb(255,255,255,0);
-    position: absolute;
-    left: 360px;
-    margin-top: -340px;
-    padding-bottom: 10px;
-    width: 300px;
-    border: 3px solid white;
-    border-radius: 10px;
-   
+  background-color: rgb(255, 255, 255, 0);
+  position: absolute;
+  left: 360px;
+  margin-top: -340px;
+  padding-bottom: 10px;
+  width: 300px;
+  border: 3px solid white;
+  border-radius: 10px;
+
 }
 
 .mobsheading {
@@ -169,23 +173,25 @@ h2 {
   img {
     border: 2px solid green;
   }
+
   .mobsheading {
     color: rgb(2, 153, 2);
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   }
+
   .Mobs {
     border: 3px solid green;
     background-color: rgb(169, 169, 169, 0.5);
-    -webkit-animation: glow 1.0s infinite alternate;  
-     -webkit-transition: border 0.5s linear, box-shadow 0.5s linear;
-       -moz-transition: border 0.5s linear, box-shadow 0.5s linear;
-            transition: border 0.5s linear, box-shadow 0.5s linear;
-            animation: glow 0.5s infinite alternate; 
+    -webkit-animation: glow 1.0s infinite alternate;
+    -webkit-transition: border 0.5s linear, box-shadow 0.5s linear;
+    -moz-transition: border 0.5s linear, box-shadow 0.5s linear;
+    transition: border 0.5s linear, box-shadow 0.5s linear;
+    animation: glow 0.5s infinite alternate;
   }
 }
 
 .biomes {
-  background-color: rgb(255,255,255,0);
+  background-color: rgb(255, 255, 255, 0);
   position: absolute;
   left: 685px;
   margin-top: -340px;
@@ -193,7 +199,7 @@ h2 {
   border: 3px solid white;
   border-radius: 10px;
   padding-bottom: 10px;
- 
+
 }
 
 .biomesheading {
@@ -213,23 +219,25 @@ h2 {
   img {
     border: 2px solid green;
   }
+
   .biomesheading {
     color: rgb(2, 153, 2);
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   }
+
   .biomes {
     border: 3px solid green;
     background-color: rgb(169, 169, 169, 0.5);
-    -webkit-animation: glow 1.0s infinite alternate;  
-     -webkit-transition: border 0.5s linear, box-shadow 0.5s linear;
-       -moz-transition: border 0.5s linear, box-shadow 0.5s linear;
-            transition: border 0.5s linear, box-shadow 0.5s linear;
-            animation: glow 0.5s infinite alternate; 
+    -webkit-animation: glow 1.0s infinite alternate;
+    -webkit-transition: border 0.5s linear, box-shadow 0.5s linear;
+    -moz-transition: border 0.5s linear, box-shadow 0.5s linear;
+    transition: border 0.5s linear, box-shadow 0.5s linear;
+    animation: glow 0.5s infinite alternate;
   }
 }
 
 .umm {
-  background-color: rgb(255,255,255,0);
+  background-color: rgb(255, 255, 255, 0);
   position: absolute;
   left: 1010px;
   margin-top: -340px;
@@ -245,12 +253,12 @@ h2 {
   text-align: center;
   padding: 5px;
   font-family: "Minecraft", sans-serif;
-  color: white;  
+  color: white;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   font-size: 40px;
   margin-left: 5px;
   margin-right: 5px;
-  margin-top: 21px;  
+  margin-top: 21px;
   margin-bottom: 0px;
 }
 
@@ -258,25 +266,27 @@ h2 {
   img {
     border: 2px solid green;
   }
+
   .ummheading {
     color: rgb(2, 153, 2);
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   }
+
   .umm {
     border: 3px solid green;
     background-color: rgb(169, 169, 169, 0.5);
-    -webkit-animation: glow 1.0s infinite alternate;  
-     -webkit-transition: border 0.5s linear, box-shadow 0.5s linear;
-       -moz-transition: border 0.5s linear, box-shadow 0.5s linear;
-            transition: border 0.5s linear, box-shadow 0.5s linear;
-            animation: glow 0.5s infinite alternate; 
+    -webkit-animation: glow 1.0s infinite alternate;
+    -webkit-transition: border 0.5s linear, box-shadow 0.5s linear;
+    -moz-transition: border 0.5s linear, box-shadow 0.5s linear;
+    transition: border 0.5s linear, box-shadow 0.5s linear;
+    animation: glow 0.5s infinite alternate;
   }
 }
 
 .topnav {
   background-color: #333;
   overflow: hidden;
-  width: 100%; 
+  width: 100%;
   margin-top: 0px;
 }
 
@@ -289,13 +299,14 @@ h2 {
   font-size: 20px;
   font-family: "Minecraft", sans-serif;
   margin-bottom: 0px;
-  
+
 
 }
+
 .links:hover {
   background-color: white;
   color: black;
-} 
+}
 
 .linky {
   float: right;
@@ -303,7 +314,7 @@ h2 {
   font-size: 20px;
   font-family: "Minecraft", sans-serif;
   margin-bottom: 0px;
-  padding-left: 5px; 
+  padding-left: 5px;
   padding-top: 3px;
 }
 
@@ -326,7 +337,7 @@ h2 {
   border: none;
   padding: 0px;
   float: left;
-  
+
 }
 
 
@@ -346,7 +357,7 @@ h2 {
 
 .map:hover {
   background-color: white;
-  color: black ;
+  color: black;
 }
 
 a {
@@ -361,14 +372,14 @@ a {
   background: #ccc;
   top: 0;
   z-index: 1;
-  border-radius:15px 15px 15px 15px;
+  border-radius: 15px 15px 15px 15px;
 }
 
 .progress-bar {
   height: 8px;
   background: #98FB98;
   width: 0%;
-  border-radius:15px 15px 15px 15px;
+  border-radius: 15px 15px 15px 15px;
 }
 
 .mainbar {
@@ -377,31 +388,67 @@ a {
   width: 100%;
   opacity: 95%;
   padding-top: 0px;
-  top:0;
+  top: 0;
   left: 0;
 }
 
 footer {
-  display: block;
-  text-align: left;
-  padding: 3px;
   background-color: #333;
-  color: white;
-  font-family: VT323, sans-serif;
-  height: 200px;
-  margin: -10px -10px -10px -10px;
+  height: 50px;
+  width: 100%;
+  margin: 0px;
+  margin-left: 0px;
+  padding: 0;
+  position: absolute;
+  display:flex;
+  left:0;
 }
 
-.footerimg{ 
-  border:none;
-  border: transparent;
-  width: 750px;
-}
-/*leave this navbar stuff here but i dont think we need it for homepage */
-.synopsis {
-  margin-top: 50px;
-  margin-left: 10px;
-  margin-right: 10px;
+.footerwords {
+  color: white;
+  text-decoration: none;
   font-size: 20px;
-  font-family: "Minecraft" ,sans-serif;
+  font-family: "Minecraft", sans-serif;
+  padding-top: 10px;
+  padding-left: 10px;
 }
+
+.footerwords2 {
+  padding-left: 245px;
+  padding-top: 12px;
+  color: white; 
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Minecraft", sans-serif;
+
+}
+
+.footerwords3 {
+  color: white;
+  padding: 12px 16px;
+  padding-left: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Minecraft", sans-serif;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.footer4 {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Minecraft", sans-serif;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.footerimg {
+  border: none;
+  height: 30px;
+  display: flex;
+  margin-top: 10px;
+  padding-left: 5px;
+}
+
+/*leave this navbar stuff here but i dont think we need it for homepage */
