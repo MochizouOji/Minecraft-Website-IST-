@@ -163,7 +163,7 @@ h1 {
 }
 
 .sitelogo {
-  width: 30px;
+  width: 60px;
   height: 30px;
   margin: 0px;
   border-radius: 0%;
@@ -215,4 +215,19 @@ a {
   transform: translate(-50%, -50%);
   z-index: -1;
   vertical-align:right
+}
+
+.side-image {
+  position: fixed;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.side-image img {
+  width: 300px; 
+  height: auto;
+  border-radius: 30px;
+  border-color: black;
 }
