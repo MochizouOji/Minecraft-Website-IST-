@@ -62,23 +62,13 @@
   left: 0;
 }
 
-body {
-  height: 100%;
-  text-align: center;
-  font-family: 'PT Serif';
-  padding-top: 0;
-  margin: 0;
-}
+
 
 body::-webkit-scrollbar {
   display: none;
 }
 
-h1 {
-  font-family: "Minecraft", sans-serif;
-  color: #333;
-  margin-top: 100px;
-}
+
 
 .sitemap {
   list-style-type: none;
@@ -88,9 +78,7 @@ h1 {
   text-align: left;
 }
 
-.sitemap.loaded {
-  opacity: 1;
-}
+
 
 .sitemap li {
   margin: 10px;
@@ -110,15 +98,6 @@ h1 {
 
 .sitemap ul {
   display: none;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  padding: 10px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  z-index: 1;
-  width: max-content;
 }
 
 .sitemap li ul li a {
@@ -133,33 +112,13 @@ h1 {
   margin-right: 8px;
 }
 
-.sitemap li:hover > ul {
-  display: block;
-}
+
 
 .sitemap img {
   vertical-align: left;
   margin-right: 8px;
   width: 50px;
   height: 50px;
-}
-
-@media (max-width: 600px) {
-  .links {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-
-  .mainbar {
-    position: relative;
-  }
-
-  .sitemap ul {
-    left: 0;
-    transform: none;
-    width: 100%;
-  }
 }
 
 .sitelogo {
@@ -206,27 +165,61 @@ a {
   padding-top: 0px;
 }
 
-#background-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  vertical-align:right
+.backbutton {
+  width: 60px;
+  height: 40px;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-top: 70px;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  animation: slide-in 1s forwards;
+  -webkit-animation: slide-in 1s forwards;
 }
 
-.side-image {
+@keyframes slide-in {
+  100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+  100% { -webkit-transform: translateX(0%); }
+}
+
+.backbutton:hover {
+  background-color: white;
+  color: black;
+}
+
+h1 {
+  font-family: "Minecraft", sans-serif;
+  color: #333;
+  text-align: center;
+  margin-top: 0;
+
+}
+
+body {
+  top: 0;
+}
+
+
+
+.sitemap li:hover > ul {
+  display: block;
   position: fixed;
-  top: 50%;
-  right: 50px;
-  transform: translateY(-50%);
+  left: 50%;
+  top:30%;
+  transform: translateX(-50%);
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   z-index: 1;
+  width: max-content;
 }
 
-.side-image img {
-  width: 300px; 
-  height: auto;
-  border-radius: 30px;
-}
+
+
+
