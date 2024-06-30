@@ -62,6 +62,15 @@ p {
   }
 }
 
+@keyframes glow {
+  to {
+    border-color: #69c800;
+    -webkit-box-shadow: 0 0 5px #69c800;
+    -moz-box-shadow: 0 0 5px #69c800;
+    box-shadow: 0 0 5px #69c800;
+  }
+}
+
 .Classic {
   background-color: rgb(255, 255, 255, 0);
   position: relative;
