@@ -281,7 +281,11 @@ body::-webkit-scrollbar {
 
   .Versions_Title{
     margin-top: 100px;
-    font-family: Minecraft, sans-serif;
-    color: gray;
+    font-size: 25px;
+    color: white;
+    font-family: "Minecraft", sans-serif;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    opacity: 100%;
+    font-weight: normal;
   }
   
