@@ -127,3 +127,31 @@ body::-webkit-scrollbar {
     margin: -10px -10px -10px -10px;
     align-self: center;
   }
+
+  .backbutton {
+    width: 60px;
+    height: 40px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 70px;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    animation: slide-in 1s forwards;
+    -webkit-animation: slide-in 1s forwards;
+    position: fixed;
+  }
+  
+  @keyframes slide-in {
+    100% { transform: translateX(0%); }
+  }
+  
+  @-webkit-keyframes slide-in {
+    100% { -webkit-transform: translateX(0%); }
+  }
+  
+  .backbutton:hover {
+    background-color: white;
+    color: black;
+  }
