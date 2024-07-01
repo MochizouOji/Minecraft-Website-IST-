@@ -64,7 +64,9 @@
 }
 
   body {
-    
+    top: 0;
+    background-image: url(../Images/Versions\ Background.jpg);
+    background-size: 100vw 130vh;
     height: 100%;
     text-align: center;
     font-family:'PT Serif';
@@ -280,12 +282,18 @@ body::-webkit-scrollbar {
   }
 
   .Versions_Title{
-    margin-top: 100px;
+    margin-top: 50px;
     font-size: 25px;
-    color: white;
-    font-family: "Minecraft", sans-serif;
+    color: black
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     opacity: 100%;
     font-weight: normal;
+
   }
   
+  .Versions_Title1{
+    font-family: "Minecraft", sans-serif;
+    margin-top: 75px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: white;
+  }
