@@ -122,6 +122,13 @@ h2 {
   -webkit-animation: slide-in 1s forwards;
 }
 
+.linkbuttons2 {
+  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  animation: slide-in 1s forwards;
+  -webkit-animation: slide-in 1s forwards;
+}
+
 .titleimg {
   padding-top: 60px;
   margin-left: auto;
@@ -496,6 +503,12 @@ footer {
 
 audio::-webkit-media-controls {
   display: none;
+}
+
+.Music {  
+height:0px; 
+line-height: 0px;
+font-size: 0px;
 }
 /*leave this navbar stuff here but i dont think we need it for homepage */
 /*so real*/
