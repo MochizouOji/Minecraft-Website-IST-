@@ -206,8 +206,8 @@ body {
 .sitemap li:hover > ul {
   display: block;
   position: fixed;
-  left: 55%;
-  top:28%;
+  left: 58%;
+  top: 18%;
   transform: translateX(-50%);
   background-color: rgba(51, 51, 51, 0.8);
   border: 1px solid black;
@@ -223,6 +223,18 @@ body {
   padding-bottom: 20px;
   width: 70%;
   margin-left: 15%;
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  animation: slide-down 1s forwards;
+  -webkit-animation: slide-down 1s forwards;
+}
+
+@keyframes slide-down {
+  100% { transform: translateY(0%); }
+}
+
+@-webkit-keyframes slide-down {
+  100% { -webkit-transform: translateY(0%); }
 }
 
 
