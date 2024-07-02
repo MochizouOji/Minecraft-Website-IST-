@@ -179,13 +179,12 @@ h2 {
 .Mobs {
   background-color: rgb(255, 255, 255, 0);
   position: absolute;
-  left: 360px;
-  margin-top: -340px;
-  padding-bottom: 10px;
+  left: 1010px;
+  margin-top: -340px;  
   width: 300px;
   border: 3px solid white;
   border-radius: 10px;
-
+  padding-bottom: 10px;
 }
 
 .mobsheading {
@@ -203,29 +202,120 @@ h2 {
 
 .bigMobs:hover {
   img {
-    border: 2px solid green;
+    box-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+    0.025em 0.04em 0 #fffc00;
+  animation: glitchb 725ms infinite;
+  border-color: black;
   }
 
   .mobsheading {
-    color: rgb(2, 153, 2);
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+    0.025em 0.04em 0 #fffc00;
+  animation: glitch 725ms infinite;
+  color: black;
   }
 
   .Mobs {
-    border: 3px solid green;
-    background-color: rgb(169, 169, 169, 0.5);
-    -webkit-animation: glow 1.0s infinite alternate;
-    -webkit-transition: border 0.5s linear, box-shadow 0.5s linear;
-    -moz-transition: border 0.5s linear, box-shadow 0.5s linear;
-    transition: border 0.5s linear, box-shadow 0.5s linear;
-    animation: glow 0.5s infinite alternate;
+    box-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+    0.025em 0.04em 0 #fffc00;
+  animation: glitchb 725ms infinite;
+  border-color: black;
+  }
+
+  .homebuttons {
+    content: url(./Images/portal.gif);
+  }
+
+
+}
+
+.glitch {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Minecraft", sans-serif;
+  margin-bottom: 0px;
+  text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+    0.025em 0.04em 0 #fffc00;
+  animation: glitch 725ms infinite;
+}
+
+#glitched:hover {
+  text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+  0.025em 0.04em 0 #fffc00;
+animation: glitch 725ms infinite;
+background-color: white;
+ }
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+      0.025em 0.04em 0 #fffc00;
+  }
+  15% {
+    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+      0.025em 0.04em 0 #fffc00;
+  }
+  16% {
+    text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+      -0.05em -0.05em 0 #fffc00;
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+      -0.05em -0.05em 0 #fffc00;
+  }
+  50% {
+    text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+      0 -0.04em 0 #fffc00;
+  }
+  99% {
+    text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+      0 -0.04em 0 #fffc00;
+  }
+  100% {
+    text-shadow: -0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff,
+      -0.04em -0.025em 0 #fffc00;
+  }
+}
+
+@keyframes glitchb {
+  0% {
+    box-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff, 0.025em 0.04em 0 #fffc00;
+  }
+  15% {
+    box-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff, 0.025em 0.04em 0 #fffc00;
+  }
+  16% {
+    box-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff, -0.05em -0.05em 0 #fffc00;
+  }
+  49% {
+    box-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff, -0.05em -0.05em 0 #fffc00;
+  }
+  50% {
+    box-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff, 0 -0.04em 0 #fffc00;
+  }
+  /* Repeat similar patterns for the remaining keyframes */
+  74% {
+    box-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff, 0 -0.04em 0 #fffc00;
+  }
+  75% {
+    box-shadow: -0.05em -0.025em 0 #00fffc, -0.025em 0.035em 0 #fc00ff, 0.05em -0.05em 0 #fffc00;
+  }
+  99% {
+    box-shadow: -0.05em -0.025em 0 #00fffc, -0.025em 0.035em 0 #fc00ff, 0.05em -0.05em 0 #fffc00;
+  }
+  100% {
+    box-shadow: 0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff, -0.04em -0.025em 0 #fffc00;
   }
 }
 
 .biomes {
   background-color: rgb(255, 255, 255, 0);
   position: absolute;
-  left: 685px;
+  left: 360px;
   margin-top: -340px;
   width: 300px;
   border: 3px solid white;
@@ -271,7 +361,7 @@ h2 {
 .umm {
   background-color: rgb(255, 255, 255, 0);
   position: absolute;
-  left: 1010px;
+  left: 685px;
   margin-top: -340px;
   width: 300px;
   border: 3px solid white;
@@ -511,6 +601,4 @@ height:0px;
 line-height: 0px;
 font-size: 0px;
 }
-/*leave this navbar stuff here but i dont think we need it for homepage */
-/*so real*/
-/*do something cooper*/
+

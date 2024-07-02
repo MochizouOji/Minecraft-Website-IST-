@@ -17,15 +17,64 @@
   font-size: 20px;
   font-family: "Minecraft", sans-serif;
   margin-bottom: 0px;
-  
-
 }
+
 .links:hover {
   background-color: white;
   color: black;
 }
 
+.glitch {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Minecraft", sans-serif;
+  margin-bottom: 0px;
+  text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+    0.025em 0.04em 0 #fffc00;
+  animation: glitch 725ms infinite;
+}
 
+#glitched:hover {
+  text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+  0.025em 0.04em 0 #fffc00;
+animation: glitch 725ms infinite;
+background-color: white;
+ }
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+      0.025em 0.04em 0 #fffc00;
+  }
+  15% {
+    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+      0.025em 0.04em 0 #fffc00;
+  }
+  16% {
+    text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+      -0.05em -0.05em 0 #fffc00;
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+      -0.05em -0.05em 0 #fffc00;
+  }
+  50% {
+    text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+      0 -0.04em 0 #fffc00;
+  }
+  99% {
+    text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+      0 -0.04em 0 #fffc00;
+  }
+  100% {
+    text-shadow: -0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff,
+      -0.04em -0.025em 0 #fffc00;
+  }
+}
 
 .Homelogo {
   width: 20px;
@@ -118,3 +167,96 @@ body::-webkit-scrollbar {
     padding-left: 5px; 
     padding-top: 3px;
   }  
+
+
+  .quiztitle {
+    position: relative;
+    width: 700px;
+    left: 24%;
+    margin-top: 250px;
+
+    transform: translateY(-400%);
+  -webkit-transform: translateY(-400%);
+  animation: slide-down 3s forwards;
+  -webkit-animation: slide-down 3s forwards;
+  }
+
+  @keyframes slide-down {
+    100% { transform: translateY(0%); }
+  }
+  
+  @-webkit-keyframes slide-down {
+    100% { -webkit-transform: translateY(0%); }
+  }
+
+  .rainbow {
+    text-align: center;
+    font-family: 'Minecraft', sans-serif;
+    font-size: 40px;
+}
+.rainbow_text_animated {
+    background: linear-gradient(to right, red, yellow,  green, blue, purple);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 40px;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+  0%,100% {
+      background-position: 0 0;
+  }
+
+  50% {
+      background-position: 100% 0;
+  }
+}
+
+  .quizsubtitle {
+    text-align: center;
+    font-family: 'Minecraft', sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    position:absolute;
+    margin-right: 50%;
+    margin-left: 0;   
+    color: black;
+    animation: fadeInAnimation ease 4s;
+  }
+
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .quizsubtitle2 {
+    text-align: center;
+    font-family: 'Minecraft', sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    position:absolute;
+    margin-left:  50%;
+    margin-right: 30px;
+    animation: fadeInAnimation ease 4s;
+    color: black
+  }
+
+  .greentext {
+    color: green;
+    display: inline;
+  }
+
+  .redtext {
+    color: red;
+    display: inline;
+  }
+
+
+
