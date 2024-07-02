@@ -201,8 +201,6 @@ body {
   background-size: 100vw 100vh;
 }
 
-
-
 .sitemap li:hover > ul {
   display: block;
   position: fixed;
