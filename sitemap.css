@@ -184,6 +184,7 @@ h1 {
   text-align: center;
   margin-top: 0;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  letter-spacing: 2px;
 
 }
 
@@ -193,13 +194,11 @@ body {
   background-size: 100vw 100vh;
 }
 
-
-
 .sitemap li:hover > ul {
   display: block;
   position: fixed;
-  left: 55%;
-  top:28%;
+  left: 58%;
+  top: 18%;
   transform: translateX(-50%);
   background-color: rgba(51, 51, 51, 0.8);
   border: 1px solid black;
@@ -215,4 +214,41 @@ body {
   padding-bottom: 20px;
   width: 70%;
   margin-left: 15%;
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  animation: slide-down 1s forwards;
+  -webkit-animation: slide-down 1s forwards;
 }
+
+@keyframes slide-down {
+  100% { transform: translateY(0%); }
+}
+
+@-webkit-keyframes slide-down {
+  100% { -webkit-transform: translateY(0%); }
+}
+
+.warning {
+  margin-left: 30%;
+  font-family: 'MInecraft', sans-serif;
+  color: black;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  margin-right: 33%;
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  animation: slide-down 1s forwards;
+  -webkit-animation: slide-down 1s forwards;
+  background-color: rgba(200, 200, 200, 0.5);
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+<<<<<<< HEAD
+=======
+
+
+
+
+
+>>>>>>> da086797ff0a7788fb216dbd79df171c1ce4e316
