@@ -248,6 +248,10 @@ body {
   -webkit-animation: slide-down 1s forwards;
 }
 
+mark{
+  background-color: #98FB98;
+}
+
 
 
 
