@@ -17,15 +17,13 @@
   font-size: 20px;
   font-family: "Minecraft", sans-serif;
   margin-bottom: 0px;
-  
+
 
 }
 .links:hover {
   background-color: white;
   color: black;
 }
-
-
 
 .Homelogo {
   width: 20px;
@@ -64,11 +62,11 @@
 }
 
   body {
-    
     height: 100%;
     text-align: center;
     font-family:'PT Serif';
     padding-top: 0px;
+    cursor: url('./Images/Cursor.png'), auto;
   }
 
 body::-webkit-scrollbar {
@@ -118,3 +116,63 @@ body::-webkit-scrollbar {
     padding-left: 5px; 
     padding-top: 3px;
   }  
+
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .corner {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+  
+  .top-left {
+    top: 0;
+    left: 0;
+  }
+  
+  .top-right {
+    top: 0;
+    right: 0;
+  }
+  
+  .bottom-left {
+    bottom: 0;
+    left: 0;
+  }
+  
+  .bottom-right {
+    bottom: 0;
+    right: 0;
+  }
+  
+  .corner-link {
+    color: white;
+    font-family: "Minecraft", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .corner-link:hover {
+    color: #98FB98;
+  }
+  
+  .heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Minecraft", sans-serif;
+    font-size: 40px;
+  }

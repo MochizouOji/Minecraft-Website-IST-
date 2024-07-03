@@ -46,13 +46,9 @@
   left: 0;
 }
 
-
-
 body::-webkit-scrollbar {
   display: none;
 }
-
-
 
 .sitemap {
   list-style-type: none;
@@ -61,8 +57,6 @@ body::-webkit-scrollbar {
   max-width: 800px;
   text-align: left;
 }
-
-
 
 .sitemap li {
   margin: 10px;
@@ -105,8 +99,6 @@ li:hover::marker {
 .sitemap a i {
   margin-right: 8px;
 }
-
-
 
 .sitemap img {
   vertical-align: left;
@@ -224,7 +216,3 @@ body {
   width: 70%;
   margin-left: 15%;
 }
-
-
-
-
