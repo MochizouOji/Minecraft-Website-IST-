@@ -156,11 +156,15 @@ h2 {
 .bigclassic:hover {
   img {
     border: 2px solid green;
+    -webkit-animation: glow 1.0s infinite alternate;
+    -webkit-transition: border 0.5s linear, box-shadow 0.5s linear;
+    -moz-transition: border 0.5s linear, box-shadow 0.5s linear;
+    transition: border 0.5s linear, box-shadow 0.5s linear;
+    animation: glow 0.5s infinite alternate;
   }
 
   h2 {
     color: rgb(2, 153, 2);
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   }
 
   .Classic {
@@ -223,7 +227,7 @@ h2 {
   }
 
   .homebuttons {
-    content: url(./Images/portal.gif);
+    content: url(./Images/etable.gif);
   }
 
 
@@ -297,7 +301,6 @@ background-color: white;
   50% {
     box-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff, 0 -0.04em 0 #fffc00;
   }
-  /* Repeat similar patterns for the remaining keyframes */
   74% {
     box-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff, 0 -0.04em 0 #fffc00;
   }
@@ -340,6 +343,11 @@ background-color: white;
 .bigBiomes:hover {
   img {
     border: 2px solid green;
+    -webkit-animation: glow 1.0s infinite alternate;
+    -webkit-transition: border 0.5s linear, box-shadow 0.5s linear;
+    -moz-transition: border 0.5s linear, box-shadow 0.5s linear;
+    transition: border 0.5s linear, box-shadow 0.5s linear;
+    animation: glow 0.5s infinite alternate;
   }
 
   .biomesheading {
@@ -387,6 +395,11 @@ background-color: white;
 .bigUmm:hover {
   img {
     border: 2px solid green;
+    -webkit-animation: glow 1.0s infinite alternate;
+    -webkit-transition: border 0.5s linear, box-shadow 0.5s linear;
+    -moz-transition: border 0.5s linear, box-shadow 0.5s linear;
+    transition: border 0.5s linear, box-shadow 0.5s linear;
+    animation: glow 0.5s infinite alternate;
   }
 
   .ummheading {
