@@ -148,7 +148,7 @@ background-color: white;
   body {
     top: 0;
     background-image: url(../Images/Versions\ Background.jpg);
-    background-size: 100vw 130vh contain;
+    background-size: 50vw 75vh contain;
     background-repeat: no-repeat;
     height: 100%;
     text-align: center;
@@ -383,12 +383,10 @@ body::-webkit-scrollbar {
     background: linear-gradient(to right, blue, rgb(63, 63, 250),#6badeb, #355de2, blue);
     -webkit-background-clip: text;
     background-clip: text;
-    font-size: 60px;
+    font-size: 70px;
     color: transparent;
     animation: rainbow_animation 6s ease-in-out infinite;
     background-size: 400% 100%;
-    animation: slide-in 1s forwards;
-  -webkit-animation: slide-in 1s forwards;
   }
   @keyframes rainbow_animation {
   0%,100% {
@@ -401,7 +399,7 @@ body::-webkit-scrollbar {
 }
 
 .Version_Background{
-  margin-top: 700px;
+  margin-top: 750px;
   background-color: rgba(51, 51, 51, 0.5);
   padding-top: 20px;
   padding-bottom: 20px;
@@ -484,4 +482,11 @@ footer {
   animation: slide-in 1s forwards;
   -webkit-animation: slide-in 1s forwards;
 }
-
+.Main_Updates{
+font-family: "Minecraft", sans-serif;
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+  letter-spacing: 2px;
+}
