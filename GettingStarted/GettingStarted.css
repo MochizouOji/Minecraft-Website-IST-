@@ -286,7 +286,7 @@ body::-webkit-scrollbar {
 }
 .rainbow_text_animated {
   background: linear-gradient(to right, rgb(244, 102, 102), rgb(248, 70, 70),  rgb(224, 115, 31), rgb(228, 2, 2), rgb(219, 114, 23));
-  -webkit-background-clip: text;g
+  -webkit-background-clip: text;
   background-clip: text;
   font-size: 30px;
   color: transparent;
