@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 @import url('https://fonts.cdnfonts.com/css/minecraft-4');
+@import url('https://fonts.google.com/specimen/PT+Serif?preview.text');
+@import url('https://fonts.google.com/specimen/Nunito+Sans?preview.text');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 .topnav {
   background-color: #333;
@@ -17,14 +20,93 @@
   font-size: 20px;
   font-family: "Minecraft", sans-serif;
   margin-bottom: 0px;
-  
-
 }
 .links:hover {
   background-color: white;
   color: black;
 }
 
+.glitch {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Minecraft", sans-serif;
+  margin-bottom: 0px;
+  text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+    0.025em 0.04em 0 #fffc00;
+  animation: glitch 725ms infinite;
+}
+
+#glitched:hover {
+  text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+  0.025em 0.04em 0 #fffc00;
+animation: glitch 725ms infinite;
+background-color: white;
+ }
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+      0.025em 0.04em 0 #fffc00;
+  }
+  15% {
+    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+      0.025em 0.04em 0 #fffc00;
+  }
+  16% {
+    text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+      -0.05em -0.05em 0 #fffc00;
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+      -0.05em -0.05em 0 #fffc00;
+  }
+  50% {
+    text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+      0 -0.04em 0 #fffc00;
+  }
+  99% {
+    text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+      0 -0.04em 0 #fffc00;
+  }
+  100% {
+    text-shadow: -0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff,
+      -0.04em -0.025em 0 #fffc00;
+  }
+}
+
+@keyframes glitchb {
+  0% {
+    box-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff, 0.025em 0.04em 0 #fffc00;
+  }
+  15% {
+    box-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff, 0.025em 0.04em 0 #fffc00;
+  }
+  16% {
+    box-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff, -0.05em -0.05em 0 #fffc00;
+  }
+  49% {
+    box-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff, -0.05em -0.05em 0 #fffc00;
+  }
+  50% {
+    box-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff, 0 -0.04em 0 #fffc00;
+  }
+  74% {
+    box-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff, 0 -0.04em 0 #fffc00;
+  }
+  75% {
+    box-shadow: -0.05em -0.025em 0 #00fffc, -0.025em 0.035em 0 #fc00ff, 0.05em -0.05em 0 #fffc00;
+  }
+  99% {
+    box-shadow: -0.05em -0.025em 0 #00fffc, -0.025em 0.035em 0 #fc00ff, 0.05em -0.05em 0 #fffc00;
+  }
+  100% {
+    box-shadow: 0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff, -0.04em -0.025em 0 #fffc00;
+  }
+}
 
 
 .Homelogo {
@@ -66,11 +148,11 @@
   body {
     top: 0;
     background-image: url(../Images/Versions\ Background.jpg);
-    background-size: 100vw 130vh;
+    background-size: 100vw 130vh contain;
+    background-repeat: no-repeat;
     height: 100%;
     text-align: center;
     font-family:'PT Serif';
-    padding-top: 0px;
   }
 
 body::-webkit-scrollbar {
@@ -284,16 +366,116 @@ body::-webkit-scrollbar {
   .Versions_Title{
     margin-top: 50px;
     font-size: 25px;
-    color: black
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    color: black;
     opacity: 100%;
     font-weight: normal;
-
+    font-family: 'Arsenal SC', sans-serif;
+    font-weight: 500;
+    background-color: rgba(200, 200, 200, 0.5);
   }
   
   .Versions_Title1{
     font-family: "Minecraft", sans-serif;
     margin-top: 75px;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     color: white;
+    background: linear-gradient(to right, blue, rgb(63, 63, 250),#6badeb, #355de2, blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 60px;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
   }
+  @keyframes rainbow_animation {
+  0%,100% {
+      background-position: 0 0;
+  }
+
+  50% {
+      background-position: 100% 0;
+  }
+}
+
+.Version_Background{
+  margin-top: 700px;
+  background-color: rgba(51, 51, 51, 0.5);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 72%;
+  margin-left: 15%;
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  animation: slide-down 1s forwards;
+  -webkit-animation: slide-down 1s forwards;
+} 
+
+footer {
+  background-color: #333;
+  height: 50px;
+  width: 100%;
+  margin: 0px;
+  margin-left: 0px;
+  margin-top: 10px;
+  padding: 0;
+  position: absolute;
+  display:flex;
+  left:0;
+}
+
+.footerwords {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Minecraft", sans-serif;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.footerwords2 {
+  padding-left: 245px;
+  padding-top: 12px;
+  color: white; 
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Minecraft", sans-serif;
+
+}
+
+.footerwords3 {
+  color: white;
+  padding: 12px 16px;
+  padding-left: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Minecraft", sans-serif;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.footer4 {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Minecraft", sans-serif;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.footerimg {
+  border: none;
+  height: 30px;
+  display: flex;
+  margin-top: 10px;
+  padding-left: 5px;
+}
+
+.mainbar {
+  position: fixed;
+  z-index: 4;
+  width: 100%;
+  opacity: 95%;
+  padding-top: 0px;
+  top: 0;
+  left: 0;
+}
+
