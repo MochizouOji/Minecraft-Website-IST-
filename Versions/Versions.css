@@ -148,7 +148,7 @@ background-color: white;
   body {
     top: 0;
     background-image: url(../Images/Versions\ Background.jpg);
-    background-size: 100vw 130vh contain;
+    background-size: 50vw 75vh contain;
     background-repeat: no-repeat;
     height: 100%;
     text-align: center;
@@ -266,7 +266,7 @@ body::-webkit-scrollbar {
   
   /* The circles on the timeline */
   .container::after {
-    content: '';
+
     position: absolute;
     width: 25px;
     height: 25px;
@@ -294,7 +294,7 @@ body::-webkit-scrollbar {
     content: " ";
     height: 0;
     position: absolute;
-    top: 22px;
+    top: 50px;
     width: 0;
     z-index: 1;
     right: 30px;
@@ -308,7 +308,7 @@ body::-webkit-scrollbar {
     content: " ";
     height: 0;
     position: absolute;
-    top: 22px;
+    top: 50px;
     width: 0;
     z-index: 1;
     left: 30px;
@@ -371,7 +371,9 @@ body::-webkit-scrollbar {
     font-weight: normal;
     font-family: 'Arsenal SC', sans-serif;
     font-weight: 500;
-    background-color: rgba(200, 200, 200, 0.5);
+    background-color: rgba(255, 255, 143, 0.70);
+    animation: slide-in 1s forwards;
+  -webkit-animation: slide-in 1s forwards;
   }
   
   .Versions_Title1{
@@ -381,7 +383,7 @@ body::-webkit-scrollbar {
     background: linear-gradient(to right, blue, rgb(63, 63, 250),#6badeb, #355de2, blue);
     -webkit-background-clip: text;
     background-clip: text;
-    font-size: 60px;
+    font-size: 70px;
     color: transparent;
     animation: rainbow_animation 6s ease-in-out infinite;
     background-size: 400% 100%;
@@ -397,11 +399,11 @@ body::-webkit-scrollbar {
 }
 
 .Version_Background{
-  margin-top: 700px;
+  margin-top: 750px;
   background-color: rgba(51, 51, 51, 0.5);
   padding-top: 20px;
   padding-bottom: 20px;
-  width: 72%;
+  width: 70%;
   margin-left: 15%;
   transform: translateY(-100%);
   -webkit-transform: translateY(-100%);
@@ -477,5 +479,14 @@ footer {
   padding-top: 0px;
   top: 0;
   left: 0;
+  animation: slide-in 1s forwards;
+  -webkit-animation: slide-in 1s forwards;
 }
-
+.Main_Updates{
+font-family: "Minecraft", sans-serif;
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+  letter-spacing: 2px;
+}
