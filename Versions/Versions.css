@@ -108,6 +108,16 @@ background-color: white;
   }
 }
 
+.Title_Link {
+  color: black;
+  font-family: "Minecraft", sans-serif;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.Title_Link:hover {
+  color: green;
+}
 
 .Homelogo {
   width: 20px;
@@ -372,8 +382,10 @@ body::-webkit-scrollbar {
     font-family: 'Arsenal SC', sans-serif;
     font-weight: 500;
     background-color: rgba(255, 255, 143, 0.70);
-    animation: slide-in 1s forwards;
-  -webkit-animation: slide-in 1s forwards;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    animation: slide-down 1s forwards;
+    -webkit-animation: slide-down 1s forwards;
   }
   
   .Versions_Title1{
@@ -489,4 +501,20 @@ font-family: "Minecraft", sans-serif;
   margin-top: 0;
   text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
   letter-spacing: 2px;
+}
+
+@keyframes slide-in {
+  100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+  100% { -webkit-transform: translateX(0%); }
+}
+
+@keyframes slide-down {
+  100% { transform: translateY(0%); }
+}
+
+@-webkit-keyframes slide-down {
+  100% { -webkit-transform: translateY(0%); }
 }
