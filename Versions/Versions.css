@@ -261,6 +261,15 @@ background-color: white;
       box-shadow: 0 0 5px #69c800;
     }
   }
+
+  @keyframes glow {
+    to {
+      border-color: #69c800;
+      -webkit-box-shadow: 0 0 5px #69c800;
+      -moz-box-shadow: 5px 5px 5px #69c800;
+      box-shadow: 0 0 5px #69c800;
+    }
+  }
   
   /* Container around content */
   .container {
