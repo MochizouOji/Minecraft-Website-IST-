@@ -223,9 +223,9 @@ body::-webkit-scrollbar {
 @-webkit-keyframes glow {
   to {
     border-color: white;
-    -webkit-box-shadow: 0 0 5px #69c800;
-    -moz-box-shadow: 0 0 5px #69c800;
-    box-shadow: 0 0 5px #69c800;
+    -webkit-box-shadow: 0 5px 10px #69c800;
+    -moz-box-shadow: 0 5px 10px #69c800;
+    box-shadow: 0 5px 10px #69c800;
   }
 }
 
@@ -307,13 +307,3 @@ body::-webkit-scrollbar {
     background-position: 100% 0;
 }
 }
-
-audio::-webkit-media-controls {
-  display: none;
-}
-
-.Music {  
-  height:0px; 
-  line-height: 0px;
-  font-size: 0px;
-  }
