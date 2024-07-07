@@ -489,3 +489,13 @@ font-family: "Minecraft", sans-serif;
 @-webkit-keyframes slide-down {
   100% { -webkit-transform: translateY(0%); }
 }
+
+audio::-webkit-media-controls {
+  display: none;
+}
+
+.Music {  
+  height:0px; 
+  line-height: 0px;
+  font-size: 0px;
+  }

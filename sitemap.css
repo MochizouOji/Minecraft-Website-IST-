@@ -243,3 +243,12 @@ body {
   padding-right: 5px;
   padding-bottom: 5px;
 }
+audio::-webkit-media-controls {
+  display: none;
+}
+
+.Music {  
+  height:0px; 
+  line-height: 0px;
+  font-size: 0px;
+  }
