@@ -129,6 +129,17 @@ background-color: white;
 
 }
 
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .progress-container {
   width: 100%;
   height: 8px;
@@ -243,6 +254,18 @@ background-color: white;
     animation: glow 0.5s infinite alternate;
   }
 
+  .quizsubtitle{
+  text-align: center;
+  font-family: 'Minecraft', sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+  position: absolute;
+  margin-right: 50%;
+  margin-left: 0;
+  color: white;
+  animation: fadeInAnimation ease 4s;
+  }
+  
   @keyframes fadeInAnimation {
     0% {
       opacity: 0;
