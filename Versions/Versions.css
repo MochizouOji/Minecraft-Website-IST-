@@ -168,7 +168,7 @@ background-color: white;
 
   body {
     top: 0;
-    background-image: url(../Images/Versions_Background_fr.png);
+    background-image: url(../Images/Versions_Background_fr_fr.png);
     background-size: 100vw 110vh;
     background-repeat: no-repeat;
     height: 100%;
@@ -531,3 +531,9 @@ audio::-webkit-media-controls {
   line-height: 0px;
   font-size: 0px;
   }
+
+p{
+  font-family: 'Arsenal SC', sans-serif;
+  font-weight:500;
+  font-size: 18px;
+}
