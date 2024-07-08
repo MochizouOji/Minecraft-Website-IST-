@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.cdnfonts.com/css/minecraft-4');
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 0;
+    height: 50px;
+  }
+  
+  .links {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Minecraft", sans-serif;
+  }
+  
+  .links:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .Homelogo {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    padding: 0;
+  }
+  
+  .mainbar {
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    opacity: 95%;
+    padding-top: 0;
+    top: 0;
+    left: 0;
+  }
+  
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+.sitelogo {
+    width: 30px;
+    height: 30px;
+    margin: 0px;
+    border-radius: 0%;
+    border: none;
+    padding: 0px;
+    float: left;
+    
+  }
+
+  
+.map {
+    font-family: "Minecraft", sans-serif;
+    color: white;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    float: right;
+  }
+  
+  .map:hover {
+    background-color: white;
+    color: black ;
+  }
+
+  .linky {
+    float: right;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Minecraft", sans-serif;
+    margin-bottom: 0px;
+    padding-left: 5px; 
+    padding-top: 0px;
+  }
+  
+
+  
