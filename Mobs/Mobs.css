@@ -195,8 +195,8 @@ a {
   height: 50px;
   transform: translateY(-400%);
   -webkit-transform: translateY(-400%);
-  animation: slide-down 3s forwards;
-  -webkit-animation: slide-down 3s forwards;
+  animation: slide-down 2s forwards;
+  -webkit-animation: slide-down 2s forwards;
 }
 
 @keyframes slide-down {
@@ -248,7 +248,7 @@ a {
   margin-right: 50%;
   margin-left: 0;
   color: white;
-  animation: fadeInAnimation ease 4s;
+  animation: fadeInAnimation ease 3s;
 
 }
 
@@ -270,7 +270,7 @@ a {
   position: absolute;
   margin-left: 50%;
   margin-right: 30px;
-  animation: fadeInAnimation ease 4s;
+  animation: fadeInAnimation ease 3s;
   color: white
 }
 
@@ -293,8 +293,8 @@ a {
   height: 50px;
   transform: translateY(-800%);
   -webkit-transform: translateY(-800%);
-  animation: slide-down 3s forwards;
-  -webkit-animation: slide-down 3s forwards;
+  animation: slide-down 2.5s forwards;
+  -webkit-animation: slide-down 2.5s forwards;
 }
 
 .choose {
