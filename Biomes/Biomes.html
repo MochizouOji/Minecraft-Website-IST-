@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="../Images/Grassblock.jpg">
-
   <link rel="stylesheet" href="./Biomes.css">
-  <script src="../Javascript.js">
+  <script src="../Javascript.js" defer></script>
+  <title>Biomes</title>
+</head>
 
-  </script>
-   <div class="mainbar">
+<body>
+  <div class="mainbar">
     <div class="topnav">
       <a href="../index.html" class="links"><img src="../Images/Homelogo.png" class="Homelogo"></a>
       <a href="../Versions/Versions.html" class="links">Versions</a>
@@ -21,14 +23,21 @@
       </a>
     </div>
   </div>
-  <title>Biomes</title>
-</head>
-<body>
-    <button type="button" class="backbutton" id="backbutton" onclick="history.back()">◄</button>
-    <img src="../Images/X2Download.app-Official Minecraft Trailer-(720p).gif" class="gifvid">
-  <div class="Music">
-      <audio controls>
-        <audio src="../Audio/Mice on Venus.mp3" autoplay></audio>
-       </audio>
+  <button type="button" class="backbutton" id="backbutton" onclick="history.back()">◄</button>
+  <div class="carousel">
+    <div class="carousel-biome">
+      <img src="../Images/overworld.webp" class="carousel-image">
+      <img src="../Images/nether.jpg" class="carousel-image">
+      <img src="../Images/end.jpg" class="carousel-image">
     </div>
+    <button class="carousel-button prev" onclick="prevSlide()">❮</button>
+    <button class="carousel-button next" onclick="nextSlide()">❯</button>
+  </div>
+  <div class="Music">
+    <audio controls autoplay>
+      <source src="../Audio/Mice on Venus.mp3" type="audio/mpeg">
+    </audio>
+  </div>
 </body>
+
+</html>
