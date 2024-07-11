@@ -2,6 +2,7 @@
 @import url('https://fonts.cdnfonts.com/css/minecraft-4');
 @import url('https://fonts.google.com/specimen/PT+Serif?preview.text');
 @import url('https://fonts.google.com/specimen/Nunito+Sans?preview.text');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
   cursor: url('./Images/Cursor.png'),auto;
@@ -615,3 +616,11 @@ line-height: 0px;
 font-size: 0px;
 }
 
+
+p{
+  font-family: 'Arsenal SC', sans-serif;
+  font-weight:500;
+  font-size: 22px;
+  text-align: center;
+  background-color: rgba(0, 255, 13, 0.247);
+}
