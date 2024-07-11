@@ -303,6 +303,23 @@ body::-webkit-scrollbar {
   height: 10vh; 
 }
 
+.headinginner {
+  animation: fadeInAnimation ease 4s;
+}
+
+.headinginner1 {
+  animation: fadeInAnimation ease 3s;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 
 
 .corner-link {

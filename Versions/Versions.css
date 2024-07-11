@@ -168,12 +168,20 @@ background-color: white;
 
   body {
     top: 0;
+    margin-top: -10px;
     background-image: url(../Images/Versions_Background_fr_fr.png);
-    background-size: 100vw 110vh;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
     text-align: center;
     font-family:'PT Serif';
+    background-color: darkblue;
+    overflow-y: scroll;
+    
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
   }
 
   .sitelogo {
@@ -375,21 +383,6 @@ background-color: white;
       left: 0%;
     }
   }
-
-  .Versions_Title{
-    margin-top: 50px;
-    font-size: 25px;
-    color: black;
-    opacity: 100%;
-    font-weight: normal;
-    font-family: 'Arsenal SC', sans-serif;
-    font-weight: 500;
-    background-color: rgba(255, 255, 255, 0.75);
-    transform: translateY(-100%);
-    -webkit-transform: translateY(-100%);
-    animation: slide-down 1s forwards;
-    -webkit-animation: slide-down 1s forwards;
-  }
   
   .Versions_Title1{
     font-family: "Minecraft", sans-serif;
@@ -403,6 +396,14 @@ background-color: white;
     animation: rainbow_animation 6s ease-in-out infinite;
     background-size: 400% 100%;
   }
+
+  .titleoutside {
+    transform: translateY(-200%);
+  -webkit-transform: translateY(-200%);
+  animation: slide-down 1s forwards;
+  -webkit-animation: slide-down 1s forwards;
+  }
+
   @keyframes rainbow_animation {
   0%,100% {
       background-position: 0 0;
@@ -414,16 +415,17 @@ background-color: white;
 }
 
 .Version_Background{
-  margin-top: 750px;
+  margin-top: 70px;
   background-color: rgba(51, 51, 51, 0.5);
   padding-top: 20px;
   padding-bottom: 20px;
   width: 70%;
   margin-left: 15%;
-  transform: translateY(-100%);
-  -webkit-transform: translateY(-100%);
+  transform: translateY(200%);
+  -webkit-transform: translateY(200%);
   animation: slide-down 1s forwards;
   -webkit-animation: slide-down 1s forwards;
+  
 } 
 
 footer {
@@ -522,6 +524,7 @@ font-family: "Minecraft", sans-serif;
   100% { -webkit-transform: translateY(0%); }
 }
 
+
 audio::-webkit-media-controls {
   display: none;
 }
@@ -530,6 +533,8 @@ audio::-webkit-media-controls {
   height:0px; 
   line-height: 0px;
   font-size: 0px;
+  margin: 0px;
+  display: inline-block;
   }
 
 p{
