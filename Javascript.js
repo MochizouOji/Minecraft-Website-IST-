@@ -7,3 +7,7 @@ function Scrollbar() {
   document.getElementById("myBar").style.width = scrolled + "%";
 }
 
+function fontFunction() {
+  document.getElementById("para").classList.toggle("hidden");
+  document.getElementById("para").style.animation = 'slidey 1000ms';
+}
