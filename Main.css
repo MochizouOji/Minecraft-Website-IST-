@@ -646,12 +646,12 @@ audio::-webkit-media-controls {
 
 
 .paragraph {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Arsenal SC', sans-serif;
   text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
-  border: 5px solid #524f4f;
+  border: 3px solid #524f4f;
   letter-spacing: 2px;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 20px;
   text-align: center;
   margin-left: 3%;
   margin-right: 3%;
@@ -662,7 +662,6 @@ audio::-webkit-media-controls {
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
-
 }
 
 #para {
