@@ -1,4 +1,4 @@
-window.onscroll = function() {Scrollbar()};
+window.onscroll = function () { Scrollbar() };
 
 function Scrollbar() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -9,5 +9,7 @@ function Scrollbar() {
 
 function fontFunction() {
   document.getElementById("para").classList.toggle("hidden");
+  document.getElementById("linkbuttonz").classList.toggle("hidden");
+  document.getElementById("linkbuttonz2 ").classList.toggle("hidden");
   document.getElementById("para").style.animation = 'slidey 1000ms';
 }

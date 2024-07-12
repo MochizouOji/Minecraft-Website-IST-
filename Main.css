@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
-  cursor: url('./Images/Cursor.png'),auto;
+  cursor: url('./Images/Cursor.png'), auto;
   height: 100%;
   text-align: center;
   font-family: 'PT Serif';
@@ -48,7 +48,8 @@ h1 {
   opacity: 100%;
   font-weight: normal;
   display: flex;
-  
+  position: relative;
+  z-index: 500;
   transform: translateY(-100%);
   -webkit-transform: translateY(-100%);
   animation: slide-down 1s forwards;
@@ -110,7 +111,7 @@ h2 {
   margin-top: 15px;
   width: 200px;
   height: 200px;
-  
+
 }
 
 .linkbuttons {
@@ -136,7 +137,8 @@ h2 {
   display: block;
   border: none;
   border-radius: 0px;
-  z-index: 0;
+  z-index: 500;
+  position: relative;
   transform: translateY(-100%);
   -webkit-transform: translateY(-100%);
   animation: slide-down 1s forwards;
@@ -182,7 +184,7 @@ h2 {
   background-color: rgb(255, 255, 255, 0);
   position: absolute;
   left: 1010px;
-  margin-top: -340px;  
+  margin-top: -340px;
   width: 300px;
   border: 3px solid white;
   border-radius: 10px;
@@ -205,23 +207,23 @@ h2 {
 .bigMobs:hover {
   img {
     box-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
-    0.025em 0.04em 0 #fffc00;
-  animation: glitchb 725ms infinite;
-  border-color: black;
+      0.025em 0.04em 0 #fffc00;
+    animation: glitchb 725ms infinite;
+    border-color: black;
   }
 
   .mobsheading {
     text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
-    0.025em 0.04em 0 #fffc00;
-  animation: glitch 725ms infinite;
-  color: black;
+      0.025em 0.04em 0 #fffc00;
+    animation: glitch 725ms infinite;
+    color: black;
   }
 
   .Mobs {
     box-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
-    0.025em 0.04em 0 #fffc00;
-  animation: glitchb 725ms infinite;
-  border-color: black;
+      0.025em 0.04em 0 #fffc00;
+    animation: glitchb 725ms infinite;
+    border-color: black;
   }
 
   .homebuttons {
@@ -247,36 +249,42 @@ h2 {
 
 #glitched:hover {
   text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
-  0.025em 0.04em 0 #fffc00;
-animation: glitch 725ms infinite;
-background-color: white;
- }
+    0.025em 0.04em 0 #fffc00;
+  animation: glitch 725ms infinite;
+  background-color: white;
+}
 
 @keyframes glitch {
   0% {
     text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
       0.025em 0.04em 0 #fffc00;
   }
+
   15% {
     text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
       0.025em 0.04em 0 #fffc00;
   }
+
   16% {
     text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
       -0.05em -0.05em 0 #fffc00;
   }
+
   49% {
     text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
       -0.05em -0.05em 0 #fffc00;
   }
+
   50% {
     text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
       0 -0.04em 0 #fffc00;
   }
+
   99% {
     text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
       0 -0.04em 0 #fffc00;
   }
+
   100% {
     text-shadow: -0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff,
       -0.04em -0.025em 0 #fffc00;
@@ -287,27 +295,35 @@ background-color: white;
   0% {
     box-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff, 0.025em 0.04em 0 #fffc00;
   }
+
   15% {
     box-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff, 0.025em 0.04em 0 #fffc00;
   }
+
   16% {
     box-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff, -0.05em -0.05em 0 #fffc00;
   }
+
   49% {
     box-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff, -0.05em -0.05em 0 #fffc00;
   }
+
   50% {
     box-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff, 0 -0.04em 0 #fffc00;
   }
+
   74% {
     box-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff, 0 -0.04em 0 #fffc00;
   }
+
   75% {
     box-shadow: -0.05em -0.025em 0 #00fffc, -0.025em 0.035em 0 #fc00ff, 0.05em -0.05em 0 #fffc00;
   }
+
   99% {
     box-shadow: -0.05em -0.025em 0 #00fffc, -0.025em 0.035em 0 #fc00ff, 0.05em -0.05em 0 #fffc00;
   }
+
   100% {
     box-shadow: 0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff, -0.04em -0.025em 0 #fffc00;
   }
@@ -419,25 +435,34 @@ background-color: white;
 
 
 @keyframes slide-in {
-  100% { transform: translateX(0%); }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 @-webkit-keyframes slide-in {
-  100% { -webkit-transform: translateX(0%); }
+  100% {
+    -webkit-transform: translateX(0%);
+  }
 }
 
 @keyframes slide-down {
-  100% { transform: translateY(0%); }
+  100% {
+    transform: translateY(0%);
+  }
 }
 
 @-webkit-keyframes slide-down {
-  100% { -webkit-transform: translateY(0%); }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
 }
 
 @keyframes slidey {
   0% {
     transform: translateY(-500px);
   }
+
   100% {
     transform: translateY(0px);
   }
@@ -545,7 +570,7 @@ a {
 
 .mainbar {
   position: fixed;
-  z-index: 4;
+  z-index: 600;
   width: 100%;
   opacity: 95%;
   padding-top: 0px;
@@ -562,8 +587,8 @@ footer {
   margin-top: 10px;
   padding: 0;
   position: absolute;
-  display:flex;
-  left:0;
+  display: flex;
+  left: 0;
 }
 
 .footerwords {
@@ -578,7 +603,7 @@ footer {
 .footerwords2 {
   padding-left: 245px;
   padding-top: 12px;
-  color: white; 
+  color: white;
   text-decoration: none;
   font-size: 20px;
   font-family: "Minecraft", sans-serif;
@@ -617,17 +642,17 @@ audio::-webkit-media-controls {
   display: none;
 }
 
-.Music {  
-height:0px; 
-line-height: 0px;
-font-size: 0px;
+.Music {
+  height: 0px;
+  line-height: 0px;
+  font-size: 0px;
 }
 
 
 .paragraph {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 2px;
-  font-weight:500;
+  font-weight: 500;
   font-size: 22px;
   text-align: center;
   margin-left: 3%;
@@ -639,19 +664,24 @@ font-size: 0px;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
+
+}
+
+#para {
+  z-index: 1;
 }
 
 .hidden {
-  
   display: none;
-  animation: fadeInAnimation ease 3s;
 }
 
 #clickme {
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(38, 108, 189, 0.5);
   padding-bottom: 5px;
   padding-top: 5px;
   border: 2px solid black;
+  position: relative;
+  z-index: 500;
 }
 
 .pointleft {
