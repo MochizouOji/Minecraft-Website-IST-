@@ -113,10 +113,38 @@ background-color: white;
   font-family: "Minecraft", sans-serif;
   font-size: 25px;
   text-decoration: none;
+  animation: fadeInAnimation ease 2s;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .Title_Link:hover {
   color: green;
+  -webkit-animation: glow 0.5s infinite alternate;
+  -webkit-transition: border 1s linear, text-shadow 0.5s linear;
+  -moz-transition: border 1s linear, text-shadow 0.5s linear;
+  transition: border 1s linear, text-shadow 0.5s linear;
+  animation: glow 0.5s infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  to {
+    color: #69c800;    
+  }
+}
+
+@keyframes glow {
+  to {
+    color: #69c800;    
+  }
 }
 
 .Homelogo {
