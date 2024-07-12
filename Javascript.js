@@ -10,6 +10,6 @@ function Scrollbar() {
 function fontFunction() {
   document.getElementById("para").classList.toggle("hidden");
   document.getElementById("linkbuttonz").classList.toggle("hidden");
-  document.getElementById("linkbuttonz2 ").classList.toggle("hidden");
+  document.getElementById("linkbuttonz2").classList.toggle("hidden");
   document.getElementById("para").style.animation = 'slidey 1000ms';
 }
