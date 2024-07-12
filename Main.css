@@ -686,6 +686,10 @@ audio::-webkit-media-controls {
   -webkit-animation: slide-down 1s forwards;
 }
 
+#clickme:hover {
+  border-color: aqua;
+}
+
 .pointleft {
   rotate: 90deg;
   width: 30px;
