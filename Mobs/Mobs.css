@@ -5,7 +5,10 @@ body {
   background-image: url(../Images/dark.png);
   background-repeat: no-repeat;
   background-size: cover;
-
+  height: 100%;
+  text-align: center;
+  font-family: 'PT Serif';
+  padding-top: 0px;
 }
 
 body::-webkit-scrollbar {
@@ -127,18 +130,6 @@ body::-webkit-scrollbar {
   padding-top: 0px;
   top: 0;
   left: 0;
-}
-
-body {
-
-  height: 100%;
-  text-align: center;
-  font-family: 'PT Serif';
-  padding-top: 0px;
-}
-
-body::-webkit-scrollbar {
-  display: none;
 }
 
 .sitelogo {
