@@ -651,14 +651,15 @@ audio::-webkit-media-controls {
 
 .paragraph {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
   letter-spacing: 2px;
   font-weight: 500;
   font-size: 22px;
   text-align: center;
   margin-left: 3%;
   margin-right: 3%;
-  background-color: rgba(60, 60, 60, 0.75);
-  border-radius: 5px;
+  background-color: rgba(60, 60, 60, 0.8);
+  border-radius: 10px;
   color: white;
   padding-top: 10px;
   padding-bottom: 10px;

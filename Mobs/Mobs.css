@@ -293,8 +293,8 @@ a {
   height: 50px;
   transform: translateY(-800%);
   -webkit-transform: translateY(-800%);
-  animation: slide-down 2.5s forwards;
-  -webkit-animation: slide-down 2.5s forwards;
+  animation: slide-down 2s forwards;
+  -webkit-animation: slide-down 2s forwards;
 }
 
 .choose {

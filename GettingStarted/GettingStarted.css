@@ -304,11 +304,11 @@ body::-webkit-scrollbar {
 }
 
 .headinginner {
-  animation: fadeInAnimation ease 4s;
+  animation: fadeInAnimation ease 3s;
 }
 
 .headinginner1 {
-  animation: fadeInAnimation ease 3s;
+  animation: fadeInAnimation ease 2s;
 }
 
 @keyframes fadeInAnimation {
@@ -361,24 +361,22 @@ body::-webkit-scrollbar {
 
 .corner-link:hover {
   color: green;
-  -webkit-animation: glow 1s infinite alternate;
+  -webkit-animation: glow 0.5s infinite alternate;
   -webkit-transition: border 1s linear, text-shadow 0.5s linear;
   -moz-transition: border 1s linear, text-shadow 0.5s linear;
   transition: border 1s linear, text-shadow 0.5s linear;
-  animation: glow 1s infinite alternate;
+  animation: glow 0.5s infinite alternate;
 }
 
 @-webkit-keyframes glow {
   to {
-    color: #69c800;
-    
+    color: #69c800;    
   }
 }
 
 @keyframes glow {
   to {
-    color: #69c800;
-    
+    color: #69c800;    
   }
 }
 
