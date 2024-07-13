@@ -255,3 +255,9 @@ body {
   @keyframes cssAnimation {
     to   { visibility: visible; }
   }
+
+  .Music {
+    height: 0px;
+    line-height: 0px;
+    font-size: 0px;
+  }
