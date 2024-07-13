@@ -261,3 +261,8 @@ body {
     line-height: 0px;
     font-size: 0px;
   }
+
+  
+audio::-webkit-media-controls {
+  display: none;
+}
