@@ -178,7 +178,7 @@ body {
     padding-top: 30px;
     margin-bottom: 0px;
     padding-bottom: 0px;
-    animation: cssAnimation 0s 2.5s forwards;
+    animation: cssAnimation 0s 2s forwards;
     visibility: hidden;
 
   }
