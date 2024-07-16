@@ -2,9 +2,6 @@
 @import url('https://fonts.cdnfonts.com/css/minecraft-4');
 
 body {
-  background-image: url(../Images/dark.png);
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100%;
   text-align: center;
   font-family: 'PT Serif';
@@ -176,3 +173,12 @@ a {
   padding-left: 5px;
   padding-top: 3px;
 }
+
+.hidden {
+  display: none;
+}
+
+.question1 {
+  margin-top: 80px;
+}
+
