@@ -1,5 +1,9 @@
 @import url('https://fonts.cdnfonts.com/css/minecraft-4');
 
+html {
+  height: 100%;
+}
+
 body::-webkit-scrollbar {
     display: none;
   }
@@ -13,7 +17,9 @@ body {
   background-image: url(../Images/ezgif.com-optimize.gif);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
   background-color: rgb(58, 54, 54);
+  height: 100%;
 }
   
   .topnav {
@@ -167,10 +173,12 @@ body {
     background-image: url(../Images/explodehole.png);
     background-repeat: no-repeat;
     background-size: cover;
-    overflow-y: clip;
+    height: 100%;
+    overflow-y:clip;
     padding-top: 30px;
     margin-bottom: 0px;
-    animation: cssAnimation 0s 2.5s forwards;
+    padding-bottom: 0px;
+    animation: cssAnimation 0s 2s forwards;
     visibility: hidden;
 
   }
@@ -179,6 +187,7 @@ body {
     background-color: rgba(241, 81, 81, 0.5);
     padding-top: 10px;
     padding-bottom: 24px;
+    height: 100%;
   }
 
   .youdiedtext {
@@ -260,6 +269,9 @@ body {
     height: 0px;
     line-height: 0px;
     font-size: 0px;
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
   }
 
   
