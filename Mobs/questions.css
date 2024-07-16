@@ -2,7 +2,9 @@
 @import url('https://fonts.cdnfonts.com/css/minecraft-4');
 
 body {
-  height: 100%;
+  background-image: url(../Images/questionbg.png);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
   text-align: center;
   font-family: 'PT Serif';
   padding-top: 0px;
@@ -182,3 +184,73 @@ a {
   margin-top: 80px;
 }
 
+.q1words {
+  font-size: 60px;
+  font-family: "Minecraft", sans-serif;
+  color: white;
+  text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.dropdown1 {
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 40%;
+  height: 40px;
+  color: #333;
+  border-width: 5px;
+  text-align: center;
+}
+
+.button1 {
+  margin-top: 200px;
+  width: 40%;
+  height: 50px;
+  border-radius: 10px;
+  background-color: lawngreen;
+  border-width: 5px;
+  font-family: "Minecraft", sans-serif;
+  font-size: 20px;
+}
+
+
+
+
+.question2 {
+  margin-top: 80px;
+}
+
+.question3 {
+  margin-top: 80px;
+}
+
+.question4 {
+  margin-top: 80px;
+}
+
+.question5 {
+  margin-top: 80px;
+}
+
+.question6 {
+  margin-top: 80px;
+}
+
+.question7 {
+  margin-top: 80px;
+}
+
+.question8 {
+  margin-top: 80px;
+}
+
+.question9 {
+  margin-top: 80px;
+}
+
+.question10 {
+  margin-top: 80px;
+}
