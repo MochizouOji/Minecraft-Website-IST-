@@ -449,6 +449,8 @@ background-color: white;
   padding-bottom: 20px;
   width: 70%;
   margin-left: 15%;
+  border-radius: 10px;
+  border: 4px solid black;
   transform: translateY(200%);
   -webkit-transform: translateY(200%);
   animation: slide-down 1s forwards;

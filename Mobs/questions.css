@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
-  background-image: url(../Images/questionbg.png);
+  background-image: url(../Images/mbquestionbg.jpg);
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
   text-align: center;
@@ -183,15 +183,35 @@ a {
   display: none;
 }
 
+/* Question 1 */
 .question1 {
   margin-top: 80px;
+  background-color: rgba(100, 100, 100, 0.5);
+  padding-bottom: 20px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  border: 5px solid black;
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  animation: slide-down 1s forwards;
+  -webkit-animation: slide-down 1s forwards;
+}
+
+@keyframes slide-down {
+  100% { transform: translateY(0%); }
+}
+
+@-webkit-keyframes slide-down {
+  100% { -webkit-transform: translateY(0%); }
 }
 
 .q1words {
   font-size: 60px;
   font-family: "Minecraft", sans-serif;
   color: white;
-  text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   margin-left: 20%;
   margin-right: 20%;
 }
@@ -203,9 +223,11 @@ a {
   border-radius: 10px;
   width: 40%;
   height: 40px;
-  color: #333;
-  border-width: 5px;
+  color: black;
+  border-width: 3px;
   text-align: center;
+  border-color: black;
+  font-family: 'Arsenal SC', sans-serif;
 }
 
 .button1 {
@@ -217,37 +239,149 @@ a {
   border-width: 5px;
   font-family: "Minecraft", sans-serif;
   font-size: 20px;
+  border-color: black;
 }
 
 .button1:hover{
-  -webkit-animation: glow 0.5s infinite alternate;
-  -webkit-transition: border 1s linear, text-shadow 0.5s linear;
-  -moz-transition: border 1s linear, text-shadow 0.5s linear;
-  transition: border 1s linear, text-shadow 0.5s linear;
-  animation: glow 0.75s infinite alternate;
+  background-color: rgb(102, 201, 4);
+}
+
+option{
+  font-family: 'Arsenal SC', sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Question 2 */
+.question2 {
+  margin-top: 80px;
+  background-color: rgba(100, 100, 100, 0.5);
+  padding-bottom: 20px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  border: 5px solid black;
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  animation: slide-down 1s forwards;
+  -webkit-animation: slide-down 1s forwards;
+  
+}
+
+.q2words {
+  font-size: 60px;
+  font-family: "Minecraft", sans-serif;
+  color: white;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.overworldbutton1 {
+  display: inline-block;
+  height: 300px;
+  width: 23%;
+  background-color: green;
+  border-radius: 10px;
+  border: 3px solid white;
+  margin-left: 2%;
+  margin-top: 100px;
+  font-family: 'Arsenal SC', sans-serif;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  background-image: url(../Images/overworldquestion.png);
+}
+.netherbutton1 {
+  display: inline-block;
+  height: 300px;
+  width: 23%;
+  background-color: red;
+  border-radius: 10px;
+  border: 3px solid white;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 100px;
+  font-family: 'Arsenal SC', sans-serif;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  background-image: url(../Images/netherquestion.png);
+}
+.endbutton1 {
+  display: inline-block;
+  height: 300px;
+  width: 23%;
+  background-color: purple;
+  border-radius: 10px;
+  border: 3px solid white;  
+  margin-top: 100px;
+  margin-right: 2%;
+  text-align: center;
+  font-family: 'Arsenal SC', sans-serif;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  background-image: url(../Images/endquestion.png);
+}
+
+.endbutton1:hover, .netherbutton1:hover, .overworldbutton1:hover {
+  border: 3px solid green;
+    background-color: rgb(169, 169, 169, 0.5);
+    -webkit-animation: glow 1.0s infinite alternate;
+    -webkit-transition: border 0.5s linear, box-shadow 0.5s linear;
+    -moz-transition: border 0.5s linear, box-shadow 0.5s linear;
+    transition: border 0.5s linear, box-shadow 0.5s linear;
+    animation: glow 0.5s infinite alternate;
+    color: rgb(2, 153, 2);
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 @-webkit-keyframes glow {
   to {
-    color: white;    
+    border-color: #69c800;
+    -webkit-box-shadow: 0 0 5px #69c800;
+    -moz-box-shadow: 0 0 5px #69c800;
+    box-shadow: 0 0 5px #69c800;
   }
 }
 
 @keyframes glow {
   to {
-    color: white;    
+    border-color: #69c800;
+    -webkit-box-shadow: 0 0 5px #69c800;
+    -moz-box-shadow: 0 0 5px #69c800;
+    box-shadow: 0 0 5px #69c800;
   }
 }
 
-
-
-
-.question2 {
-  margin-top: 80px;
+span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
 }
 
+/* Question 3 */
 .question3 {
   margin-top: 80px;
+  background-color: rgba(100, 100, 100, 0.5);
+  padding-bottom: 20px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  border: 5px solid black;
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  animation: slide-down 1s forwards;
+  -webkit-animation: slide-down 1s forwards;
+}
+
+.q3words {
+  font-size: 60px;
+  font-family: "Minecraft", sans-serif;
+  color: white;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 .question4 {
@@ -278,9 +412,4 @@ a {
   margin-top: 80px;
 }
 
-option{
-  font-family: 'Arsenal SC', sans-serif;
-  font-weight:500;
-  font-size: 18px;
-  text-align: center;
-}
+

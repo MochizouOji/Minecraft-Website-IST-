@@ -18,5 +18,12 @@ function abc() {
 
 }
 
+function hideme() {
+    const audio = new Audio("../Audio/yes.mp3");
+    question2.classList.add("hidden");
+    question3.classList.remove("hidden");
+    audio.play();
+}
+
 
 
