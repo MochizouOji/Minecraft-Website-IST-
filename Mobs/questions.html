@@ -37,18 +37,33 @@
       Submit
     </button>
   </div>
-  <div class="question2 hidden" id="question2">    
-      <div class="q2words">Question 2: Which dimension can the badlands biome be found in?</div>
-      <button type="button" onclick="hideme();" class="overworldbutton1"><span>Overworld</span></button>
-      <button type="button" onclick="window.location.href = 'dead.html'" class="netherbutton1"><span>Nether</span></button>
-      <button type="button" onclick="window.location.href = 'dead.html'" class="endbutton1"><span>End</span></button>    
+  <div class="question2 hidden" id="question2">
+    <div class="q2words">Question 2: Which dimension can the badlands biome be found in?</div>
+    <button type="button" onclick="hideme();" class="overworldbutton1"><span>Overworld</span></button>
+    <button type="button" onclick="window.location.href = 'dead.html'"
+      class="netherbutton1"><span>Nether</span></button>
+    <button type="button" onclick="window.location.href = 'dead.html'" class="endbutton1"><span>End</span></button>
   </div>
   <div class="question3 hidden" id="question3">
     <div class="q3words">Question 3: Fill in the blank with the correct word.</div>
-      
+    <div class="filltheblank1"><input placeholder="Type your answer." type="text" id="filltheblank1input"
+        class="filltheblank1input"></input> mode is a gamemode that allows players to have access to every item in the
+      game.</div>
+    <button type="button" class="button2" id="button2" onclick="bcd();">
+      Submit
+    </button>
   </div>
   <div class="question4 hidden" id="question4">
-    1
+    <div class="q4words">Question 4: Which of these are the correct recipe for a crafting table? (Hint: There could be
+      more than one!)</div>
+    <input id="lists" type="checkbox" name="lists1">
+    <label for="lists1"><img src="../Images/option1d.png"></label>
+    <input id="lists" type="checkbox" name="lists2">
+    <label for="lists2"><img src="../Images/option2d.png"></label>
+    <input id="lists" type="checkbox" name="lists3">
+    <label for="lists3"><img src="../Images/option3d.png"></label>
+    <input id="lists" type="checkbox" name="lists4">
+    <label for="lists4"><img src="../Images/option4d.png"></label>
   </div>
   <div class="question5 hidden" id="question5">
     1
