@@ -33,7 +33,7 @@
       <option value="Dolphin">Dolphin</option>
     </select>
     <br>
-    <button type="button" class="button1" id="button1" onclick="abc();">
+    <button type="button" class="button1" id="button1" onclick="firstquestion();">
       Submit
     </button>
   </div>
@@ -49,38 +49,97 @@
     <div class="filltheblank1"><input placeholder="Type your answer." type="text" id="filltheblank1input"
         class="filltheblank1input"></input> mode is a gamemode that allows players to have access to every item in the
       game.</div>
-    <button type="button" class="button2" id="button2" onclick="bcd();">
+    <button type="button" class="button2" id="button2" onclick="thirdquestion();">
       Submit
     </button>
   </div>
   <div class="question4 hidden" id="question4">
     <div class="q4words">Question 4: Which of these are the correct recipe for a crafting table? (Hint: There could be
       more than one!)</div>
-    <input id="lists" type="checkbox" name="lists1">
-    <label for="lists1"><img src="../Images/option1d.png"></label>
-    <input id="lists" type="checkbox" name="lists2">
-    <label for="lists2"><img src="../Images/option2d.png"></label>
-    <input id="lists" type="checkbox" name="lists3">
-    <label for="lists3"><img src="../Images/option3d.png"></label>
-    <input id="lists" type="checkbox" name="lists4">
-    <label for="lists4"><img src="../Images/option4d.png"></label>
+    <div class="checkboxes">
+      <input type="checkbox" id="img1" name="img1" />
+      <label for="img1"><img class="img" src="../Images/option1d.png" /></label>
+      <input type="checkbox" id="img2" name="img2" />
+      <label for="img2"><img class="img" src="../Images/option2d.png" /></label>
+      <input type="checkbox" id="img3" name="img3" />
+      <label for="img3"><img class="img" src="../Images/option3d.png" /></label>
+      <input type="checkbox" id="img4" name="img4" />
+      <label for="img4"><img class="img" src="../Images/option4d.png" /></label>
+    </div>
+    <button type="button" class="button3" id="button3" onclick="fourthquestion();">
+      Submit
+    </button>
   </div>
   <div class="question5 hidden" id="question5">
-    1
+    <div class="q5words">Question 5: An ocelot, wolf, and horse are the only animals that are able to be tamed in Minecraft.</div>
+    <button type="button" onclick="window.location.href = 'dead.html'" class="true1"><span>True</span></button>
+    <button type="button" onclick="hidemeagain();" class="false1"><span>False</span></button>
   </div>
   <div class="question6 hidden" id="question6">
-    1
+    <div class="q2words">Question 6: What is the use of the piston in redstone contraptions?</div>
+    <select name="question6" id="pistonredstone" class="dropdown2">
+      <option value="" disabled selected>Select one</option>
+      <option value="pusher">Push entities or blocks</option>
+      <option value="states">To check block states</option>
+      <option value="power">To generate power</option>      
+      <option value="lines">Activate redstone lines</option>
+    </select>
+    <br>
+    <button type="button" class="button1" id="button6" onclick="sixthquestion();">
+      Submit
+    </button>
   </div>
   <div class="question7 hidden" id="question7">
-    1
+    <div class="q7words">Question 7: What is the main ingredient in the crafting recipe of a furnace?</div>
+    <button type="button" onclick="window.location.href = 'dead.html'" class="stonebutton"><span>Stone</span></button>
+    <button type="button" onclick="hidemeagain4();" class="cobblestonebutton"><span>Cobblestone</span></button>
+    <button type="button" onclick="window.location.href = 'dead.html'" class="smoothstonebutton"><span>Smooth Stone</span></button>
   </div>
   <div class="question8 hidden" id="question8">
-    1
+    <div class="q3words">Question 8: Fill in the blank with the correct word.</div>
+    <div class="filltheblank1">In Minecraft, a sculk catalyst is dropped from a <input placeholder="Type your answer." type="text" id="filltheblank1input2" class="filltheblank1input"></input> when killed.</div>
+    <button type="button" class="button2" id="button2" onclick="eigthquestion();">
+      Submit
+    </button>
   </div>
   <div class="question9 hidden" id="question9">
-    1
+    <div class="q9words">Question 9: Which of the following can spawn naturally in the nether? (Hint: There could be
+      more than one!)</div>
+    <div class="checkboxes2">
+      <input type="checkbox" id="mob1" name="mob1" />
+      <label for="mob1"><img class="img" src="../Images/Blaze.webp" /></label>
+      <input type="checkbox" id="mob2" name="mob2" />
+      <label for="mob2"><img class="img" src="../Images/Enderman.webp" /></label>
+      <input type="checkbox" id="mob3" name="mob3" />
+      <label for="mob3"><img class="img" src="../Images/Ghast_JE2_BE2.webp" /></label>
+      <input type="checkbox" id="mob4" name="mob4" />
+      <label for="mob4"><img class="img" src="../Images/Piglin.webp" /></label>
+    </div>
+    <button type="button" class="button3" id="button3" onclick="ninthquestion();">
+      Submit
+    </button>
   </div>
   <div class="question10 hidden" id="question10">
-    1
+    <div class="q10words"><span>Question 10: This website should get an <span class="greentext">A</span> grade.</span></div>
+      <button type="button" onclick="hidemeagainagain();" class="true1"><span>True</span></button>
+      <button type="button" onclick="window.location.href = 'dead.html'" class="false1"><span>False</span></button>
+  </div>
+  <div class="final hidden" id="final">
+    <div class="last">
+    <div class="finalwords">Congratulations! You have completed the Minecraft Fan Forum Quiz!</div>
+    <br>
+    <div class="finalwordssub">You are a true Minecraft scholar.</div>
+  </div>
+    <img src="../Images/Cake_JE4.webp" class="middlecake">
+    <div class="buttons">
+      <button id="one"><a href="Mobs.html" style="text-decoration: none;">
+              <div class="respawn">
+                  Go Again! (Back to Quiz)
+              </div></button>
+      <button id="two"><a href="../index.html" style="text-decoration: none;">
+              <div class="title">
+                  Quit to Title (Back to Home)
+              </div></button>
+  </div>
   </div>
 </body>
