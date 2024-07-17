@@ -174,7 +174,7 @@
     }
   }
   .bannersection1 {
-    background-image: url(../Images/craftingbanner.png);
+    background-image: url(../Images/craftingbanner.webp);
     background-size: cover;
     z-index: -1;
     height: 650px;

@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
-  background-image: url(../Images/mbquestionbg.jpg);
+  background-image: url(../Images/mbquestionbg.webp);
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
   text-align: center;
@@ -290,7 +290,7 @@ option{
   font-size: 30px;
   color: white;
   font-weight: bold;
-  background-image: url(../Images/overworldquestion.png);
+  background-image: url(../Images/overworldquestion.webp);
 }
 .netherbutton1 {
   display: inline-block;
@@ -306,7 +306,7 @@ option{
   font-size: 30px;
   color: white;
   font-weight: bold;
-  background-image: url(../Images/netherquestion.png);
+  background-image: url(../Images/netherquestion.webp);
 }
 .endbutton1 {
   display: inline-block;
@@ -322,7 +322,7 @@ option{
   font-size: 30px;
   color: white;
   font-weight: bold;
-  background-image: url(../Images/endquestion.png);
+  background-image: url(../Images/endquestion.webp);
 }
 
 .endbutton1:hover, .netherbutton1:hover, .overworldbutton1:hover {
