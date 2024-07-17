@@ -174,7 +174,7 @@ background-color: white;
   }
 }
 .bannersection1 {
-  background-image: url(../Images/netherbanner.jpg);
+  background-image: url(../Images/netherbanner.webp);
   background-size: cover;
   z-index: -1;
   height: 650px;
