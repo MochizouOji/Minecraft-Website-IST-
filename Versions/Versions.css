@@ -573,17 +573,16 @@ p{
   font-size: 18px;
 }
 
-
 .backbutton {
   width: 60px;
   height: 40px;
   background-color: #333;
   color: white;
+  margin-left: 5px;
   border-radius: 5px;
   font-size: 20px;
   margin-top: 70px;
   position: fixed;
-  display:inline-flexbox;
   z-index: 1000;
 }
 
