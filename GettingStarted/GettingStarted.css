@@ -233,7 +233,7 @@ body::-webkit-scrollbar {
   left: 0;
   width: 49%;
 
-  background-image: url('../Images/redstonegettingstarted.jpg');
+  background-image: url('../Images/redstonegettingstarted.webp');
   transform: translateX(-100%);
   -webkit-transform: translateX(-100%);
   animation: slide-down 1s forwards;
@@ -267,7 +267,7 @@ body::-webkit-scrollbar {
 .bottom-right {
   bottom: 0;
   right: 0;
-  background-image: url('../Images/craftinggettingstarted.jpg');
+  background-image: url('../Images/craftinggettingstarted.webp');
   transform: translateX(100%);
   -webkit-transform: translateX(100%);
   animation: slide-down 1s forwards;
