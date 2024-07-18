@@ -539,7 +539,7 @@ input[type=checkbox] {
 .true1:hover{
   border: 3px solid green;
     background-color: rgb(169, 169, 169, 0.5);
-    background-image: url(../Images/check-mark-vector-seamless-pattern_547110-1724-removebg-preview.png);
+    background-image: url(../Images/check-mark-vector-seamless-pattern_547110-1724-removebg-preview.webp);
     -webkit-animation: glow 1.0s infinite alternate;
     -webkit-transition: border 0.5s linear, box-shadow 0.5s linear;
     -moz-transition: border 0.5s linear, box-shadow 0.5s linear;
@@ -552,7 +552,7 @@ input[type=checkbox] {
 .false1:hover{
   border: 3px solid red;
     background-color: rgb(169, 169, 169, 0.5);
-    background-image: url(../Images/pattern-background-wrong-mark-icon-vector-removebg-preview.png);
+    background-image: url(../Images/pattern-background-wrong-mark-icon-vector-removebg-preview.webp);
     -webkit-animation: glowbad 1.0s infinite alternate;
     -webkit-transition: border 0.5s linear, box-shadow 0.5s linear;
     -moz-transition: border 0.5s linear, box-shadow 0.5s linear;
