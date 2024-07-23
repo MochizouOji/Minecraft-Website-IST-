@@ -423,3 +423,25 @@ body::-webkit-scrollbar {
       -webkit-transform: translateX(12%);
     }
   }
+
+  .forward-button {
+    position: fixed;
+    top: 70px;
+    right: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    width: 60px;
+    height: 40px;
+    z-index:1000;
+  }
+  
+  .forward-button:hover {
+    background-color: white;
+    color: black;
+  }
