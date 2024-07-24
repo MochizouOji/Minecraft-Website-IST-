@@ -205,7 +205,9 @@ h1{
   text-align: center;
   margin-top: 75px;
   font-size: 70px;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   font-family: "Minecraft", sans-serif;
+  color: white;
 }
 
 .Youtube{
