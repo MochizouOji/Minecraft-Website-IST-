@@ -416,7 +416,7 @@ background-color: white;
     font-family: "Minecraft", sans-serif;
     margin-top: 75px;
     color: white;
-    background: linear-gradient(to right, blue, rgb(63, 63, 250),#6badeb, #5b73c2, blue);
+    background: linear-gradient(to right, darkblue, rgb(72, 72, 216),darkblue, rgb(72, 72, 216), darkblue);
     -webkit-background-clip: text;
     background-clip: text;
     font-size: 70px;
