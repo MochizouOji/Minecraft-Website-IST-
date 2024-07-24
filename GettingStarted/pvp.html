@@ -30,8 +30,13 @@
 </div>
 <h1>Player vs Player</h1>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TzA2TsNMpVc?si=cxRwvPpVhCEviMSt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="Youtube"></iframe>
-
-
+<button type="button" class="backbutton" id="backbutton" onclick="history.back()" style="left: 0;">◄</button>
+<button class="forward-button" onclick="navigateToPage()">►</button>
+<script>
+  function navigateToPage() {
+    window.location.href = '../GettingStarted/gamemodes.html';
+  }
+</script>
 
 
 

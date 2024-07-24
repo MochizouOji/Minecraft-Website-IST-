@@ -24,7 +24,7 @@
   <title>1.8</title>
 </head>
 <body>
-  <button type="button" class="backbutton" id="backbutton" onclick="history.back()" style="left: 0; ">◄</button>
+  <button type="button" class="backbutton" id="backbutton" onclick="history.back()" style="left: 0;">◄</button>
   <div class="bannersection1"></div>
   <div class="progress-container">
     <div class="progress-bar" id="myBar"></div>
@@ -33,7 +33,13 @@
 <h1>1.8 - The Bountiful Update</h1>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/v5vTBqAJat0?si=NJBgYnqQZCGn6xcg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="Youtube"></iframe>
 
+<button class="forward-button" onclick="navigateToPage()">►</button>
 
+<script>
+  function navigateToPage() {
+    window.location.href = '../Versions/1.9.html';
+  }
+</script>
 
 
 
