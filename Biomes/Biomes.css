@@ -128,6 +128,7 @@ body::-webkit-scrollbar {
   align-self: center;
 }
 
+
 .backbutton {
   width: 60px;
   height: 40px;
@@ -135,30 +136,31 @@ body::-webkit-scrollbar {
   color: white;
   border-radius: 5px;
   font-size: 20px;
+  margin-top: 70px;
+  z-index: 999;
+  position: fixed;
+  top: 0;
   transform: translateX(-100%);
   -webkit-transform: translateX(-100%);
-  animation: slide-in 1s forwards;
-  -webkit-animation: slide-in 1s forwards;
-  position: fixed;
-  left: 0;
-  margin-top: -190px;
-}
-
-@keyframes slide-in {
-  100% {
-    transform: translateX(10%);
-  }
-}
-
-@-webkit-keyframes slide-in {
-  100% {
-    -webkit-transform: translateX(10%);
-  }
+  animation: slide-inbutton 1s forwards;
+  -webkit-animation: slide-inbutton 1s forwards;
 }
 
 .backbutton:hover {
   background-color: white;
   color: black;
+}
+
+@keyframes slide-inbutton {
+  100% {
+    transform: translateX(12%);
+  }
+}
+
+@-webkit-keyframes slide-inbutton {
+  100% {
+    -webkit-transform: translateX(12%);
+  }
 }
 
 audio::-webkit-media-controls {
@@ -309,12 +311,12 @@ audio::-webkit-media-controls {
 
 .overworld {
   margin-left: 18%;
-  margin-top: 120px;
+  margin-top: 70px;
   position: absolute;
   height: fit-content;
   width: fit-content;
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   font-family: "Minecraft", sans-serif;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   transition: all 0.2s;
@@ -322,13 +324,14 @@ audio::-webkit-media-controls {
 }
 
 .end {
+  margin-top: 70px;
   margin-right: 44%;
   float: right;
   height: fit-content;
   width: fit-content;
   margin-top: 80px;
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   font-family: "Minecraft", sans-serif;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   transition: all 0.2s;
@@ -339,11 +342,11 @@ audio::-webkit-media-controls {
   right: 0;
   margin-right: 18%;
   position: absolute;
-  margin-top: 100px;
+  margin-top: 70px;
   height: fit-content;
   width: fit-content;
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   font-family: "Minecraft", sans-serif;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   transition: all 0.2s;
@@ -387,19 +390,19 @@ audio::-webkit-media-controls {
 .linkbuttons:hover {
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
-  transform: scale(1.1);
+  transform: scale(1.25);
 }
 
 .linkbuttons2:hover {
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
-  transform: scale(1.1);
+  transform: scale(1.25);
 }
 
 .linkbuttons3:hover {
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
-  transform: scale(1.1);
+  transform: scale(1.25);
 }
 
 .nether:hover {
