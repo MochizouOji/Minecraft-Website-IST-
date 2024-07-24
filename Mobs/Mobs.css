@@ -399,7 +399,6 @@ audio::-webkit-media-controls {
     font-size: 16px;
     color: white;
     background-color: #333;
-    border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-left: 5px;
