@@ -221,16 +221,33 @@ h1{
   height: 40px;
   background-color: #333;
   color: white;
-  margin-left: 5px;
   border-radius: 5px;
   font-size: 20px;
-  position: fixed;
+  margin-top: 70px;
   z-index: 1000;
+  position: fixed;
+  top: 0;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  animation: slide-inbutton 1s forwards;
+  -webkit-animation: slide-inbutton 1s forwards;
 }
 
 .backbutton:hover {
   background-color: white;
   color: black;
+}
+
+@keyframes slide-inbutton {
+  100% {
+    transform: translateX(12%);
+  }
+}
+
+@-webkit-keyframes slide-inbutton {
+  100% {
+    -webkit-transform: translateX(12%);
+  }
 }
 
 .forward-button {
