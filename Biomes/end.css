@@ -193,7 +193,7 @@ background-color: white;
 
 .progress-bar {
   height: 8px;
-  background: #98FB98;
+  background: rgb(0, 153, 0);
   width: 0%;
   border-radius:15px 15px 15px 15px
 }
