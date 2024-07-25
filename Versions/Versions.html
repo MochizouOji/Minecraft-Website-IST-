@@ -6,7 +6,7 @@
   <link rel="icon" href="../Images/Grassblock.jpg">
 
   <link rel="stylesheet" href="./Versions.css">
-  <script src="../Javascript.js">
+  <script src="Versions.js">
 
   </script>
   <div class="mainbar">
@@ -21,51 +21,70 @@
       </a>
     </div>
   </div>
-    <div class="progress-container">
-      <div class="progress-bar" id="myBar"></div>
-  </div>
   </div>
   <title>Versions</title>
 </head>
+
 <body>
   <button type="button" class="backbutton" id="backbutton" onclick="history.back()" style="left: 0; ">◄ </button>
-  <div class="titleoutside"><h1 class="Versions_Title1">V e r s i o n s</h1></div>
+  <div class="titleoutside">
+    <h1 class="Versions_Title1">V e r s i o n s</h1>
+  </div>
   <div class="Version_Background">
-    <h1 class="Main_Updates">Main Updates</h1>
-  <div class="timeline">
-    <div class="container left">
-      <div class="content">
-        <a href=1.8.html class="Title_Link"> 1.8 - The Bountiful Update</a>
-        <p>Spectating, Enchants and Slimes!</p>
+    <h1 class="Main_Updates">Explore 4 of the most important updates in Minecraft history!</h1>
+    <h1><img src="../Images/scrolldown.gif" class="scrolldown2"></h1>
+    <div class="timeline">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
       </div>
-    </div>
-    <div class="container right">
-      <div class="content">
-        <a href=1.9.html class="Title_Link"> 1.9 - The Combat Update</a>
-        <p>Cooldowns, Arrows and Shields!</p>
+
+      <div class="container left">
+        <a href="../Versions/1.8.html" id="link1">
+          <div class="content">
+            <p class="Title_Link1"> 1.8 - The Bountiful Update</p>
+            <p class="Title_Link2">Spectating, Enchants and Slimes!</p>
+          </div>
+        </a>
       </div>
-    </div>
-    <div class="container left">
-      <div class="content">
-        <a href=1.16.html class="Title_Link">1.16 - The Nether Update</a>
-        <p>New Gear, New Biomes and New Mobs!</p>
+      <div class="container right">
+        <a href=1.9.html id="link2">
+          <div class="content2">
+            <br>
+            <p class="Title_Link1-2"> 1.9 - The Combat Update</p>
+            
+            <p class="Title_Link2-2">Cooldowns, Arrows and Shields!</p>
+            <br>
+          </div>
+        </a>
       </div>
-    </div>
-    <div class="container right">
-      <div class="content">
-        <a href=1.17.html class="Title_Link">1.17 - The Caves & Cliff Update</a>
-        <p>Caves, Mountains and Terrains!</p>
+      <div class="container left2">
+        <a href=1.16.html id="link3">
+          <div class="content3">
+            <p class="Title_Link1-3">1.16 - The Nether Update </p>
+          
+            <p class="Title_Link2-3">New Gear, New Biomes and New Mobs!</p>
+            <br>
+          </div>
+        </a>
+      </div>
+      <div class="container right2">
+        <a href=1.17.html id="link4">
+          <div class="content4">
+            <p class="Title_Link1-4">1.17 - The Caves & Cliff Update</p>
+            <p class="Title_Link2-4">Caves, Mountains and Terrains!</p>
+            <br>
+          </div>
+        </a>
       </div>
     </div>
   </div>
-</div>
-<div class="Music">
-  <audio controls>
-    <audio src="../Audio/Wet Hands.mp3" autoplay></audio>
-   </audio>
-</div>
+  <div class="Music">
+    <audio controls>
+      <audio src="../Audio/Wet Hands.mp3" autoplay></audio>
+    </audio>
+  </div>
 
-<button class="forward-button" onclick="navigateToPage()">►</button>
+  <button class="forward-button" onclick="navigateToPage()">►</button>
 
   <script>
     function navigateToPage() {
@@ -73,4 +92,5 @@
     }
   </script>
 </body>
+
 </html>
