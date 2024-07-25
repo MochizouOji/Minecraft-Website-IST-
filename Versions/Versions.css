@@ -255,6 +255,7 @@ p {
     bottom: 0;
     left: 50%;
     margin-left: -3px;
+    margin-bottom: 50px;
     border: solid  3px rgb(97, 96, 96);
     border-radius: 10px;
   }
@@ -520,7 +521,7 @@ p {
   background-size: cover;
   background-position:60%;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   width: 70%;
   margin-left: 15%;
   border-radius: 10px;
@@ -735,13 +736,12 @@ p{
 
 .progress-container {
   width: 16px;
-  height: 81%;
+  height: 78%;
   background: white;
   position: fixed;
   z-index: 1;
   border-radius:15px 15px 15px 15px;
-  margin-top: 200px;
-  margin-bottom: 50px;
+  
   left: 49.5%;
   border: solid  3px rgb(97, 96, 96);
 }
