@@ -38,7 +38,7 @@
   
   .mainbar {
     position: fixed;
-    z-index: 4;
+    z-index: 1000;
     width: 100%;
     opacity: 95%;
     padding-top: 0;
@@ -173,10 +173,14 @@ background-color: white;
     box-shadow: 0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff, -0.04em -0.025em 0 #fffc00;
   }
 }
-.bannersection1 {
+
+.section1 {
   background-image: url(../Images/endbanner.webp);
   background-size: cover;
-  z-index: -1;
+  background-repeat: no-repeat;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-top: -20px;
   height: 650px;
   padding-top: 0px;
 }
@@ -203,6 +207,8 @@ h1{
   z-index: 500;
   text-align: center;
   margin-top: 75px;
+  margin-left: 70px;
+  margin-right: 70px;
   font-size: 70px;
   font-family: "Minecraft", sans-serif;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
