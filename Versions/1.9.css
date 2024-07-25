@@ -174,12 +174,16 @@ background-color: white;
   }
 }
 
-.bannersection1 {
+.section1 {
   background-image: url(../Images/Combatupdatebackground.webp);
   background-size: cover;
-  z-index: -1;
+  background-repeat: no-repeat;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-top: -5px;
   height: 650px;
   padding-top: 0px;
+  display:none
 }
 
 .progress-container {
@@ -187,7 +191,7 @@ background-color: white;
   height: 8px;
   background: #ccc;
   position: fixed;
-  top: 50px;
+  top: 45px;
   z-index: 1;
   border-radius:15px 15px 15px 15px
 }
@@ -212,10 +216,11 @@ h1{
 
 .Youtube{
   position: relative;
-  z-index: 500;
   text-align: center;
   margin-top: 80px;
   margin-left: 400px;
+  border: 5px white solid;
+  border-radius: 10px;
 }
 
 .backbutton {
