@@ -605,19 +605,21 @@ footer {
   -webkit-animation: slide-in 1s forwards;
 }
 .Main_Updates{
-font-family: "Minecraft", sans-serif;
+font-family: "Arsenal SC", sans-serif;
   color: rgb(255, 255, 255);
   text-align: center;
   margin-top: 0;
   text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
-  letter-spacing: 3px;
   font-size: 30px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
   border: 5px solid rgb(75, 75, 75);
   border-radius: 10px;
   background-color: rgba(150, 150, 150, 0.7);
+  padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @keyframes slide-in {
