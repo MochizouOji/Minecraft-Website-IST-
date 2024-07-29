@@ -45,16 +45,12 @@
       }      
     </script>
   </div>
-  <div id="carousel-1" class="carousel" role="region" aria-labelledby="carousel-1-title">
-    <h2 id="carousel-1-title">...</h2>
-
-    <div class="slide" role="tabpanel" aria-labelledby="carousel-1-slide-1-title">
-      <div class="slide-content">
-        <h3 id="carousel-1-slide-1-title" class="slide-caption">...</h3>
-        <img src="..." alt="..." />
-      </div>
-    </div>
-
+  <div class="caroselfeature" draggable="false">
+  <div class="scrolltosee">Click and Drag to see more....</div>
+  <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0" draggable="false">
+    <img class="image" src="../Images/minecraft-1-9-combat-update-wings.avif" draggable="false" />
+    <img class="image" src="../Images/minecraft-1-9-combat-update-wings.avif" draggable="false" />
+    <img class="image" src="../Images/minecraft-1-9-combat-update-wings.avif" draggable="false" />    
   </div>
   <div class="content">
   <h2>New Features</h2>
@@ -83,8 +79,53 @@
 
   </div>
   <script>
-    new Splide('#image-carousel').mount();
+    const track = document.getElementById("image-track");
+
+const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
+
+const handleOnUp = () => {
+  track.dataset.mouseDownAt = "0";  
+  track.dataset.prevPercentage = track.dataset.percentage;
+}
+
+const handleOnMove = e => {
+  if(track.dataset.mouseDownAt === "0") return;
+  console.log ("hi");
+  
+  const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
+        maxDelta = window.innerWidth / 2;
+  
+  const percentage = (mouseDelta / maxDelta) * -50,
+        nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
+        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -33.25);
+  
+  track.dataset.percentage = nextPercentage;
+  
+  track.animate({
+    transform: `translate(${nextPercentage-30}%, -50%)`
+  }, { duration: 800, fill: "forwards" });
+  
+ 
+}
+
+/* -- Had to add extra lines for touch events -- */
+
+window.onmousedown = e => handleOnDown(e);
+
+window.ontouchstart = e => handleOnDown(e.touches[0]);
+
+window.onmouseup = e => handleOnUp(e);
+
+window.ontouchend = e => handleOnUp(e.touches[0]);
+
+window.onmousemove = e => handleOnMove(e);
+
+window.ontouchmove = e => handleOnMove(e.touches[0]);
   </script>
+</div>
+
+
+  </a>
   <br>
   <br>
   <br>
@@ -100,5 +141,4 @@
   <br>
 
 </body>
-
 </html>

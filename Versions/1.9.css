@@ -58,6 +58,13 @@
     display: none;
   }
 
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    overflow-y:scroll;
+    overflow-x: hidden;
+  }
 
 .sitelogo {
     width: 30px;
@@ -302,7 +309,6 @@ h1{
     -webkit-transform: translateX(12%);
   }
 }
-
 .content {
   margin-top: 150px;
   margin-left: 250px;
@@ -325,61 +331,40 @@ h1{
   text-align: center;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
-/* Basic body styles */
-body {
-  margin: 0;
-  font: 1em/1.6 sans-serif;
-}
-
-/* Optimized media elements */
-img,
-video,
-audio {
-  max-width: 100%;
-}
-
-.carousel-inner {
-  overflow: hidden;
-  position: relative;
-  min-height: var(--carousel-height);
-}
-
-.slide {
-  width: 100%;
+#image-track {
+  display: flex;
+  gap: 4vmin;
   position: absolute;
-  transition: transform 0.5s ease-in-out;
+  left: 45%;
+  top: 145%;
+  transform: translate(-30%, -50%); 
+  user-select: none; /* -- Prevent image highlighting -- */
+  margin-top: 40px;
 }
 
-.slide-content {
-  position: relative;
-  z-index: 5000;
-}
-
-.slide img {
-  width: 100%;
+#image-track > .image {
+  width: 101vmin;
+  height: 60vmin;
   object-fit: cover;
+  object-position: 80% center;
 }
 
-.slide-caption {
+.scrolltosee {
+  display: block;
+  width: 400px;
+  height: 20px;
+  margin-left: 40%;
+  align-content: 50%;
+  justify-content: 50%;
+  font-family: "Minecraft", sans-serif;
+  font-size: 20px;
+  margin-top:20px ;
+
+}
+
+.caroselfeature {
   width: 100%;
-  position: absolute;
-  padding: 2em;
-  left: 0;
-  bottom: 0;
-}
+  height: 80%;
 
-.carousel-btn {  }
-.carousel-btn--prev-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
 }
-
-.carousel-btn--prev { left: 2em; }
-.carousel-btn--next { right: 2em; }

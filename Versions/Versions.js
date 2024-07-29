@@ -6,3 +6,4 @@ function Scrollbar() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.height = scrolled + "%";
 }
+
