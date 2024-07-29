@@ -294,3 +294,62 @@ h1{
     -webkit-transform: translateX(12%);
   }
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Basic body styles */
+body {
+  margin: 0;
+  font: 1em/1.6 sans-serif;
+}
+
+/* Optimized media elements */
+img,
+video,
+audio {
+  max-width: 100%;
+}
+
+.carousel-inner {
+  overflow: hidden;
+  position: relative;
+  min-height: var(--carousel-height);
+}
+
+.slide {
+  width: 100%;
+  position: absolute;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-content {
+  position: relative;
+  z-index: 5000;
+}
+
+.slide img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.slide-caption {
+  width: 100%;
+  position: absolute;
+  padding: 2em;
+  left: 0;
+  bottom: 0;
+}
+
+.carousel-btn {  }
+.carousel-btn--prev-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-btn--prev { left: 2em; }
+.carousel-btn--next { right: 2em; }

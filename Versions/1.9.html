@@ -24,7 +24,7 @@
       <div class="progress-bar" id="myBar"></div>
     </div>
   </div>
-</div>
+  </div>
   <title>1.9</title>
 </head>
 
@@ -42,12 +42,23 @@
     <script>
       function navigateToPage() {
         window.location.href = '../Versions/1.16.html';
-      }
+      }      
     </script>
   </div>
-  <div class="hello">
-    efuehieuhei
+  <div id="carousel-1" class="carousel" role="region" aria-labelledby="carousel-1-title">
+    <h2 id="carousel-1-title">...</h2>
+
+    <div class="slide" role="tabpanel" aria-labelledby="carousel-1-slide-1-title">
+      <div class="slide-content">
+        <h3 id="carousel-1-slide-1-title" class="slide-caption">...</h3>
+        <img src="..." alt="..." />
+      </div>
+    </div>
+
   </div>
+  <script>
+    new Splide('#image-carousel').mount();
+  </script>
   <br>
   <br>
   <br>
