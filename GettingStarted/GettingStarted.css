@@ -412,6 +412,11 @@ body::-webkit-scrollbar {
     color: black;
   }
 
+  ::selection{
+    background-color:#333;
+    color:rgb(115, 250, 115); 
+  }
+
   @keyframes slide-inbutton {
     100% {
       transform: translateX(12%);

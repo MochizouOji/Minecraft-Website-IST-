@@ -316,6 +316,11 @@ h1{
   font-family: Arsenal SC;
 }
 
+::selection{
+  background-color:#333;
+  color:rgb(115, 250, 115); 
+}
+
 .content p, .content ul {
   font-size: 20px;
   line-height: 1.6;

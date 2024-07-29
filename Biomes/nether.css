@@ -198,6 +198,11 @@ background-color: white;
   border-radius:15px 15px 15px 15px
 }
 
+::selection{
+  background-color:#333;
+  color:rgb(115, 250, 115); 
+}
+
 .progress-bar {
   height: 8px;
   background: rgb(0, 153, 0);

@@ -12,6 +12,11 @@
     height: 50px;
   }
   
+  ::selection{
+    background-color:#333;
+    color:rgb(115, 250, 115); 
+  }
+
   .links {
     float: left;
     color: #f2f2f2;

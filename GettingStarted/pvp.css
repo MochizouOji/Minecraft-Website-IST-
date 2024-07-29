@@ -227,7 +227,10 @@ h1{
   border-radius: 10px;
 }
 
-
+::selection{
+  background-color:#333;
+  color:rgb(115, 250, 115); 
+}
 
 
 .backbutton {

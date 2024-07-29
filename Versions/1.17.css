@@ -177,6 +177,11 @@ background-color: white;
   }
 }
 
+::selection{
+  background-color:#333;
+  color:rgb(115, 250, 115); 
+}
+
 .section1 {
   background-image: url(../Images/Cavesandcliffsbackground\ \(1\).webp);
   background-size: cover;

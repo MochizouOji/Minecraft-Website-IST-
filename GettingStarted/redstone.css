@@ -316,3 +316,8 @@ h1{
   font-size: 20px;
   line-height: 1.6;
 }
+
+::selection{
+  background-color:#333;
+  color:rgb(115, 250, 115); 
+}

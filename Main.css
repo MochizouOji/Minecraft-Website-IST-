@@ -12,7 +12,10 @@ body {
   top: 0;
 }
 
-
+::selection{
+  background-color:rgba(60, 60, 60, 1);
+  color:rgb(115, 250, 115); 
+}
 
 body::-webkit-scrollbar {
   display: none;
