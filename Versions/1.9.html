@@ -45,100 +45,120 @@
       }      
     </script>
   </div>
-  <div class="caroselfeature" draggable="false">
-  <div class="scrolltosee">Click and Drag to see more....</div>
-  <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0" draggable="false">
-    <img class="image" src="../Images/minecraft-1-9-combat-update-wings.avif" draggable="false" />
-    <img class="image" src="../Images/minecraft-1-9-combat-update-wings.avif" draggable="false" />
-    <img class="image" src="../Images/minecraft-1-9-combat-update-wings.avif" draggable="false" />    
-  </div>
-  <div class="content">
-  <h2>New Features</h2>
-  <p>The Combat Update, Minecraft 1.9, was released on February 29, 2016, bringing significant changes and new features
-    to the game's combat mechanics. Notably, the update introduced a cooldown system for melee attacks, requiring
-    precise timing for maximum damage instead of the previous spam-clicking method. Dual wielding was also added,
-    allowing players to hold items in both hands. Shields were introduced, enhancing defence, and new types of arrows,
-    such as spectral and tipped arrows, provided special effects for ranged attacks. Additionally, sweeping edge
-    enchantments were added, improving attack range and making combat more strategic.
-  </p>
-  <br>
-  <Br>
-  <p>The update also enhanced the End dimension, adding end cities with valuable loot and the hostile mob shulkers, as
-    well as the elytra, an item enabling players to glide through the air, revolutionising travel within the game. End
-    gateway portals were introduced, allowing players to return to the End after defeating the Ender Dragon, thereby
-    extending endgame content. Furthermore, new blocks such as purpur and end stone bricks were included, giving
-    builders new materials to work with, and adding variety to the aesthetic of structures built in the End.
-  </p>
-  <br>
-  <br>
-  <p>Beyond the combat and End dimension improvements, the 1.9 update also introduced changes to other areas of the
-    game. The addition of new commands and changes to existing ones expanded the limit for map makers and server
-    administrators. Players could now set their spawn point using beds in the End and Nether, making survival in these
-    dimensions more manageable. The update also included various bug fixes and performance improvements, ensuring a
-    smoother and more enjoyable gameplay experience for all players.</p>
 
-  </div>
+    <div class="heading2">New Features</div>
+    <div class="paragraph">The Combat Update, Minecraft 1.9, was released on February 29, 2016, bringing
+      significant changes and new features
+      to the game's combat mechanics. Notably, the update introduced a cooldown system for melee attacks, requiring
+      precise timing for maximum damage instead of the previous spam-clicking method. Dual wielding was also added,
+      allowing players to hold items in both hands. Shields were introduced, enhancing defence, and new types of arrows,
+      such as spectral and tipped arrows, provided special effects for ranged attacks. Additionally, sweeping edge
+      enchantments were added, improving attack range and making combat more strategic.
+    </div>
+
+    <div draggable="false"  class="stupidcarosel">
+      <div class="scrolltosee">Click and Drag to see more....</div>
+      <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0" draggable="false">
+        <img class="image" src="../Images/minecraft-1-9-combat-update-wings.avif" draggable="false" />
+        <img class="image" src="../Images/minecraft-1-9-combat-update-wings.avif" draggable="false" />
+        <img class="image" src="../Images/minecraft-1-9-combat-update-wings.avif" draggable="false" />
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="paragraph">The update also enhanced the End dimension, adding end cities with valuable loot
+      and the hostile mob shulkers, as
+      well as the elytra, an item enabling players to glide through the air, revolutionising travel within the game. End
+      gateway portals were introduced, allowing players to return to the End after defeating the Ender Dragon, thereby
+      extending endgame content. Furthermore, new blocks such as purpur and end stone bricks were included, giving
+      builders new materials to work with, and adding variety to the aesthetic of structures built in the End.
+    </div>
+    
+    <div class="paragraph">Beyond the combat and End dimension improvements, the 1.9 update also introduced
+      changes to other areas of the
+      game. The addition of new commands and changes to existing ones expanded the limit for map makers and server
+      administrators. Players could now set their spawn point using beds in the End and Nether, making survival in these
+      dimensions more manageable. The update also included various bug fixes and performance improvements, ensuring a
+      smoother and more enjoyable gameplay experience for all players.</div>
+      <div class="bodyback">
+      <img src="../Images/1.9updatelvl3.jpg" class="image2">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+    </div>
   <script>
     const track = document.getElementById("image-track");
 
-const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
+    const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
 
-const handleOnUp = () => {
-  track.dataset.mouseDownAt = "0";  
-  track.dataset.prevPercentage = track.dataset.percentage;
-}
+    const handleOnUp = () => {
+      track.dataset.mouseDownAt = "0";
+      track.dataset.prevPercentage = track.dataset.percentage;
+    }
 
-const handleOnMove = e => {
-  if(track.dataset.mouseDownAt === "0") return;
-  console.log ("hi");
-  
-  const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
+    const handleOnMove = e => {
+      if (track.dataset.mouseDownAt === "0") return;
+      console.log("hi");
+
+      const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
         maxDelta = window.innerWidth / 2;
-  
-  const percentage = (mouseDelta / maxDelta) * -50,
+
+      const percentage = (mouseDelta / maxDelta) * -50,
         nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
         nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -33.25);
-  
-  track.dataset.percentage = nextPercentage;
-  
-  track.animate({
-    transform: `translate(${nextPercentage-30}%, -50%)`
-  }, { duration: 800, fill: "forwards" });
-  
- 
-}
 
-/* -- Had to add extra lines for touch events -- */
+      track.dataset.percentage = nextPercentage;
 
-window.onmousedown = e => handleOnDown(e);
+      track.animate({
+        transform: `translate(${nextPercentage - 30}%, -50%)`
+      }, { duration: 800, fill: "forwards" });
 
-window.ontouchstart = e => handleOnDown(e.touches[0]);
 
-window.onmouseup = e => handleOnUp(e);
+    }
 
-window.ontouchend = e => handleOnUp(e.touches[0]);
+    /* -- Had to add extra lines for touch events -- */
 
-window.onmousemove = e => handleOnMove(e);
+    window.onmousedown = e => handleOnDown(e);
 
-window.ontouchmove = e => handleOnMove(e.touches[0]);
+    window.ontouchstart = e => handleOnDown(e.touches[0]);
+
+    window.onmouseup = e => handleOnUp(e);
+
+    window.ontouchend = e => handleOnUp(e.touches[0]);
+
+    window.onmousemove = e => handleOnMove(e);
+
+    window.ontouchmove = e => handleOnMove(e.touches[0]);
   </script>
-</div>
-
-
-  </a>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-
 </body>
+<footer>
+  <div class="footerwords">Contact us: minecraft.fanforum.com</div>
+  <Br>
+  <div class="footerwords3">Phone: 0472 217 228</div>
+  <Br>
+  <div class="footer4">Socials: </div><a href="https://www.facebook.com/"><img src="../Images/Footer.png"
+      class="footerimg"></a>
+  <div class="footerwords2"> © 2024 Minecraft_FanForum </div>
+
+</footer>
 </html>
