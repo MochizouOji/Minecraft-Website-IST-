@@ -307,7 +307,7 @@ h1{
   gap: 4vmin;
   position: absolute;
   left: 45%;
-  top: 170%;
+  top: 127%;
   transform: translate(-30%, -50%); 
   user-select: none; /* -- Prevent image highlighting -- */
   margin-top: 40px;
