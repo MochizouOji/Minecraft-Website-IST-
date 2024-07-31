@@ -44,26 +44,114 @@
       }
     </script>
   </div>
-  <div class="content">
-    <h2>New Features:</h2>
-    <p>Minecraft's Update 1.16, known as the "Nether Update," was released on June 23, 2020, and provided a massive
-      update
-      to the Nether dimension, adding more new content and features to this unique dimension. The update introduced four
+  <div class="heading2">New Features:</div>
+    <div class="paragraph">
+      Minecraft's Update 1.16, known as the "Nether Update," was released on June 23, 2020, and provided a massive
+      update to the Nether dimension, adding more new content and features to this unique dimension. The update introduced four
       new biomes: the Crimson Forest, Warped Forest, Soul Sand Valley, and Basalt Deltas, each with unique terrain and
       characteristics. These biomes made the Nether a much more interesting place to navigate. Additionally, new blocks
       like blackstone, netherite, and ancient debris were introduced, providing players with fresh building materials
-      and
-      the strongest equipment in the game; also giving incentive to explore this dimension.
-    </p>
+      and the strongest equipment in the game; also giving incentive to explore this dimension.
+    </div>
+    <br>
+    <div draggable="false"  class="stupidcarosel">
+      <div class="scrolltosee">Click and Drag to see more....</div>
+      <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0" draggable="false">
+        <img class="image" src="../Images/minecraft-1-9-combat-update-wings.avif" draggable="false" />
+        <img class="image" src="../Images/minecraft-1-9-combat-update-wings.avif" draggable="false" />
+        <img class="image" src="../Images/minecraft-1-9-combat-update-wings.avif" draggable="false" />
+      </div>
+    </div>
     <br>
     <br>
-    <p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="paragraph">
       The Nether Update also added new mobs, including piglins, hoglins, striders, and zoglins. Piglins, with their
       trading system, offered a new method for players to obtain valuable resources by trading gold. Hoglins, on the
       other hand, provided a food source within the Nether. Striders allowed players to traverse lava lakes safely,
       adding a travel system within the Nether with the large lava lakes the Nether had.
-    </p>
+    </div>
+    <div class="bodyback">
+      <img src="../Images/1.9updatelvl3.jpg" class="image2">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
   </div>
+  <script>
+    const track = document.getElementById("image-track");
+
+    const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
+
+    const handleOnUp = () => {
+      track.dataset.mouseDownAt = "0";
+      track.dataset.prevPercentage = track.dataset.percentage;
+    }
+
+    const handleOnMove = e => {
+      if (track.dataset.mouseDownAt === "0") return;
+      console.log("hi");
+
+      const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
+        maxDelta = window.innerWidth / 2;
+
+      const percentage = (mouseDelta / maxDelta) * -50,
+        nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
+        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -33.25);
+
+      track.dataset.percentage = nextPercentage;
+
+      track.animate({
+        transform: `translate(${nextPercentage - 30}%, -50%)`
+      }, { duration: 800, fill: "forwards" });
 
 
+    }
+
+    /* -- Had to add extra lines for touch events -- */
+
+    window.onmousedown = e => handleOnDown(e);
+
+    window.ontouchstart = e => handleOnDown(e.touches[0]);
+
+    window.onmouseup = e => handleOnUp(e);
+
+    window.ontouchend = e => handleOnUp(e.touches[0]);
+
+    window.onmousemove = e => handleOnMove(e);
+
+    window.ontouchmove = e => handleOnMove(e.touches[0]);
+  </script>
 </body>
+<footer>
+  <div class="footerwords">Contact us: minecraft.fanforum.com</div>
+  <Br>
+  <div class="footerwords3">Phone: 0472 217 228</div>
+  <Br>
+  <div class="footer4">Socials: </div><a href="https://www.facebook.com/"><img src="../Images/Footer.png"
+      class="footerimg"></a>
+  <div class="footerwords2"> © 2024 Minecraft_FanForum </div>
+
+</footer>
+</html>
+</body>
+</html>
