@@ -40,33 +40,114 @@
     </script>
   </div>
   
-  <div class="content">
-    <p>One of the most advanced mechanics in this sandbox game is redstone. It is able to accomplish many different complex contraptions such as a calculator, advanced deathtraps and even a working computer.</p>
-    <h2>Simple Uses of Redstone:</h2>
-    <ul>
-      <li>Sorting items</li>
-      <li>Transporting players</li>
-      <li>Automatic door</li>
-    </ul>
-    <p>When placed on the ground, redstone dust will become redstone wire which can be used to transfer power from a redstone torch or a switch such as a Lever or Button. This can be used to activate items such as Doors, Pistons, Note blocks, rails, or a handy trap. Redstone is the real equivalent of wires and electrical circuits; they don't go together with water but are heavily relied upon late game for big projects such as large automatic farms and item sorting systems. Things like the redstone repeater, calibrated sculk sensor, observer and tripwire hook are all commonly used items related to redstone contraptions.</p>
+  <div class="paragraph">
+    One of the most advanced mechanics in this sandbox game is redstone. It is able to accomplish many different complex contraptions such as a calculator, advanced deathtraps and even a working computer.
+  </div>  
+    <div draggable="false"  class="stupidcarosel">
+      <div class="scrolltosee">Click and Drag to see more....</div>
+      <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0" draggable="false">
+        <img class="image" src="../Images/minecraft-1-9-combat-update-wings.avif" draggable="false" />
+        <img class="image" src="../Images/minecraft-1-9-combat-update-wings.avif" draggable="false" />
+        <img class="image" src="../Images/minecraft-1-9-combat-update-wings.avif" draggable="false" />
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <div class="heading2">Simple Uses of Redstone</div>
+    <div class="paragraph">
+      Some simple examples of Redstone usage include sorting items, transporting players, and creating automatic doors. When placed on the ground, redstone dust becomes redstone wire, which can transfer power from a redstone torch or a switch, such as a lever or button. This setup can activate various items like doors, pistons, note blocks, rails, and traps, making Redstone an essential tool for automation and innovation within the game.
+    </div>
+    <div class="heading2">Contraptions</div>
+    <div class="paragraph">
+      Redstone can also be used to create more complex mechanisms like clocks, gates, and pulse extenders, allowing for the creation of intricate systems that perform specific tasks. Redstone doesn't interact well with water, similar to real life electrical circuits, but it is heavily relied upon in the late game for large projects, such as massive automatic farms and sophisticated item sorting systems. Items like the redstone repeater, calibrated sculk sensor, observer, and tripwire hook are commonly used in Redstone contraptions. These components help players create intricate systems that add depth and functionality to their builds, showcasing the versatility and creativity that Redstone brings to Minecraft.
+    </div>
+    
+    <div class="paragraph">
+      Redstone also plays a crucial role in creating player traps and defense mechanisms. By using pressure plates, tripwires, and dispensers, players can set up automated defenses to protect their bases from mobs and other players. Additionally, Redstone can be used to build automated transportation systems, such as minecart railways and piston powered elevators, making travel within the game more efficient and enjoyable. The possibilities with Redstone are virtually limitless and push the boundaries of what they can achieve within the game. 
+    </div>
+      
+    <div class="bodyback">
+      <img src="../Images/1.9updatelvl3.jpg" class="image2">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
   </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+  <script>
+    const track = document.getElementById("image-track");
 
+    const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
+
+    const handleOnUp = () => {
+      track.dataset.mouseDownAt = "0";
+      track.dataset.prevPercentage = track.dataset.percentage;
+    }
+
+    const handleOnMove = e => {
+      if (track.dataset.mouseDownAt === "0") return;
+      console.log("hi");
+
+      const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
+        maxDelta = window.innerWidth / 2;
+
+      const percentage = (mouseDelta / maxDelta) * -50,
+        nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
+        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -33.25);
+
+      track.dataset.percentage = nextPercentage;
+
+      track.animate({
+        transform: `translate(${nextPercentage - 30}%, -50%)`
+      }, { duration: 800, fill: "forwards" });
+
+
+    }
+
+    /* -- Had to add extra lines for touch events -- */
+
+    window.onmousedown = e => handleOnDown(e);
+
+    window.ontouchstart = e => handleOnDown(e.touches[0]);
+
+    window.onmouseup = e => handleOnUp(e);
+
+    window.ontouchend = e => handleOnUp(e.touches[0]);
+
+    window.onmousemove = e => handleOnMove(e);
+
+    window.ontouchmove = e => handleOnMove(e.touches[0]);
+  </script>
+</body>
+<footer>
+  <div class="footerwords">Contact us: minecraft.fanforum.com</div>
+  <Br>
+  <div class="footerwords3">Phone: 0472 217 228</div>
+  <Br>
+  <div class="footer4">Socials: </div><a href="https://www.facebook.com/"><img src="../Images/Footer.png"
+      class="footerimg"></a>
+  <div class="footerwords2"> © 2024 Minecraft_FanForum </div>
+
+</footer>
+</html>
 </body>
 </html>

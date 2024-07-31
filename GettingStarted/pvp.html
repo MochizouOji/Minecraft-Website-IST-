@@ -38,39 +38,124 @@
       }
     </script>
   </div>
-<div class="content">
-  <p>PvP, or Player vs. Player combat, involves players battling each other in Minecraft multiplayer. Whether in team battles or one on one duels, mastering PvP requires skill and practice. The basic mechanics are straightforward: one player attacks another until the target's health is depleted, the attacker is defeated, or someone escapes.</p>
-    <h2>New Features</h2>
-    <p>New game updates bring fresh strategies, but foundational skills remain valuable. Features like enchanting tables and netherite gear enhance PvP capabilities. For instance, critical hits (crits) occur when you jump and strike while falling, dealing extra damage and knockback. To achieve consistent crits, jump and attack as you descend, avoiding sprinting mid air. Timing your attacks for maximum impact and allowing your weapon to recharge between swings are crucial for success.</p>
-    <h2>Combos</h2>
-    <p>Combos involve chaining attacks to overwhelm opponents. Effective combos often use knockback, with swords being ideal due to their balance of damage and knockback. Aim to hit your opponent into a trajectory for follow-up attacks, using moves that stun and keep opponents close to sustain combos.</p>
-    <h2>Types of Combat Tools</h2>
-    <p>Various tools enhance PvP performance and are split into different categories. Ranged weapons like bows and crossbows offer safe distance attacks but deal less damage. Melee weapons, including swords and axes, provide quick damage and effective combos. Axes deal more damage, while swords offer better knockback. Enchantments like fire aspect, sharpness, unbreaking, mending, and looting further enhance these weapons.</p>
+  <div class="paragraph">
+    PvP, or Player vs. Player combat, involves players battling each other in Minecraft multiplayer. Whether in team battles or one on one duels, mastering PvP requires skill and practice. The basic mechanics are straightforward: one player attacks another until the target's health is depleted, the attacker is defeated, or someone escapes.
+  </div>
+
+  <div draggable="false"  class="stupidcarosel">
+    <div class="scrolltosee">Click and Drag to see more....</div>
+    <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0" draggable="false">
+      <img class="image" src="../Images/minecraft-1-9-combat-update-wings.avif" draggable="false" />
+      <img class="image" src="../Images/minecraft-1-9-combat-update-wings.avif" draggable="false" />
+      <img class="image" src="../Images/minecraft-1-9-combat-update-wings.avif" draggable="false" />
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+    <div class="heading2">New Features</div>
+    <div class="paragraph">
+      New game updates bring fresh strategies, but foundational skills remain valuable. Features like enchanting tables and netherite gear enhance PvP capabilities. For instance, critical hits (crits) occur when you jump and strike while falling, dealing extra damage and knockback. To achieve consistent crits, jump and attack as you descend, avoiding sprinting mid air. Timing your attacks for maximum impact and allowing your weapon to recharge between swings are crucial for success.
+    </div>
+
+    <div class="heading2">Combos</div>
+    <div class="paragraph">
+      Combos involve chaining attacks to overwhelm opponents. Effective combos often use knockback, with swords being ideal due to their balance of damage and knockback. Aim to hit your opponent into a trajectory for follow-up attacks, using moves that stun and keep opponents close to sustain combos.
+    </div>
     
-    <p>Defensive items, such as shields, block attacks, while the totem of undying grants an extra life. These items are typically held in the offhand slot. Potions, though less commonly used, offer buffs (strength, speed) or inflict debuffs (weakness, poison) on opponents. Explosive PvP is popular, with items like beds, end crystals, respawn anchors, and TNT minecarts dealing massive damage or instant kills.</p>
-    <h2>PvP Servers</h2>
-    <p>Trusted PvP servers include Hypixel, PvP Legacy, Foxcraft, PvP Land, and Manacube. These communities provide platforms for honing your skills and joining a broader PvP community, offering various game modes and arenas to practice and improve your combat abilities.
-    </p>
-</div>
+    <div class="heading2">Types of Combat Tools</div>
+    <div class="paragraph">
+      Various tools enhance PvP performance and are split into different categories. Ranged weapons like bows and crossbows offer safe distance attacks but deal less damage. Melee weapons, including swords and axes, provide quick damage and effective combos. Axes deal more damage, while swords offer better knockback. Enchantments like fire aspect, sharpness, unbreaking, mending, and looting further enhance these weapons.
+    </div>
+    
+    <div class="paragraph">
+      Defensive items, such as shields, block attacks, while the totem of undying grants an extra life. These items are typically held in the offhand slot. Potions, though less commonly used, offer buffs (strength, speed) or inflict debuffs (weakness, poison) on opponents. Explosive PvP is popular, with items like beds, end crystals, respawn anchors, and TNT minecarts dealing massive damage or instant kills.
+    </div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+    <div class="heading2">PvP Servers</div>
+    <div class="paragraph">
+      Trusted PvP servers include Hypixel, PvP Legacy, Foxcraft, PvP Land, and Manacube. These communities provide platforms for honing your skills and joining a broader PvP community, offering various game modes and arenas to practice and improve your combat abilities.
+    </div>
+    <div class="bodyback">
+      <img src="../Images/1.9updatelvl3.jpg" class="image2">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+  </div>
+  <script>
+    const track = document.getElementById("image-track");
+
+    const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
+
+    const handleOnUp = () => {
+      track.dataset.mouseDownAt = "0";
+      track.dataset.prevPercentage = track.dataset.percentage;
+    }
+
+    const handleOnMove = e => {
+      if (track.dataset.mouseDownAt === "0") return;
+      console.log("hi");
+
+      const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
+        maxDelta = window.innerWidth / 2;
+
+      const percentage = (mouseDelta / maxDelta) * -50,
+        nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
+        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -33.25);
+
+      track.dataset.percentage = nextPercentage;
+
+      track.animate({
+        transform: `translate(${nextPercentage - 30}%, -50%)`
+      }, { duration: 800, fill: "forwards" });
 
 
+    }
+
+    /* -- Had to add extra lines for touch events -- */
+
+    window.onmousedown = e => handleOnDown(e);
+
+    window.ontouchstart = e => handleOnDown(e.touches[0]);
+
+    window.onmouseup = e => handleOnUp(e);
+
+    window.ontouchend = e => handleOnUp(e.touches[0]);
+
+    window.onmousemove = e => handleOnMove(e);
+
+    window.ontouchmove = e => handleOnMove(e.touches[0]);
+  </script>
+</body>
+<footer>
+  <div class="footerwords">Contact us: minecraft.fanforum.com</div>
+  <Br>
+  <div class="footerwords3">Phone: 0472 217 228</div>
+  <Br>
+  <div class="footer4">Socials: </div><a href="https://www.facebook.com/"><img src="../Images/Footer.png"
+      class="footerimg"></a>
+  <div class="footerwords2"> © 2024 Minecraft_FanForum </div>
+
+</footer>
+</html>
 </body>
 </html>
