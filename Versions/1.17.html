@@ -46,15 +46,17 @@
   </div>
   <div class="heading2">New Features:
     <div class="paragraph">
-      Minecraft's Caves & Cliffs Update, released in June 2021 as version 1.17, added significant new content to the
-      game's underground and mountain environments. This update introduced new blocks like copper, amethyst, and deep
-      slate, which provided players with a variety of new materials for crafting and building. Copper blocks brought an
+      Minecraft's Caves & Cliffs Update, released in June 2021 as version 1.17, <b>added significant new content to the
+        game's underground and mountain environments</b>. This update introduced new blocks like <i>copper</i>,
+      <i>amethyst</i>, and
+      <i>deep
+      slate</i>, which provided players with a variety of new materials for crafting and building. <i>Copper</i> blocks brought an
       aging mechanic, changing their colour over time and offering builders a unique visual element for their creations.
       Additionally, new mobs such as axolotls, glow squids, and goats were introduced, adding more diversity and life to
       the game.
     </div>
     <br>
-    <div draggable="false"  class="stupidcarosel">
+    <div draggable="false" class="stupidcarosel">
       <div class="scrolltosee">Click and Drag to see more....</div>
       <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0" draggable="false">
         <img class="image" src="../Images/1.17updatelvl3.png" draggable="false" />
@@ -81,8 +83,8 @@
     <br>
     <br>
     <div class="paragraph">
-      The 1.17 update also brought new items and mechanics that enhanced gameplay. Players could now find amethyst
-      geodes, which contained crystals used for crafting new items like the spyglass and tinted glass. Deep slate added
+      The 1.17 update also <b>brought new items and mechanics that enhanced gameplay</b>. Players could now find <i>amethyst
+      geodes</i>, which contained crystals used for crafting new items like the <i>spyglass</i> and <i>tinted glass</i>. <i>Deep slate</i> added
       a new dimension to mining, being harder to mine but offering new building opportunities with its distinct
       appearance. The update also included the introduction of the lightning rod, which could protect structures from
       lightning strikes, and the addition of powdered snow, which affected player movement and added a new environmental
@@ -91,12 +93,12 @@
     </div>
     <Br>
     <Br>
-      <div class="paragraph">
+    <div class="paragraph">
       Beyond the new blocks and mobs, the 1.17 update made significant improvements to the overall exploration
-      experience. The addition of lush caves and dripstone caves as new biomes brought more variety and visual appeal to
+      experience. The addition of <i>lush caves</i> and <i>dripstone caves</i> as new biomes brought more variety and visual appeal to
       the underground world. These biomes featured unique vegetation and terrain. The update also improved the
       generation of ores, ensuring for a more balanced and engaging mining experience.
-      </div>
+    </div>
 
     <div class="bodyback">
       <img src="../Images/1.9updatelvl3.jpg" class="image2">
@@ -107,52 +109,52 @@
       <br>
       <br>
       <br>
-      
-  </div>
-  <script>
-    const track = document.getElementById("image-track");
 
-    const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
+    </div>
+    <script>
+      const track = document.getElementById("image-track");
 
-    const handleOnUp = () => {
-      track.dataset.mouseDownAt = "0";
-      track.dataset.prevPercentage = track.dataset.percentage;
-    }
+      const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
 
-    const handleOnMove = e => {
-      if (track.dataset.mouseDownAt === "0") return;
-      console.log("hi");
+      const handleOnUp = () => {
+        track.dataset.mouseDownAt = "0";
+        track.dataset.prevPercentage = track.dataset.percentage;
+      }
 
-      const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
-        maxDelta = window.innerWidth / 2;
+      const handleOnMove = e => {
+        if (track.dataset.mouseDownAt === "0") return;
+        console.log("hi");
 
-      const percentage = (mouseDelta / maxDelta) * -50,
-        nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
-        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -33.25);
+        const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
+          maxDelta = window.innerWidth / 2;
 
-      track.dataset.percentage = nextPercentage;
+        const percentage = (mouseDelta / maxDelta) * -50,
+          nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
+          nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -33.25);
 
-      track.animate({
-        transform: `translate(${nextPercentage - 30}%, -50%)`
-      }, { duration: 800, fill: "forwards" });
+        track.dataset.percentage = nextPercentage;
+
+        track.animate({
+          transform: `translate(${nextPercentage - 30}%, -50%)`
+        }, { duration: 800, fill: "forwards" });
 
 
-    }
+      }
 
-    /* -- Had to add extra lines for touch events -- */
+      /* -- Had to add extra lines for touch events -- */
 
-    window.onmousedown = e => handleOnDown(e);
+      window.onmousedown = e => handleOnDown(e);
 
-    window.ontouchstart = e => handleOnDown(e.touches[0]);
+      window.ontouchstart = e => handleOnDown(e.touches[0]);
 
-    window.onmouseup = e => handleOnUp(e);
+      window.onmouseup = e => handleOnUp(e);
 
-    window.ontouchend = e => handleOnUp(e.touches[0]);
+      window.ontouchend = e => handleOnUp(e.touches[0]);
 
-    window.onmousemove = e => handleOnMove(e);
+      window.onmousemove = e => handleOnMove(e);
 
-    window.ontouchmove = e => handleOnMove(e.touches[0]);
-  </script>
+      window.ontouchmove = e => handleOnMove(e.touches[0]);
+    </script>
 </body>
 <footer>
   <div class="footerwords">Contact us: minecraft.fanforum.com</div>
@@ -164,6 +166,8 @@
   <div class="footerwords2"> © 2024 Minecraft_FanForum </div>
 
 </footer>
+
 </html>
 </body>
+
 </html>
