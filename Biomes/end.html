@@ -38,14 +38,16 @@
     <button class="forward-button" onclick="navigateToPage()">►</button>
     <script>
       function navigateToPage() {
-        window.location.href = '../Biomes/nether.html';
+        window.location.href = '../GettingStarted/redstone.html';
       }
     </script>
   </div>
   <div class="paragraph">
-    The End is a desolate, otherworldly dimension with vast expanses of void and towering obsidian pillars. Home to the Endermen and the Ender Dragon, it challenges players with its final-stage atmosphere and offers the ultimate test of skill as they strive to conquer its perils and claim victory. </p>
+    The End is a <b>desolate, otherworldly dimension with vast expanses of void and towering obsidian pillars</b>. Home
+    to the Endermen and the Ender Dragon, it challenges players with its final-stage atmosphere and offers the ultimate
+    test of skill as they strive to conquer its perils and claim victory. </p>
   </div>
-  <div draggable="false"  class="stupidcarosel">
+  <div draggable="false" class="stupidcarosel">
     <div class="scrolltosee">Click and Drag to see more....</div>
     <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0" draggable="false">
       <img class="image" src="../Images/minecraft-1-9-combat-update-wings.avif" draggable="false" />
@@ -69,96 +71,111 @@
   <br>
   <br>
   <br>
-  <br>  
-    <div class="heading2">End Midlands</div>
-    <div class="paragraph">
-      Floating islands with various terrain elevations. These islands are relatively flat compared to other End biomes and often contain End Cities, which are structures filled with valuable loot and Shulkers. The terrain is covered with End Stone and Chorus Plants, which can be harvested for Chorus Fruit.
-    </div> 
-      
-    <h2>End Barrens</h2>
-    <div class="paragraph">
-      Flat and empty region of the End dimension. It is usually found at the edges of End islands and lacks significant features or structures. The terrain is composed primarily of End Stone, with occasional Chorus Plants. This biome is considered one of the safer areas in the End due to the lower spawn rates of Endermen.
+  <br>
+  <br>
+  <div class="heading2">End Midlands</div>
+  <div class="paragraph">
+    Floating islands with various terrain elevations. These islands are relatively flat compared to other End biomes and
+    often contain <i>End Cities</i>, which are structures filled with valuable loot and <i>Shulkers</i>. The terrain is
+    covered with <i>End Stone</i> and <i>Chorus Plants</i>, which can be harvested for <i>Chorus Fruit</i>.
+  </div>
 
-    <h2>Small End Islands</h2>
-    <div class="paragraph">
-      Isolated landmasses scattered throughout the void of the End dimension. These islands are much smaller than the central End island and other biomes, often consisting of just a few blocks of End Stone and Chorus Plants. They are challenging to navigate due to their size and the surrounding void, making them dangerous for players without adequate resources.
-    </div>
-
-    <h2>End Highlands</h2>
-    <div class="paragraph">
-      Elevated terrain and larger End islands. These highlands often feature dramatic cliffs and valleys, providing a more challenging landscape to traverse. End Cities are more commonly found in this biome, offering valuable loot and the chance to encounter Shulkers. The terrain is primarily composed of End Stone and Chorus Plants, with occasional Ender Pearls and other resources scattered throughout.
-    </div>
-
-    <h2>Dragon Island</h2>
-    <div class="paragraph">
-      The central island where the Ender Dragon resides, surrounded by obsidian pillars. Defeating the Ender Dragon here is a significant challenge, offering the ultimate reward of an End gateway and the dragon egg.</p>
-    </div>
-  <div class="bodyback">
-    <img src="../Images/1.9updatelvl3.jpg" class="image2">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    
+  <div class="heading2">End Barrens</div>
+  <div class="paragraph">
+    Flat and empty region of the <i>End dimension</i>. It is usually found at the edges of <i>End islands</i> and lacks significant
+    features or structures. The terrain is composed primarily of <i>End Stone</i>, with occasional <i>Chorus Plants</i>. This biome is
+    considered one of the safer areas in the End due to the lower spawn rates of <i>Endermen</i>.
 </div>
-<script>
-  const track = document.getElementById("image-track");
+    <div class="heading2">Small End Islands</div>
+    <div class="paragraph">
+      Isolated landmasses scattered throughout the void of the <i>End dimension</i>. These islands are much smaller than the
+      central <i>End island</i> and other biomes, often consisting of just a few blocks of <i>End Stone</i> and <i>Chorus Plants</i>. They
+      are challenging to navigate due to their size and the surrounding void, making them dangerous for players without
+      adequate resources.
+    </div>
 
-  const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
+    <div class="heading2">End Highlands</div>
+    <div class="paragraph">
+      Elevated terrain and larger <i>End islands</i>. These highlands often feature dramatic <i>cliffs</i> and <i>valleys</i>, providing a
+      more challenging landscape to traverse. <i>End Cities</i> are more commonly found in this biome, offering valuable loot
+      and the chance to encounter <i>Shulkers</i>. The terrain is primarily composed of <i>End Stone</i> and <i>Chorus Plants</i>, with
+      occasional <i>Ender Pearls</i> and other resources scattered throughout.
+    </div>
 
-  const handleOnUp = () => {
-    track.dataset.mouseDownAt = "0";
-    track.dataset.prevPercentage = track.dataset.percentage;
-  }
+    <div class="heading2">Dragon Island</div>
+    <div class="paragraph">
+      The central island where the <i>Ender Dragon</i> resides, surrounded by obsidian pillars. Defeating the <i>Ender Dragon</i> here
+      is a significant challenge, offering the ultimate reward of an <i>End gateway</i> and the <i>dragon egg</i>.</p>
+    </div>
+    <br>
+    <div class="bodyback">
+      <img src="../Images/1.9updatelvl3.jpg" class="image2">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
 
-  const handleOnMove = e => {
-    if (track.dataset.mouseDownAt === "0") return;
-    console.log("hi");
+    </div>
+    <script>
+      const track = document.getElementById("image-track");
 
-    const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
-      maxDelta = window.innerWidth / 2;
+      const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
 
-    const percentage = (mouseDelta / maxDelta) * -50,
-      nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
-      nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -33.25);
+      const handleOnUp = () => {
+        track.dataset.mouseDownAt = "0";
+        track.dataset.prevPercentage = track.dataset.percentage;
+      }
 
-    track.dataset.percentage = nextPercentage;
+      const handleOnMove = e => {
+        if (track.dataset.mouseDownAt === "0") return;
+        console.log("hi");
 
-    track.animate({
-      transform: `translate(${nextPercentage - 30}%, -50%)`
-    }, { duration: 800, fill: "forwards" });
+        const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
+          maxDelta = window.innerWidth / 2;
+
+        const percentage = (mouseDelta / maxDelta) * -50,
+          nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
+          nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -33.25);
+
+        track.dataset.percentage = nextPercentage;
+
+        track.animate({
+          transform: `translate(${nextPercentage - 30}%, -50%)`
+        }, { duration: 800, fill: "forwards" });
 
 
-  }
+      }
 
-  /* -- Had to add extra lines for touch events -- */
+      /* -- Had to add extra lines for touch events -- */
 
-  window.onmousedown = e => handleOnDown(e);
+      window.onmousedown = e => handleOnDown(e);
 
-  window.ontouchstart = e => handleOnDown(e.touches[0]);
+      window.ontouchstart = e => handleOnDown(e.touches[0]);
 
-  window.onmouseup = e => handleOnUp(e);
+      window.onmouseup = e => handleOnUp(e);
 
-  window.ontouchend = e => handleOnUp(e.touches[0]);
+      window.ontouchend = e => handleOnUp(e.touches[0]);
 
-  window.onmousemove = e => handleOnMove(e);
+      window.onmousemove = e => handleOnMove(e);
 
-  window.ontouchmove = e => handleOnMove(e.touches[0]);
-</script>
+      window.ontouchmove = e => handleOnMove(e.touches[0]);
+    </script>
 </body>
 <footer>
-<div class="footerwords">Contact us: minecraft.fanforum.com</div>
-<Br>
-<div class="footerwords3">Phone: 0472 217 228</div>
-<Br>
-<div class="footer4">Socials: </div><a href="https://www.facebook.com/"><img src="../Images/Footer.png"
-    class="footerimg"></a>
-<div class="footerwords2"> © 2024 Minecraft_FanForum </div>
+  <div class="footerwords">Contact us: minecraft.fanforum.com</div>
+  <Br>
+  <div class="footerwords3">Phone: 0472 217 228</div>
+  <Br>
+  <div class="footer4">Socials: </div><a href="https://www.facebook.com/"><img src="../Images/Footer.png"
+      class="footerimg"></a>
+  <div class="footerwords2"> © 2024 Minecraft_FanForum </div>
 
 </footer>
+
 </html>
 </body>
+
 </html>

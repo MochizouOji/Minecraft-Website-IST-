@@ -313,7 +313,7 @@ h1{
   gap: 4vmin;
   position: absolute;
   left: 45%;
-  top: 127%;
+  top: 170%;
   transform: translate(-30%, -50%); 
   user-select: none; /* -- Prevent image highlighting -- */
   margin-top: 40px;
@@ -330,7 +330,7 @@ h1{
   display: block;
   width: 400px;
   height: 20px;
-  margin-left: 40%;
+  margin-left: 35%;
   align-content: 50%;
   justify-content: 50%;
   font-family: "Minecraft", sans-serif;
@@ -348,7 +348,7 @@ h1{
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-family: Arsenal SC;
-  margin-left: 35px;
+  margin-left: 50px;
   margin-right: 50px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -370,7 +370,7 @@ h1{
 }
 
 .image2 {
-  transform: translateX(31%);
+
   border: 4px rgb(65, 65, 65) solid;
   border-radius: 10px;
 }
