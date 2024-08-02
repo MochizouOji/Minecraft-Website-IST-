@@ -369,9 +369,11 @@ background-color: white;
 }
 
 .image2 {
-  transform: translateX(55%);
+  transform: translateX(85%);
   border: 4px rgb(65, 65, 65) solid;
   border-radius: 10px;
+  height: 300px;
+  width: 500px;
 }
 
 footer {
@@ -439,4 +441,17 @@ footer {
     background-repeat: no-repeat;
     background-size:contain;
     margin: -10px;
+}
+
+.heading3 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.image4 {
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  transform: translateX(85%);
+  border-radius: 10px;
 }
