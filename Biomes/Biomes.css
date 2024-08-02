@@ -13,7 +13,7 @@ body {
   font-family: 'PT Serif';
   padding-top: 0px;
   margin-top: 70px;
-  margin-left: 70px;
+  margin-left: 80px;
 }
 
 body::-webkit-scrollbar {
@@ -37,7 +37,11 @@ body::-webkit-scrollbar {
   font-family: "Minecraft", sans-serif;
   margin-bottom: 0px;
 
+}
 
+.links:hover {
+  background-color: white;
+  color: black;
 }
 
 .bodyback {
@@ -312,7 +316,7 @@ audio::-webkit-media-controls {
 
 
 .overworld {
-  margin-left: 18%;
+  margin-left: 15%;
   margin-top: 70px;
   position: absolute;
   height: fit-content;
