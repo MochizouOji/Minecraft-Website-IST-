@@ -367,9 +367,11 @@
   }
   
   .image2 {
-    transform: translateX(31%);
+    transform: translateX(21%);
     border: 4px rgb(65, 65, 65) solid;
     border-radius: 10px;
+    height: 550px;
+    width: 1000px;
   }
   
   footer {

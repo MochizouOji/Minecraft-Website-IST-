@@ -367,9 +367,11 @@ h1{
 }
 
 .image2 {
-  transform: translateX(31%);
+  transform: translateX(36%);
   border: 4px rgb(65, 65, 65) solid;
   border-radius: 10px;
+  height: 450px;
+  width: 800px;
 }
 
 footer {
