@@ -319,8 +319,9 @@
   #image-track > .image {
     width: 80vmin;
     height: 40vmin;
-    object-fit: cover;
-    object-position: 80% center;
+    object-fit: contain;
+    object-position: center;
+  
   }
   
   .scrolltosee {
