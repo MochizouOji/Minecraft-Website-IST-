@@ -13,6 +13,7 @@ body {
   font-family: 'PT Serif';
   padding-top: 0px;
   margin-top: 70px;
+  margin-left: 70px;
 }
 
 body::-webkit-scrollbar {
@@ -39,11 +40,9 @@ body::-webkit-scrollbar {
 
 }
 
-.links:hover {
-  background-color: white;
-  color: black;
+.bodyback {
+  background-color: rgb(7, 18, 26);
 }
-
 
 
 .Homelogo {
@@ -434,7 +433,8 @@ audio::-webkit-media-controls {
   color: transparent;
   animation: rainbow_animation 6s ease-in-out infinite;
   background-size: 400% 100%;
-  margin-right: 31px;
+
+
 }
 
 @keyframes slide-down {
