@@ -222,7 +222,7 @@
         console.log("hi");
 
         const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
-          maxDelta = window.innerWidth / 2;
+          maxDelta = window.innerWidth;
 
         const percentage = (mouseDelta / maxDelta) * -50,
           nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
