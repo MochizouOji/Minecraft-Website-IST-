@@ -21,6 +21,8 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+
+
 h1 {
   text-align: center;
 }
@@ -55,6 +57,7 @@ h1 {
   display: flex;
   position: relative;
   z-index: 500;
+  cursor: pointer;
 }
 
 @-webkit-keyframes glow {
