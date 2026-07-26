@@ -1,204 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-@import url('https://fonts.cdnfonts.com/css/minecraft-4');
-@import url('https://fonts.google.com/specimen/PT+Serif?preview.text');
-@import url('https://fonts.google.com/specimen/Nunito+Sans?preview.text');
-@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-  width: 100%; 
-  margin-top: 0px;
-  z-index: 2;
-  position: relative;
-}
+/* GettingStarted Hub — Page-Specific Styles Only */
 
 body {
   background-color: black;
-}
-
-.links {
-  float: left;
-  color: #f2f2f2;
+  height: 100%;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: "Minecraft", sans-serif;
-  margin-bottom: 0px;
-}
-.links:hover {
-  background-color: white;
-  color: black;
-}
-
-.glitch {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: "Minecraft", sans-serif;
-  margin-bottom: 0px;
-  text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
-    0.025em 0.04em 0 #fffc00;
-  animation: glitch 725ms infinite;
-}
-
-#glitched:hover {
-  text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
-  0.025em 0.04em 0 #fffc00;
-animation: glitch 725ms infinite;
-background-color: white;
- }
-
-@keyframes glitch {
-  0% {
-    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
-      0.025em 0.04em 0 #fffc00;
-  }
-  15% {
-    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
-      0.025em 0.04em 0 #fffc00;
-  }
-  16% {
-    text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
-      -0.05em -0.05em 0 #fffc00;
-  }
-  49% {
-    text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
-      -0.05em -0.05em 0 #fffc00;
-  }
-  50% {
-    text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
-      0 -0.04em 0 #fffc00;
-  }
-  99% {
-    text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
-      0 -0.04em 0 #fffc00;
-  }
-  100% {
-    text-shadow: -0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff,
-      -0.04em -0.025em 0 #fffc00;
-  }
-}
-
-@keyframes glitchb {
-  0% {
-    box-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff, 0.025em 0.04em 0 #fffc00;
-  }
-  15% {
-    box-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff, 0.025em 0.04em 0 #fffc00;
-  }
-  16% {
-    box-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff, -0.05em -0.05em 0 #fffc00;
-  }
-  49% {
-    box-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff, -0.05em -0.05em 0 #fffc00;
-  }
-  50% {
-    box-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff, 0 -0.04em 0 #fffc00;
-  }
-  74% {
-    box-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff, 0 -0.04em 0 #fffc00;
-  }
-  75% {
-    box-shadow: -0.05em -0.025em 0 #00fffc, -0.025em 0.035em 0 #fc00ff, 0.05em -0.05em 0 #fffc00;
-  }
-  99% {
-    box-shadow: -0.05em -0.025em 0 #00fffc, -0.025em 0.035em 0 #fc00ff, 0.05em -0.05em 0 #fffc00;
-  }
-  100% {
-    box-shadow: 0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff, -0.04em -0.025em 0 #fffc00;
-  }
-}
-
-.linky {
-  float: right;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: "Minecraft", sans-serif;
-  margin-bottom: 0px;
-  padding-left: 5px;
-  padding-top: 3px;
-}
-
-.Homelogo {
-  width: 20px;
-  height: 20px;
-  margin: 0px;
-  border-radius: 0%;
-  border: none;
-  padding: 0px;
-
-}
-
-.progress-container {
-  width: 100%;
-  height: 8px;
-  background: #ccc;
-  top: 0;
-  z-index: 1;
-  border-radius:15px 15px 15px 15px;
-}
-
-.progress-bar {
-  height: 8px;
-  background: #98FB98;
-  width: 0%;
-  border-radius:15px 15px 15px 15px;
-}
-
-.mainbar {
-  position: fixed;
-  z-index: 4;
-  width: 100%;
-  opacity: 95%;
+  font-family: 'PT Serif';
   padding-top: 0px;
-  top:0;
-  left: 0;
 }
-
-  body {
-    height: 100%;
-    text-align: center;
-    font-family:'PT Serif';
-    padding-top: 0px;
-  }
-
-body::-webkit-scrollbar {
-    display: none;
-  }
-
-  .sitelogo {
-    width: 30px;
-    height: 30px;
-    margin: 0px;
-    border-radius: 0%;
-    border: none;
-    padding: 0px;
-    float: left;
-  }
-  
-  .map {
-    font-family: "Minecraft", sans-serif;
-    color: white;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 0px;
-    float: right;
-  }
-  
-  .map:hover {
-    background-color: white;
-    color: black ;
-  }
 
 .container {
   position: relative;
@@ -221,24 +29,13 @@ body::-webkit-scrollbar {
   margin-top: 0;
 }
 
-@-webkit-keyframes glow {
-  to {
-    border-color: #333;
-    /*not in use*/
-  }
-}
-
 .top-left {
   top: 0;
   left: 0;
   width: 49%;
-
   background-image: url('../Images/redstonegettingstarted.webp');
   transform: translateX(-100%);
-  -webkit-transform: translateX(-100%);
   animation: slide-down 1s forwards;
-  -webkit-animation: slide-down 1s forwards;
-  
 }
 
 .top-right {
@@ -248,20 +45,15 @@ body::-webkit-scrollbar {
   background-image: url('../Images/pvpgettingstarted.webp');
   z-index: 1;
   transform: translateY(-100%);
-  -webkit-transform: translateY(-100%);
   animation: slide-down 1s forwards;
-  -webkit-animation: slide-down 1s forwards;
 }
-
 
 .bottom-left {
   bottom: 0;
   left: 0;
-  background-image: url('../Images/gamemodesgettingstarted.webp'); 
+  background-image: url('../Images/gamemodesgettingstarted.webp');
   transform: translateY(100%);
-  -webkit-transform: translateY(100%);
   animation: slide-down 1s forwards;
-  -webkit-animation: slide-down 1s forwards;
 }
 
 .bottom-right {
@@ -269,19 +61,7 @@ body::-webkit-scrollbar {
   right: 0;
   background-image: url('../Images/craftinggettingstarted.webp');
   transform: translateX(100%);
-  -webkit-transform: translateX(100%);
   animation: slide-down 1s forwards;
-  -webkit-animation: slide-down 1s forwards;
-}
-
-@keyframes slide-down {
-  100% { transform: translateY(0%); }
-
-}
-
-@-webkit-keyframes slide-down {
-  100% { -webkit-transform: translateY(0%); }
-
 }
 
 .heading {
@@ -290,7 +70,7 @@ body::-webkit-scrollbar {
   top: 48.5%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgb(200,200,200, 0.8); 
+  background-color: rgb(200, 200, 200, 0.8);
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 0;
@@ -300,7 +80,7 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh; 
+  height: 10vh;
 }
 
 .headinginner {
@@ -310,17 +90,6 @@ body::-webkit-scrollbar {
 .headinginner1 {
   animation: fadeInAnimation ease 2s;
 }
-
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 
 .corner-link {
   z-index: 1;
@@ -332,12 +101,24 @@ body::-webkit-scrollbar {
   position: relative;
 }
 
+.corner-link:hover {
+  color: green;
+  transition: border 1s linear, text-shadow 0.5s linear;
+  animation: glow 0.5s infinite alternate;
+}
+
+/* LOCAL glow override — different from common.css glow (which targets border-color + box-shadow) */
+@keyframes glow {
+  to {
+    color: #69c800;
+  }
+}
+
 .rainbow {
   text-align: center;
   font-family: 'Minecraft', sans-serif;
   font-size: 40px;
- 
-  }
+}
 
 .rainbow_text_animated {
   background: linear-gradient(to right, red, darkorange, red, darkorange);
@@ -350,118 +131,11 @@ body::-webkit-scrollbar {
 }
 
 @keyframes rainbow_animation {
-0%,100% {
+  0%,
+  100% {
     background-position: 0 0;
-}
-
-50% {
+  }
+  50% {
     background-position: 100% 0;
-}
-}
-
-.corner-link:hover {
-  color: green;
-  -webkit-animation: glow 0.5s infinite alternate;
-  -webkit-transition: border 1s linear, text-shadow 0.5s linear;
-  -moz-transition: border 1s linear, text-shadow 0.5s linear;
-  transition: border 1s linear, text-shadow 0.5s linear;
-  animation: glow 0.5s infinite alternate;
-}
-
-@-webkit-keyframes glow {
-  to {
-    color: #69c800;    
   }
 }
-
-@keyframes glow {
-  to {
-    color: #69c800;    
-  }
-}
-
-.Music {  
-  height:0px; 
-  line-height: 0px;
-  font-size: 0px;
-  }
-
-  audio::-webkit-media-controls {
-    display: none;
-  }
-
-  .backbutton {
-    width: 60px;
-    height: 40px;
-    background-color: #333;
-    color: white;
-    border-radius: 5px;
-    font-size: 20px;
-    margin-top: 70px;
-    z-index: 999;
-    position: fixed;
-    top: 0;
-    transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    animation: slide-inbutton 1s forwards;
-    -webkit-animation: slide-inbutton 1s forwards;
-  }
-
-  .backbutton:hover {
-    background-color: white;
-    color: black;
-  }
-
-  ::selection{
-    background-color:#333;
-    color:rgb(115, 250, 115); 
-  }
-
-  @keyframes slide-inbutton {
-    100% {
-      transform: translateX(12%);
-    }
-  }
-  
-  @-webkit-keyframes slide-inbutton {
-    100% {
-      -webkit-transform: translateX(12%);
-    }
-  }
-
-  .forward-button {
-    position: fixed;
-    top: 70px;
-    right: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 20px;
-    color: white;
-    background-color: #333;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 60px;
-    height: 40px;
-    z-index:1000;
-    transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    animation: slide-inbutton 1s forwards;
-    -webkit-animation: slide-inbutton 1s forwards;
-  }
-  
-  .forward-button:hover {
-    background-color: white;
-    color: black;
-  }
-
-  @keyframes slide-inbutton {
-    100% {
-      transform: translateX(12%);
-    }
-  }
-  
-  @-webkit-keyframes slide-inbutton {
-    100% {
-      -webkit-transform: translateX(12%);
-    }
-  }

@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
   <link rel="icon" href="../Images/Grassblock.jpg">
-
+  <link rel="stylesheet" href="../common.css">
   <link rel="stylesheet" href="./nether.css">
-  <script src="../Javascript.js">
+  <script src="../Javascript.js"></script>
+  <title>Nether Biomes</title>
+</head>
 
-  </script>
+<body>
   <div class="mainbar">
     <div class="topnav">
       <a href="../index.html" class="links"><img src="../Images/Homelogo.png" class="Homelogo"></a>
@@ -24,17 +25,14 @@
       <div class="progress-bar" id="myBar"></div>
     </div>
   </div>
-  <title>Nether Biomes</title>
-</head>
 
-<body>
   <button type="button" class="backbutton" id="backbutton" onclick="history.back()" style="left: 0;">◄</button>
   <div class="section1">
     <h1>Nether Biomes</h1>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/sPheOQppB3Q?si=pKIlqGU2NR-qTGzp"
       title="YouTube video player" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen Class="Youtube"></iframe>
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="Youtube"></iframe>
     <button class="forward-button" onclick="navigateToPage()">►</button>
     <script>
       function navigateToPage() {
@@ -44,136 +42,62 @@
   </div>
   <div class="paragraph">
     The Nether is a <b>fiery, treacherous dimension filled with dangerous landscapes and unique biomes</b>. From the eerie glow
-    of the <i>Crimson</i> and <i>Warped Forests<? to the perilous terrain of <i>Basalt Deltas</i> and <i>Soul Sand Valleys</i>, it challenges
-    players with hostile mobs, lava lakes, and valuable resources like netherite and <i>ancient debris</i>.</p>
+    of the <i>Crimson</i> and <i>Warped Forests</i> to the perilous terrain of <i>Basalt Deltas</i> and <i>Soul Sand Valleys</i>, it challenges
+    players with hostile mobs, lava lakes, and valuable resources like netherite and <i>ancient debris</i>.
   </div>
-  <div draggable="false" class="stupidcarosel">
-    <div class="scrolltosee">Click and Drag to see more....</div>
-    <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0" draggable="false">
-      <img class="image3" src="../Images/Screenshot 2024-08-02 104929.png" draggable="false" />
-      <img class="image" src="../Images/netherbiomeslvl3(2).webp" draggable="false" />
-      <img class="image" src="../Images/netherbiomeslvl3(3).webp" draggable="false" />
-      <img class="image" src="../Images/netherbiomeslvl3(4).webp" draggable="false" />
-      <img class="image" src="../Images/netherbiomeslvl3(5).webp" draggable="false" />
-      <img class="image3" src="../Images/Screenshot 2024-08-02 104929.png" draggable="false" />
+
+  <div class="carousel-container" id="carousel">
+    <div class="carousel-track" id="track">
+      <div class="item"><img src="../Images/Screenshot 2024-08-02 104929.png" draggable="false"></div>
+      <div class="item"><img src="../Images/netherbiomeslvl3(2).webp" draggable="false"></div>
+      <div class="item"><img src="../Images/netherbiomeslvl3(3).webp" draggable="false"></div>
+      <div class="item"><img src="../Images/netherbiomeslvl3(4).webp" draggable="false"></div>
+      <div class="item"><img src="../Images/netherbiomeslvl3(5).webp" draggable="false"></div>
+      <div class="item"><img src="../Images/Screenshot 2024-08-02 104929.png" draggable="false"></div>
     </div>
   </div>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+
   <div class="heading2">Nether Wastes</div>
   <div class="paragraph">
     The quintessential <i>Nether biome</i>, with vast expanses of <i>soul sand</i>, <i>glowstone</i>, and <i>netherrack</i>. <i>Ghasts</i> and <i>skeletons</i>
-    roam amidst towering cliffs and lava lakes.</p>
+    roam amidst towering cliffs and lava lakes.
   </div>
 
   <div class="heading2">Soul Sand Valley</div>
   <div class="paragraph">
     A desolate, eerie biome filled with <i>soul sand</i> and <i>soul soil</i>, where blue flames flicker amidst the fog. Beware of
-    <i>ghasts</i> and <i>skeletons</i> lurking in its shadowy depths.</p>
+    <i>ghasts</i> and <i>skeletons</i> lurking in its shadowy depths.
   </div>
 
   <div class="heading2">Warped Forest</div>
   <div class="paragraph">
     A surreal, otherworldly forest with twisting <i>warped fungi</i> and <i>endermen</i> roaming its alien landscape. It offers
-    shelter from hostile mobs and a source of <i>warped wood</i>.</p>
+    shelter from hostile mobs and a source of <i>warped wood</i>.
   </div>
 
   <div class="heading2">Crimson Forest</div>
   <div class="paragraph">
     A crimson-hued biome dominated by towering <i>crimson fungi</i> and <i>piglins</i> scavenging its terrain. Valuable resources like
-    <i>nether wart</i> can be found here amidst the danger.</p>
+    <i>nether wart</i> can be found here amidst the danger.
   </div>
 
   <div class="heading2">Basalt Deltas</div>
   <div class="paragraph">
     Harsh, volcanic landscapes surrounded by towering basalt pillars and streams of lava. <i>Magma cubes</i> roam amidst the
-    rugged terrain, providing <i>blackstone</i> and <i>basalt</i> for the player.</p>
+    rugged terrain, providing <i>blackstone</i> and <i>basalt</i> for the player.
   </div>
   <br>
   <div class="bodyback">
     <img src="../Images/netherbiomeslvl3(6).webp" class="image2">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
+    <br><br><br><br><br><br><br>
   </div>
-  <script>
-    const track = document.getElementById("image-track");
 
-    const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
-
-    const handleOnUp = () => {
-      track.dataset.mouseDownAt = "0";
-      track.dataset.prevPercentage = track.dataset.percentage;
-    }
-
-    const handleOnMove = e => {
-      if (track.dataset.mouseDownAt === "0") return;
-      console.log("hi");
-
-      const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
-        maxDelta = window.innerWidth / 2;
-
-      const percentage = (mouseDelta / maxDelta) * -50,
-        nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
-        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -33.25);
-
-      track.dataset.percentage = nextPercentage;
-
-      track.animate({
-        transform: `translate(${nextPercentage - 30}%, -50%)`
-      }, { duration: 800, fill: "forwards" });
-
-
-    }
-
-    /* -- Had to add extra lines for touch events -- */
-
-    window.onmousedown = e => handleOnDown(e);
-
-    window.ontouchstart = e => handleOnDown(e.touches[0]);
-
-    window.onmouseup = e => handleOnUp(e);
-
-    window.ontouchend = e => handleOnUp(e.touches[0]);
-
-    window.onmousemove = e => handleOnMove(e);
-
-    window.ontouchmove = e => handleOnMove(e.touches[0]);
-  </script>
+  <script src="../carousel.js"></script>
 </body>
+
 <footer>
-  <div class="footerwords">Contact us: minecraft.fanforum.com</div>
-  <Br>
-  <div class="footerwords3">Phone: 0472 217 228</div>
-  <Br>
-  <div class="footer4">Socials: </div><a href="https://www.facebook.com/"><img src="../Images/Footer.png"
-      class="footerimg"></a>
-  <div class="footerwords2"> © 2024 Minecraft_FanForum </div>
-
+  <span class="footer-site-name">Minecraft Fan Forum</span>
+  <span class="footer-copyright">&copy; 2024</span>
 </footer>
-
-</html>
-</body>
 
 </html>

@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
   <link rel="icon" href="../Images/Grassblock.jpg">
-
+  <link rel="stylesheet" href="../common.css">
   <link rel="stylesheet" href="./crafting.css">
-  <script src="../Javascript.js">
+  <script src="../Javascript.js"></script>
+  <title>Crafting</title>
+</head>
 
-  </script>
+<body>
   <div class="mainbar">
     <div class="topnav">
       <a href="../index.html" class="links"><img src="../Images/Homelogo.png" class="Homelogo"></a>
@@ -24,10 +25,7 @@
       <div class="progress-bar" id="myBar"></div>
     </div>
   </div>
-  <title>Crafting</title>
-</head>
 
-<body>
   <button type="button" class="backbutton" id="backbutton" onclick="history.back()" style="left: 0;">◄</button>
   <div class="section1">
     <h1>Crafting</h1>
@@ -48,128 +46,52 @@
       the crafting table. Inside the crafting table however, the grid is increased to a size of three by three gaining
       the ability to craft more items.
     </div>
-    <div draggable="false" class="stupidcarosel">
-      <div class="scrolltosee">Click and Drag to see more....</div>
-      <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0" draggable="false">        
-        <img class="image" src="../Images/Crafting2x2.png" draggable="false" />
-        <img class="image" src="../Images/craftinggettingstartedlvl3.png" draggable="false" />
-        <img class="image" src="../Images/Crafting3x3.webp" draggable="false" />               
+
+    <div class="carousel-container" id="carousel">
+      <div class="carousel-track" id="track">
+        <div class="item"><img src="../Images/Crafting2x2.png" draggable="false"></div>
+        <div class="item"><img src="../Images/craftinggettingstartedlvl3.png" draggable="false"></div>
+        <div class="item"><img src="../Images/Crafting3x3.webp" draggable="false"></div>
       </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+
     <div class="heading2">Shapeless Recipes</div>
     <div class="paragraph"><b>Some recipes in <i>Minecraft</i> don't require the ingredients to be arranged in a specific way
       inside the <i>crafting table</i></b>. These are called shapeless recipes. For example, players can craft a <i>fermented spider
       eye</i> without needing a specific arrangement of the ingredients.
     </div>
-    <img class="image3" src="../Images/craftinggettingstartedlvl3(3).png"></img>
-    <br>
-    <br>
+    <img class="image3" src="../Images/craftinggettingstartedlvl3(3).png">
+    <br><br>
     <div class="heading2">Shaped Recipes</div>
     <div class="paragraph">On the other hand, <b>some recipes require the ingredients to be placed in a specific order</b>,
       known as shaped recipes. These recipes can be moved around in any direction—up, down, left, right, sideways, or
       even flipped. Examples of shaped recipes include crafting <i>bread</i> or an <i>axe</i>.
     </div>
-    <img class="image3" src="../Images/craftinggettingstartedlvl3(4).png"></img>
-    <br>
-    <br>
+    <img class="image3" src="../Images/craftinggettingstartedlvl3(4).png">
+    <br><br>
     <div class="heading2">Fixed Recipes</div>
     <div class="paragraph"><b>Some recipes cannot be moved or mirrored in any way</b>. These are known as fixed recipes. An
-      example of a fixed recipe is the use of <i>dyes</i> in <i>banner</i> recipes. </div>
-    <img class="image3" src="../Images/craftinggettingstartedlvl3(5).png"></img>
+      example of a fixed recipe is the use of <i>dyes</i> in <i>banner</i> recipes.</div>
+    <img class="image3" src="../Images/craftinggettingstartedlvl3(5).png">
+    <br><br>
+    <div class="paragraph">Due to <i>Minecraft's</i> massive popularity, <b>the game includes a vast number of items, each with
+      its own crafting recipe</b>. Many players find it difficult to remember all the recipes, so the game provides a
+      system to help. When you interact with a <i>crafting table</i>, there's a book icon you can tap to access all the
+      recipes in the game.
+    </div>
     <br>
-    <br>
-      <div class="paragraph">Due to <i>Minecraft's</i> massive popularity, <b>the game includes a vast number of items, each with
-        its own crafting recipe</b>. Many players find it difficult to remember all the recipes, so the game provides a
-        system to help. When you interact with a <i>crafting table</i>, there's a book icon you can tap to access all the
-        recipes in the game.
-      </div>
-      <br>
-      <div class="bodyback">
-        <img src="../Images/craftinggettingstartedlvl3(6).jpg" class="image2">
-      
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+    <div class="bodyback">
+      <img src="../Images/craftinggettingstartedlvl3(6).jpg" class="image2">
+      <br><br><br><br><br><br><br>
+    </div>
+  </div>
 
-      </div>
-      <script>
-        const track = document.getElementById("image-track");
-
-        const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
-
-        const handleOnUp = () => {
-          track.dataset.mouseDownAt = "0";
-          track.dataset.prevPercentage = track.dataset.percentage;
-        }
-
-        const handleOnMove = e => {
-          if (track.dataset.mouseDownAt === "0") return;
-          console.log("hi");
-
-          const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
-            maxDelta = window.innerWidth / 2;
-
-          const percentage = (mouseDelta / maxDelta) * -50,
-            nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
-            nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -33.25);
-
-          track.dataset.percentage = nextPercentage;
-
-          track.animate({
-            transform: `translate(${nextPercentage - 30}%, -50%)`
-          }, { duration: 800, fill: "forwards" });
-
-
-        }
-
-        /* -- Had to add extra lines for touch events -- */
-
-        window.onmousedown = e => handleOnDown(e);
-
-        window.ontouchstart = e => handleOnDown(e.touches[0]);
-
-        window.onmouseup = e => handleOnUp(e);
-
-        window.ontouchend = e => handleOnUp(e.touches[0]);
-
-        window.onmousemove = e => handleOnMove(e);
-
-        window.ontouchmove = e => handleOnMove(e.touches[0]);
-      </script>
+  <script src="../carousel.js"></script>
 </body>
+
 <footer>
-  <div class="footerwords">Contact us: minecraft.fanforum.com</div>
-  <Br>
-  <div class="footerwords3">Phone: 0472 217 228</div>
-  <Br>
-  <div class="footer4">Socials: </div><a href="https://www.facebook.com/"><img src="../Images/Footer.png"
-      class="footerimg"></a>
-  <div class="footerwords2"> © 2024 Minecraft_FanForum </div>
-
+  <span class="footer-site-name">Minecraft Fan Forum</span>
+  <span class="footer-copyright">&copy; 2024</span>
 </footer>
-
-</html>
-</body>
 
 </html>

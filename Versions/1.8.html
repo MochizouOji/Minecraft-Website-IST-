@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
   <link rel="icon" href="../Images/Grassblock.jpg">
-
+  <link rel="stylesheet" href="../common.css">
   <link rel="stylesheet" href="./1.8.css">
-  <script src="../Javascript.js">
+  <script src="../Javascript.js"></script>
+  <title>1.8</title>
+</head>
 
-  </script>
+<body>
   <div class="mainbar">
     <div class="topnav">
       <a href="../index.html" class="links"><img src="../Images/Homelogo.png" class="Homelogo"></a>
@@ -20,22 +21,18 @@
         <div class="linky">Sitemap</div><img src="../Images/sitemap.png" class="sitelogo">
       </a>
     </div>
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
   </div>
-  <title>1.8</title>
-</head>
 
-<body>
   <button type="button" class="backbutton" id="backbutton" onclick="history.back()" style="left: 0;">◄</button>
-  <div class="progress-container">
-    <div class="progress-bar" id="myBar"></div>
-  </div>
   <div class="section1">
     <h1>1.8 - The Bountiful Update</h1>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/v5vTBqAJat0?si=NJBgYnqQZCGn6xcg"
       title="YouTube video player" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="Youtube">
-    </iframe>
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="Youtube"></iframe>
     <button class="forward-button" onclick="navigateToPage()">►</button>
     <script>
       function navigateToPage() {
@@ -44,7 +41,7 @@
     </script>
   </div>
   <div class="heading2">New Features:</div>
-  <div class="paragraph">One of Minecraft’s biggest updates is 1.8, otherwise known as “The Bountiful Update”, released
+  <div class="paragraph">One of Minecraft's biggest updates is 1.8, otherwise known as "The Bountiful Update", released
     on September 2,
     2014. It <b>introduced numerous new features, blocks, and items that significantly impacted gameplay</b>.
     Among the new blocks were <i>prismarine</i>, <i>prismarine bricks</i>, <i>dark prismarine</i>, and <i>sea
@@ -55,31 +52,14 @@
     became a
     significant part of <i>Redstone</i> engineering by allowing the creation of complex machines.</div>
   <br>
-  <div draggable="false" class="stupidcarosel">
-    <div class="scrolltosee">Click and Drag to see more....</div>
-    <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0" draggable="false">
-      <img class="image" src="../Images/1.8updatelvl3(3).png" draggable="false" />
-      <img class="image" src="../Images/1.8updatelvl3(1).webp" draggable="false" />
-      <img class="image" src="../Images/1.8updatelvl3(2).webp" draggable="false" />
+
+  <div class="carousel-container" id="carousel">
+    <div class="carousel-track" id="track">
+      <div class="item"><img src="../Images/1.8updatelvl3(3).png" draggable="false"></div>
+      <div class="item"><img src="../Images/1.8updatelvl3(1).webp" draggable="false"></div>
+      <div class="item"><img src="../Images/1.8updatelvl3(2).webp" draggable="false"></div>
     </div>
   </div>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
 
   <br>
   <div class="paragraph">
@@ -96,72 +76,15 @@
   <br>
   <div class="bodyback">
     <img src="../Images/1.8updatelvl3(4).webp" class="image2">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
+    <br><br><br><br><br><br><br>
   </div>
-  <script>
-    const track = document.getElementById("image-track");
 
-    const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
-
-    const handleOnUp = () => {
-      track.dataset.mouseDownAt = "0";
-      track.dataset.prevPercentage = track.dataset.percentage;
-    }
-
-    const handleOnMove = e => {
-      if (track.dataset.mouseDownAt === "0") return;
-      console.log("hi");
-
-      const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
-        maxDelta = window.innerWidth / 2;
-
-      const percentage = (mouseDelta / maxDelta) * -50,
-        nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
-        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -33.25);
-
-      track.dataset.percentage = nextPercentage;
-
-      track.animate({
-        transform: `translate(${nextPercentage - 30}%, -50%)`
-      }, { duration: 800, fill: "forwards" });
-
-
-    }
-
-    /* -- Had to add extra lines for touch events -- */
-
-    window.onmousedown = e => handleOnDown(e);
-
-    window.ontouchstart = e => handleOnDown(e.touches[0]);
-
-    window.onmouseup = e => handleOnUp(e);
-
-    window.ontouchend = e => handleOnUp(e.touches[0]);
-
-    window.onmousemove = e => handleOnMove(e);
-
-    window.ontouchmove = e => handleOnMove(e.touches[0]);
-  </script>
+  <script src="../carousel.js"></script>
 </body>
+
 <footer>
-  <div class="footerwords">Contact us: minecraft.fanforum.com</div>
-  <Br>
-  <div class="footerwords3">Phone: 0472 217 228</div>
-  <Br>
-  <div class="footer4">Socials: </div><a href="https://www.facebook.com/"><img src="../Images/Footer.png"
-      class="footerimg"></a>
-  <div class="footerwords2"> © 2024 Minecraft_FanForum </div>
-
+  <span class="footer-site-name">Minecraft Fan Forum</span>
+  <span class="footer-copyright">&copy; 2024</span>
 </footer>
-
-</html>
-</body>
 
 </html>

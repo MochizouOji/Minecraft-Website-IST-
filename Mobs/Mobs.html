@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-
+<html>
 <head>
   <link rel="icon" href="../Images/Grassblock.jpg">
-
+  <link rel="stylesheet" href="../common.css">
   <link rel="stylesheet" href="./Mobs.css">
-  <script src="../Javascript.js">
-  </script>
+  <script src="../Javascript.js"></script>
+  <title>Quiz</title>
+</head>
+<body>
   <div class="mainbar">
     <div class="topnav">
       <a href="../index.html" class="links"><img src="../Images/Homelogo.png" class="Homelogo"></a>
@@ -17,12 +19,7 @@
         <div class="linky">Sitemap</div><img src="../Images/sitemap.png" class="sitelogo">
       </a>
     </div>
-
   </div>
-  <title>Quiz</title>
-</head>
-
-<body>
 
   <button type="button" class="backbutton" id="backbutton" onclick="history.back()" style="left: 0; ">◄</button>
   <div class="quiztitle">
@@ -52,7 +49,7 @@
   <div class="Music">
     <audio controls>
       <audio src="../Audio/Mice on Venus.mp3" autoplay></audio>
-     </audio>
+    </audio>
   </div>
   <div class="choose">
     <a href="./questions.html" class="q1r">
@@ -62,9 +59,8 @@
     <a href="../index.html" class="q1w">
       <div class="internaltext2">No, take me back!</div>
     </a>
-
   </div>
-  
+
   <button class="forward-button" onclick="navigateToPage()">►</button>
 
   <script>
@@ -72,5 +68,10 @@
       window.location.href = '../sitemap.html';
     }
   </script>
+
+  <footer>
+    <span class="footer-site-name">Minecraft Fan Forum</span>
+    <span class="footer-copyright">&copy; 2024</span>
+  </footer>
 </body>
 </html>

@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-@import url('https://fonts.cdnfonts.com/css/minecraft-4');
-@import url('https://fonts.google.com/specimen/PT+Serif?preview.text');
-@import url('https://fonts.google.com/specimen/Nunito+Sans?preview.text');
-@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* Biomes Hub — Page-Specific Styles Only */
 
 body {
   background-image: url(../Images/the-battle-of-the-end-has-begun-4k-v0-bgyf1nz2dg691.webp);
@@ -16,266 +12,131 @@ body {
   margin-left: 80px;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-  width: 100%;
-  margin-top: 0px;
-}
-
-.links {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: "Minecraft", sans-serif;
-  margin-bottom: 0px;
-
-}
-
-.links:hover {
-  background-color: white;
-  color: black;
-}
-
-.bodyback {
-  background-color: rgb(7, 18, 26);
-}
-
-
-.Homelogo {
-  width: 20px;
-  height: 20px;
-  margin: 0px;
-  border-radius: 0%;
-  border: none;
-  padding: 0px;
-
-}
-
-.progress-container {
-  width: 100%;
-  height: 8px;
-  background: #ccc;
-  top: 0;
-  z-index: 1;
-  border-radius: 15px 15px 15px 15px;
-}
-
-.progress-bar {
-  height: 8px;
-  background: #98FB98;
-  width: 0%;
-  border-radius: 15px 15px 15px 15px;
-}
-
-.mainbar {
-  position: fixed;
-  z-index: 4;
-  width: 100%;
-  opacity: 95%;
-  padding-top: 0px;
-  top: 0;
-  left: 0;
-}
-
-.sitelogo {
-  width: 30px;
-  height: 30px;
-  margin: 0px;
-  border-radius: 0%;
-  border: none;
-  padding: 0px;
-  float: left;
-
-}
-
-
-.map {
-  font-family: "Minecraft", sans-serif;
-  color: white;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 0px;
-  float: right;
-}
-
-.map:hover {
-  background-color: white;
-  color: black;
-}
-
-.linky {
-  float: right;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: "Minecraft", sans-serif;
-  margin-bottom: 0px;
-  padding-left: 5px;
-  padding-top: 3px;
-}
-
-.gifvid {
-  height: 60%;
-  width: 60%;
-  padding-top: 50px;
-  margin: -10px -10px -10px -10px;
-  align-self: center;
-}
-
-
-.backbutton {
-  width: 60px;
-  height: 40px;
-  background-color: #333;
-  color: white;
-  border-radius: 5px;
-  font-size: 20px;
+.overworld {
+  margin-left: 15%;
   margin-top: 70px;
-  z-index: 999;
-  position: fixed;
-  top: 0;
-  transform: translateX(-100%);
-  -webkit-transform: translateX(-100%);
-  animation: slide-inbutton 1s forwards;
-  -webkit-animation: slide-inbutton 1s forwards;
-}
-
-.backbutton:hover {
-  background-color: white;
-  color: black;
-}
-
-@keyframes slide-inbutton {
-  100% {
-    transform: translateX(12%);
-  }
-}
-
-@-webkit-keyframes slide-inbutton {
-  100% {
-    -webkit-transform: translateX(12%);
-  }
-}
-
-audio::-webkit-media-controls {
-  display: none;
-}
-
-.Music {
-  height: 0px;
-  line-height: 0px;
-  font-size: 0px;
-}
-
-.glitch {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 20px;
+  position: absolute;
+  height: fit-content;
+  width: fit-content;
+  color: white;
+  font-size: 30px;
   font-family: "Minecraft", sans-serif;
-  margin-bottom: 0px;
-  text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
-    0.025em 0.04em 0 #fffc00;
-  animation: glitch 725ms infinite;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  transition: all 0.2s;
+  animation: fadeInAnimation ease 2s;
 }
 
-#glitched:hover {
-  text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
-    0.025em 0.04em 0 #fffc00;
-  animation: glitch 725ms infinite;
-  background-color: white;
+.overworld:hover {
+  color: rgb(3, 221, 3);
+  font-size: 30px;
 }
 
-@keyframes glitch {
-  0% {
-    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
-      0.025em 0.04em 0 #fffc00;
-  }
+.end {
+  margin-top: 70px;
+  margin-right: 44%;
+  float: right;
+  height: fit-content;
+  width: fit-content;
+  color: white;
+  font-size: 30px;
+  font-family: "Minecraft", sans-serif;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  transition: all 0.2s;
+  animation: fadeInAnimation ease 2s;
+}
 
-  15% {
-    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
-      0.025em 0.04em 0 #fffc00;
-  }
+.end:hover {
+  color: rgb(37, 37, 250);
+  font-size: 30px;
+}
 
-  16% {
-    text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
-      -0.05em -0.05em 0 #fffc00;
-  }
+.nether {
+  right: 0;
+  margin-right: 18%;
+  position: absolute;
+  margin-top: 70px;
+  height: fit-content;
+  width: fit-content;
+  color: white;
+  font-size: 30px;
+  font-family: "Minecraft", sans-serif;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  transition: all 0.2s;
+  animation: fadeInAnimation ease 2s;
+}
 
-  49% {
-    text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
-      -0.05em -0.05em 0 #fffc00;
-  }
+.nether:hover {
+  color: red;
+  font-size: 30px;
+}
 
-  50% {
-    text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
-      0 -0.04em 0 #fffc00;
-  }
+.biomestitle {
+  font-size: 70px;
+  font-family: "Minecraft", sans-serif;
+  color: white;
+  background: linear-gradient(to right, darkgreen, #1be64e, darkgreen, #1be64e, darkgreen);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 6s ease-in-out infinite;
+  background-size: 400% 100%;
+}
 
-  99% {
-    text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
-      0 -0.04em 0 #fffc00;
-  }
-
+@keyframes rainbow_animation {
+  0%,
   100% {
-    text-shadow: -0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff,
-      -0.04em -0.025em 0 #fffc00;
+    background-position: 0 0;
   }
-}
-
-@keyframes glitchb {
-  0% {
-    box-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff, 0.025em 0.04em 0 #fffc00;
-  }
-
-  15% {
-    box-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff, 0.025em 0.04em 0 #fffc00;
-  }
-
-  16% {
-    box-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff, -0.05em -0.05em 0 #fffc00;
-  }
-
-  49% {
-    box-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff, -0.05em -0.05em 0 #fffc00;
-  }
-
   50% {
-    box-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff, 0 -0.04em 0 #fffc00;
-  }
-
-  74% {
-    box-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff, 0 -0.04em 0 #fffc00;
-  }
-
-  75% {
-    box-shadow: -0.05em -0.025em 0 #00fffc, -0.025em 0.035em 0 #fc00ff, 0.05em -0.05em 0 #fffc00;
-  }
-
-  99% {
-    box-shadow: -0.05em -0.025em 0 #00fffc, -0.025em 0.035em 0 #fc00ff, 0.05em -0.05em 0 #fffc00;
-  }
-
-  100% {
-    box-shadow: 0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff, -0.04em -0.025em 0 #fffc00;
+    background-position: 100% 0;
   }
 }
 
+.outside {
+  position: absolute;
+  right: 41%;
+  top: 70%;
+  transform: translateY(200%);
+  animation: slide-down 2s forwards;
+}
 
+.linkbuttons {
+  height: 170px;
+  width: 120px;
+  filter: grayscale(100%);
+  transition: all 0.2s;
+}
+
+.linkbuttons2 {
+  height: 130px;
+  width: 220px;
+  filter: grayscale(100%);
+  transition: all 0.2s;
+}
+
+.linkbuttons3 {
+  height: 240px;
+  width: 120px;
+  filter: grayscale(100%);
+  transition: all 0.2s;
+}
+
+.linkbuttons:hover {
+  filter: grayscale(0%);
+  transform: scale(1.25);
+}
+
+.linkbuttons2:hover {
+  filter: grayscale(0%);
+  transform: scale(1.25);
+}
+
+.linkbuttons3:hover {
+  filter: grayscale(0%);
+  transform: scale(1.25);
+}
+
+/* Biome carousel (different from sub-page carousel) */
 .carousel {
   position: relative;
   margin: auto;
@@ -312,206 +173,4 @@ audio::-webkit-media-controls {
 
 .carousel-button.next {
   right: 10px;
-}
-
-
-.overworld {
-  margin-left: 15%;
-  margin-top: 70px;
-  position: absolute;
-  height: fit-content;
-  width: fit-content;
-  color: white;
-  font-size: 30px;
-  font-family: "Minecraft", sans-serif;
-  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-  transition: all 0.2s;
-  animation: fadeInAnimation ease 2s;
-}
-
-.end {
-  margin-top: 70px;
-  margin-right: 44%;
-  float: right;
-  height: fit-content;
-  width: fit-content;
-  margin-top: 80px;
-  color: white;
-  font-size: 30px;
-  font-family: "Minecraft", sans-serif;
-  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-  transition: all 0.2s;
-  animation: fadeInAnimation ease 2s;
-}
-
-.nether {
-  right: 0;
-  margin-right: 18%;
-  position: absolute;
-  margin-top: 70px;
-  height: fit-content;
-  width: fit-content;
-  color: white;
-  font-size: 30px;
-  font-family: "Minecraft", sans-serif;
-  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-  transition: all 0.2s;
-  animation: fadeInAnimation ease 2s;
-}
-
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.linkbuttons {
-  height: 170px;
-  width: 120px;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  transition: all 0.2s;
-}
-
-.linkbuttons2 {
-  height: 130px;
-  width: 220px;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  transition: all 0.2s;
-}
-
-.linkbuttons3 {
-  height: 240px;
-  width: 120px;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  transition: all 0.2s;
-}
-
-.linkbuttons:hover {
-  filter: grayscale(0%);
-  -webkit-filter: grayscale(0%);
-  transform: scale(1.25);
-}
-
-.linkbuttons2:hover {
-  filter: grayscale(0%);
-  -webkit-filter: grayscale(0%);
-  transform: scale(1.25);
-}
-
-.linkbuttons3:hover {
-  filter: grayscale(0%);
-  -webkit-filter: grayscale(0%);
-  transform: scale(1.25);
-}
-
-.nether:hover {
-  color: red;
-  font-size: 30px;
-}
-
-.end:hover {
-  color: rgb(37, 37, 250);
-  font-size: 30px;
-}
-
-.overworld:hover {
-  color: rgb(3, 221, 3);
-  font-size: 30px;
-}
-
-.biomestitle {  
-  font-size: 80px;
-  font-family: "Minecraft", sans-serif;  
-  color: white;
-  background: linear-gradient(to right, darkgreen, #1be64e, darkgreen, #1be64e, darkgreen);
-  -webkit-background-clip: text;
-  background-clip: text;
-  font-size: 70px;
-  color: transparent;
-  animation: rainbow_animation 6s ease-in-out infinite;
-  background-size: 400% 100%;
-
-
-}
-
-@keyframes slide-down {
-  100% {
-    transform: translateY(0%);
-  }
-}
-
-@-webkit-keyframes slide-down {
-  100% {
-    -webkit-transform: translateY(0%);
-  }
-}
-
-@keyframes rainbow_animation {
-
-  0%,
-  100% {
-    background-position: 0 0;
-  }
-
-  50% {
-    background-position: 100% 0;
-  }
-}
-
-.outside {
-  position: absolute;
-  right: 41%;
-  top: 70%;
-  transform: translateY(200%);
-  -webkit-transform: translateY(200%);
-  animation: slide-down 2s forwards;
-  -webkit-animation: slide-down 2s forwards;
-}
-
-a {
-  text-decoration: none;
-}
-
-.forward-button {
-  position: fixed;
-  top: 70px;
-  right: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 20px;
-  color: white;
-  background-color: #333;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 60px;
-  height: 40px;
-  z-index:1000;
-  transform: translateX(100%);
-  -webkit-transform: translateX(100%);
-  animation: slide-inbutton 1s forwards;
-  -webkit-animation: slide-inbutton 1s forwards;
-}
-
-.forward-button:hover {
-  background-color: white;
-  color: black;
-}
-
-@keyframes slide-inbutton {
-  100% {
-    transform: translateX(12%);
-  }
-}
-
-@-webkit-keyframes slide-inbutton {
-  100% {
-    -webkit-transform: translateX(12%);
-  }
 }

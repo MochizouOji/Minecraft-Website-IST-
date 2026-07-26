@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
   <link rel="icon" href="../Images/Grassblock.jpg">
-
+  <link rel="stylesheet" href="../common.css">
   <link rel="stylesheet" href="./1.16.css">
-  <script src="../Javascript.js">
+  <script src="../Javascript.js"></script>
+  <title>1.16</title>
+</head>
 
-  </script>
+<body>
   <div class="mainbar">
     <div class="topnav">
       <a href="../index.html" class="links"><img src="../Images/Homelogo.png" class="Homelogo"></a>
@@ -20,24 +21,19 @@
         <div class="linky">Sitemap</div><img src="../Images/sitemap.png" class="sitelogo">
       </a>
     </div>
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
   </div>
-  <div class="progress-container">
-    <div class="progress-bar" id="myBar"></div>
-  </div>
-  <title>1.16</title>
-</head>
 
-<body>
+  <button type="button" class="backbutton" id="backbutton" onclick="history.back()" style="left: 0;">◄</button>
   <div class="section1">
     <h1>1.16 - The Nether Update</h1>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/1DhWXAiNgfQ?si=sJkQ2Sb32eL50y6r"
       title="YouTube video player" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="Youtube"></iframe>
-    <button type="button" class="backbutton" id="backbutton" onclick="history.back()" style="left: 0;">◄</button>
-
     <button class="forward-button" onclick="navigateToPage()">►</button>
-
     <script>
       function navigateToPage() {
         window.location.href = '../Versions/1.17.html';
@@ -45,114 +41,42 @@
     </script>
   </div>
   <div class="heading2">New Features:</div>
-    <div class="paragraph">
-      Minecraft's Update 1.16, known as the "<i>Nether Update</i>", was released on June 23, 2020, and provided a <b>massive
-      update to the Nether dimension</b>, adding more new content and features to this unique dimension. The update introduced four
-      new biomes: the <i>Crimson Forest</i>, <i>Warped Forest</i>, <i>Soul Sand Valley</i>, and <i>Basalt Deltas</i>, each with unique terrain and
-      characteristics. These biomes made the <i>Nether</i> a much more interesting place to navigate. Additionally, new blocks
-      like <i>blackstone</i>, <i>netherite</i>, and <i>ancient debris</i> were introduced, providing players with fresh building materials
-      and the strongest equipment in the game; also giving incentive to explore this dimension.
-    </div>
-    <br>
-    <div draggable="false"  class="stupidcarosel">
-      <div class="scrolltosee">Click and Drag to see more....</div>
-      <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0" draggable="false">
-        <img class="image" src="../Images/netherbiomelvl3(10).webp" draggable="false" />
-        <img class="image" src="../Images/netherupdatelvl3(1).jpeg" draggable="false" />
-        <img class="image" src="../Images/netherupdatelvl3(2).webp" draggable="false" />
-      </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="paragraph">
-      The Nether Update also <b>added new mobs</b>, including <i>piglins</i>, <i>hoglins</i>, <i>striders</i>, and <i>zoglins</i>. <i>Piglins</i>, with their
-      trading system, offered a new method for players to obtain valuable resources by trading gold. <i>Hoglins</i>, on the
-      other hand, provided a food source within the <i>Nether</i>. <i>Striders</i> allowed players to traverse lava lakes safely,
-      adding a travel system within the Nether with the large lava lakes the <i>Nether</i> had.
-    </div>
-    <br>
-    <div class="bodyback">
-      <img src="../Images/crimson-forest.jpg" class="image2">
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      
+  <div class="paragraph">
+    Minecraft's Update 1.16, known as the "<i>Nether Update</i>", was released on June 23, 2020, and provided a <b>massive
+    update to the Nether dimension</b>, adding more new content and features to this unique dimension. The update introduced four
+    new biomes: the <i>Crimson Forest</i>, <i>Warped Forest</i>, <i>Soul Sand Valley</i>, and <i>Basalt Deltas</i>, each with unique terrain and
+    characteristics. These biomes made the <i>Nether</i> a much more interesting place to navigate. Additionally, new blocks
+    like <i>blackstone</i>, <i>netherite</i>, and <i>ancient debris</i> were introduced, providing players with fresh building materials
+    and the strongest equipment in the game; also giving incentive to explore this dimension.
   </div>
-  <script>
-    const track = document.getElementById("image-track");
+  <br>
 
-    const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
+  <div class="carousel-container" id="carousel">
+    <div class="carousel-track" id="track">
+      <div class="item"><img src="../Images/netherbiomelvl3(10).webp" draggable="false"></div>
+      <div class="item"><img src="../Images/netherupdatelvl3(1).jpeg" draggable="false"></div>
+      <div class="item"><img src="../Images/netherupdatelvl3(2).webp" draggable="false"></div>
+    </div>
+  </div>
 
-    const handleOnUp = () => {
-      track.dataset.mouseDownAt = "0";
-      track.dataset.prevPercentage = track.dataset.percentage;
-    }
+  <div class="paragraph">
+    The Nether Update also <b>added new mobs</b>, including <i>piglins</i>, <i>hoglins</i>, <i>striders</i>, and <i>zoglins</i>. <i>Piglins</i>, with their
+    trading system, offered a new method for players to obtain valuable resources by trading gold. <i>Hoglins</i>, on the
+    other hand, provided a food source within the <i>Nether</i>. <i>Striders</i> allowed players to traverse lava lakes safely,
+    adding a travel system within the Nether with the large lava lakes the <i>Nether</i> had.
+  </div>
+  <br>
+  <div class="bodyback">
+    <img src="../Images/crimson-forest.jpg" class="image2">
+    <br><br><br><br><br><br><br>
+  </div>
 
-    const handleOnMove = e => {
-      if (track.dataset.mouseDownAt === "0") return;
-      console.log("hi");
-
-      const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
-        maxDelta = window.innerWidth / 2;
-
-      const percentage = (mouseDelta / maxDelta) * -50,
-        nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
-        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -33.25);
-
-      track.dataset.percentage = nextPercentage;
-
-      track.animate({
-        transform: `translate(${nextPercentage - 30}%, -50%)`
-      }, { duration: 800, fill: "forwards" });
-
-
-    }
-
-    /* -- Had to add extra lines for touch events -- */
-
-    window.onmousedown = e => handleOnDown(e);
-
-    window.ontouchstart = e => handleOnDown(e.touches[0]);
-
-    window.onmouseup = e => handleOnUp(e);
-
-    window.ontouchend = e => handleOnUp(e.touches[0]);
-
-    window.onmousemove = e => handleOnMove(e);
-
-    window.ontouchmove = e => handleOnMove(e.touches[0]);
-  </script>
+  <script src="../carousel.js"></script>
 </body>
+
 <footer>
-  <div class="footerwords">Contact us: minecraft.fanforum.com</div>
-  <Br>
-  <div class="footerwords3">Phone: 0472 217 228</div>
-  <Br>
-  <div class="footer4">Socials: </div><a href="https://www.facebook.com/"><img src="../Images/Footer.png"
-      class="footerimg"></a>
-  <div class="footerwords2"> © 2024 Minecraft_FanForum </div>
-
+  <span class="footer-site-name">Minecraft Fan Forum</span>
+  <span class="footer-copyright">&copy; 2024</span>
 </footer>
-</html>
-</body>
+
 </html>

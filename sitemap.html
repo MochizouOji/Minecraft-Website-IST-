@@ -1,73 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitemap</title>
-    <link rel="icon" href="./Images/Grassblock.jpg">
-    <link rel="stylesheet" href="sitemap.css">
-    <script src="sitemap.js" defer></script>
-    <div class="mainbar">
-        <div class="topnav">
-          <a href="./index.html" class="links"><img src="./Images/Homelogo.png" class="Homelogo"></a>
-          <a href="./Versions/Versions.html" class="links">Versions</a>
-          <a href="./Biomes/Biomes.html" class="links">Biomes</a>
-          <a href="./GettingStarted/GettingStarted.html" class="links">Getting Started</a>
-          <a href="./Mobs/Mobs.html" class="links" id="glitched">Quiz</a>
-          <a href="./sitemap.html" class="map">
-            <div class="linky">Sitemap</div><img src="./Images/sitemap.png" class="sitelogo">
-          </a>
-        </div>
-      </div>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitemap</title>
+  <link rel="icon" href="./Images/Grassblock.jpg">
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="sitemap.css">
 </head>
-<body>  
-    <button type="button" class="backbutton" id="backbutton" onclick="history.back()">◄</button>  
-    <div class="bigsitemap">
-    <h1>Sitemap</h1>
-    <ul class="sitemap">
-        <li><a href="index.html"><img src="./Images/Minecraft_home.png" alt="Home Icon"> Homepage</a></li>
-        <li>
-            <a href="./Versions/Versions.html" onclick="toggleList('versionsSublist')"><img src="./Images/Versions.png" alt="Versions Icon" > Versions</a>
-            <ul id="versionsSublist" style="display: shown;">
-                <li><a href="./Versions/1.8.html"><img src="./Images/bountifulupdate.webp" alt="1.8 Icon"> 1.8 - Bountiful Update</a></li>
-                <li><a href="./Versions/1.9.html"><img src="./Images/combatupdate.webp" alt="1.9 Icon"> 1.9 - Combat Update</a></li>
-                <li><a href="./Versions/1.16.html"><img src="./Images/netherupdate.webp" alt="1.16 Icon"> 1.16 - Nether Update</a></li>
-                <li><a href="./Versions/1.17.html"><img src="./Images/caves_cliffupdate.webp" alt="1.17 Icon"> 1.17 - Caves & Cliffs Update</a></li>
-            </ul>
-        </li>
-
-        <li>
-            <a href="./Biomes/Biomes.html" onclick="toggleList('biomesSublist')"><img src="./Images/BiomesHome.png" alt="Biomes Icon"> Biomes</a>
-            <ul id="biomesSublist" style="display: shown;">
-                <li><a href="./Biomes/overworld.html"><img src="./Images/overworldbiome.webp" alt="Overworld Icon"> Overworld Biomes</a></li>
-                <li><a href="./Biomes/nether.html"><img src="./Images/netherbiomes.webp" alt="Nether Icon"> Nether Biomes</a></li>
-                <li><a href="./Biomes/end.html"><img src="./Images/endbiomes.webp" alt="End Icon"> End Biomes</a></li>
-            </ul>
-        </li>
-
-        <li>
-            <a href="./GettingStarted/GettingStarted.html" onclick="toggleList('gettingStartedSublist')"><img src="./Images/Grassblock.jpg" alt="Grassblock icon"> Getting Started</a>
-            <ul id="gettingStartedSublist" style="display: shown;">
-                <li><a href="./GettingStarted/redstone.html"><img src="./Images/redstone.png" alt="Redstone Icon"> Redstone</a></li>
-                <li><a href="./GettingStarted/crafting.html"><img src="./Images/CraftingTable.webp" alt="Crafting Icon"> Crafting</a></li>
-                <li><a href="./GettingStarted/gamemodes.html"><img src="./Images/gamemodes.png" alt="Gamemodes Icon"> Gamemodes</a></li>
-                <li><a href="./GettingStarted/pvp.html"><img src="./Images/pvp.png" alt="PvP icon"> Player vs Player</a></li>
-            </ul>
-        </li>
-
-        <li>
-            <a href="./Mobs/Mobs.html"><img src="./Images/questionblock2.png" alt="Quiz Icon"> Quiz</a>
-        </li>
-        
-    </ul>
+<body>
+  <div class="mainbar">
+    <div class="topnav">
+      <a href="./index.html" class="links"><img src="./Images/Homelogo.png" class="Homelogo"></a>
+      <a href="./Versions/Versions.html" class="links">Versions</a>
+      <a href="./Biomes/Biomes.html" class="links">Biomes</a>
+      <a href="./GettingStarted/GettingStarted.html" class="links">Getting Started</a>
+      <a href="./Mobs/Mobs.html" class="links" id="glitched">Quiz</a>
+      <a href="./sitemap.html" class="map">
+        <div class="linky">Sitemap</div><img src="./Images/sitemap.png" class="sitelogo">
+      </a>
     </div>
-</div>
-<div class="Music">
+  </div>
+
+  <button type="button" class="backbutton" id="backbutton" onclick="history.back()">◄</button>
+
+  <h1 class="sitemap-title">Sitemap</h1>
+
+  <div class="sitemap-grid">
+    <!-- Root: Home -->
+    <div class="sitemap-root">
+      <a href="index.html">🏠 Home</a>
+    </div>
+
+    <div class="sitemap-connector"></div>
+
+    <!-- Hub cards -->
+    <div class="sitemap-hubs">
+      <!-- Versions -->
+      <div class="sitemap-hub">
+        <div class="sitemap-hub-title"><a href="./Versions/Versions.html">⚔️ Versions</a></div>
+        <ul class="sitemap-subpages">
+          <li><a href="./Versions/1.8.html"><img src="./Images/bountifulupdate.webp" alt="1.8"> 1.8 - Bountiful Update</a></li>
+          <li><a href="./Versions/1.9.html"><img src="./Images/combatupdate.webp" alt="1.9"> 1.9 - Combat Update</a></li>
+          <li><a href="./Versions/1.16.html"><img src="./Images/netherupdate.webp" alt="1.16"> 1.16 - Nether Update</a></li>
+          <li><a href="./Versions/1.17.html"><img src="./Images/caves_cliffupdate.webp" alt="1.17"> 1.17 - Caves & Cliffs</a></li>
+        </ul>
+      </div>
+
+      <!-- Biomes -->
+      <div class="sitemap-hub">
+        <div class="sitemap-hub-title"><a href="./Biomes/Biomes.html">🌍 Biomes</a></div>
+        <ul class="sitemap-subpages">
+          <li><a href="./Biomes/overworld.html"><img src="./Images/overworldbiome.webp" alt="Overworld"> Overworld</a></li>
+          <li><a href="./Biomes/nether.html"><img src="./Images/netherbiomes.webp" alt="Nether"> Nether</a></li>
+          <li><a href="./Biomes/end.html"><img src="./Images/endbiomes.webp" alt="End"> End</a></li>
+        </ul>
+      </div>
+
+      <!-- Getting Started -->
+      <div class="sitemap-hub">
+        <div class="sitemap-hub-title"><a href="./GettingStarted/GettingStarted.html">📖 Getting Started</a></div>
+        <ul class="sitemap-subpages">
+          <li><a href="./GettingStarted/redstone.html"><img src="./Images/redstone.png" alt="Redstone"> Redstone</a></li>
+          <li><a href="./GettingStarted/pvp.html"><img src="./Images/pvp.png" alt="PvP"> PvP</a></li>
+          <li><a href="./GettingStarted/gamemodes.html"><img src="./Images/gamemodes.png" alt="Gamemodes"> Gamemodes</a></li>
+          <li><a href="./GettingStarted/crafting.html"><img src="./Images/CraftingTable.webp" alt="Crafting"> Crafting</a></li>
+        </ul>
+      </div>
+
+      <!-- Quiz -->
+      <div class="sitemap-hub">
+        <div class="sitemap-hub-title"><a href="./Mobs/Mobs.html">❓ Quiz</a></div>
+        <ul class="sitemap-subpages">
+          <li><a href="./Mobs/questions.html"><img src="./Images/questionblock2.png" alt="Questions"> Questions</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="Music">
     <audio controls>
       <audio src="./Audio/Subwoofer Lullaby.mp3" autoplay></audio>
-     </audio>
-</div>
-    <p class="warning">Tip: Hover the topics to see their individual subtopics</p>
+    </audio>
+  </div>
 
+  <footer>
+    <span class="footer-site-name">Minecraft Fan Forum</span>
+    <span class="footer-copyright">&copy; 2024</span>
+  </footer>
 </body>
+</html>

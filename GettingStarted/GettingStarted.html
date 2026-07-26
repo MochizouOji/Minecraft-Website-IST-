@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-
 <html>
 <head>
   <link rel="icon" href="../Images/Grassblock.jpg">
   <title>Getting Started</title>
+  <link rel="stylesheet" href="../common.css">
   <link rel="stylesheet" href="./GettingStarted.css">
-  <script src="../Javascript.js">
-
-  </script>
+  <script src="../Javascript.js"></script>
+</head>
+<body>
   <div class="mainbar">
     <div class="topnav">
       <a href="../index.html" class="links"><img src="../Images/Homelogo.png" class="Homelogo"></a>
@@ -19,12 +19,15 @@
         <div class="linky">Sitemap</div><img src="../Images/sitemap.png" class="sitelogo">
       </a>
     </div>
+  </div>
+
+  <button type="button" class="backbutton" id="backbutton" onclick="history.back()" style="left: 0; ">◄</button>
 
   <div class="container">
     <div class="corner top-left" id="borderplsglow">
       <a href="redstone.html" class="corner-link"><div class="headinginner1">Redstone</div></a>
     </div>
-    <div class="top-right corner " id="borderplsglow">
+    <div class="top-right corner" id="borderplsglow">
       <a href="pvp.html" class="corner-link"><div class="headinginner1">PvP</div></a>
     </div>
     <div class="corner bottom-left" id="borderplsglow">
@@ -37,20 +40,24 @@
       <div class="headinginner"><div class="rainbow rainbow_text_animated"><h1>Getting Started</h1></div></div>
     </div>
   </div>
-  </div>
-</head>
-<div class="Music">
-  <audio controls>
-    <audio src="../Audio/Danny.mp3" autoplay></audio>
-   </audio>
-</div>
-<button type="button" class="backbutton" id="backbutton" onclick="history.back()" style="left: 0; ">◄</button>
-<button class="forward-button" onclick="navigateToPage()">►</button>
 
-<script>
-  function navigateToPage() {
-    window.location.href = '../Mobs/Mobs.html';
-  }
-</script>
- 
+  <div class="Music">
+    <audio controls>
+      <audio src="../Audio/Danny.mp3" autoplay></audio>
+    </audio>
+  </div>
+
+  <button class="forward-button" onclick="navigateToPage()">►</button>
+
+  <script>
+    function navigateToPage() {
+      window.location.href = '../Mobs/Mobs.html';
+    }
+  </script>
+
+  <footer>
+    <span class="footer-site-name">Minecraft Fan Forum</span>
+    <span class="footer-copyright">&copy; 2024</span>
+  </footer>
+</body>
 </html>

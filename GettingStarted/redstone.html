@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
   <link rel="icon" href="../Images/Grassblock.jpg">
-
+  <link rel="stylesheet" href="../common.css">
   <link rel="stylesheet" href="./redstone.css">
-  <script src="../Javascript.js">
+  <script src="../Javascript.js"></script>
+  <title>Redstone</title>
+</head>
 
-  </script>
+<body>
   <div class="mainbar">
     <div class="topnav">
       <a href="../index.html" class="links"><img src="../Images/Homelogo.png" class="Homelogo"></a>
@@ -24,10 +25,7 @@
       <div class="progress-bar" id="myBar"></div>
     </div>
   </div>
-  <title>Redstone</title>
-</head>
 
-<body>
   <button type="button" class="backbutton" id="backbutton" onclick="history.back()" style="left: 0;">◄</button>
   <div class="section1">
     <h1>Redstone</h1>
@@ -47,32 +45,14 @@
     <b>One of the most advanced mechanics</b> in this sandbox game is <i>redstone</i>. It can be used to create many different complex
     contraptions such as a calculator, advanced deathtraps and even a working computer.
   </div>
-  <div draggable="false" class="stupidcarosel">
-    <div class="scrolltosee">Click and Drag to see more....</div>
-    <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0" draggable="false">
-      <img class="image" src="../Images/redstonegettingstartedlvl3(4).png" draggable="false" />
-      <img class="image" src="../Images/redstonegettingstartedlvl3(1).webp" draggable="false" />
-      <img class="image" src="../Images/redstonegettingstartedlvl3(2).jpg" draggable="false" />
+
+  <div class="carousel-container" id="carousel">
+    <div class="carousel-track" id="track">
+      <div class="item"><img src="../Images/redstonegettingstartedlvl3(4).png" draggable="false"></div>
+      <div class="item"><img src="../Images/redstonegettingstartedlvl3(1).webp" draggable="false"></div>
+      <div class="item"><img src="../Images/redstonegettingstartedlvl3(2).jpg" draggable="false"></div>
     </div>
   </div>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
 
   <div class="heading2">Simple Uses of Redstone</div>
   <div class="paragraph">
@@ -97,77 +77,20 @@
     <i>tripwires</i>, and <i>dispensers</i>, players can set up automated defenses to protect their bases from mobs and other players.
     Additionally, <i>Redstone</i> can be used to build automated transportation systems, such as minecart railways and piston
     powered elevators, making travel within the game more efficient and enjoyable. <b>The possibilities with Redstone are
-    virtually limitless and push the boundaries of a 'game' </b>.
+    virtually limitless and push the boundaries of a 'game'</b>.
   </div>
-<br>
+  <br>
   <div class="bodyback">
     <img src="../Images/redstonegettingstartedlvl3(5).png" class="image2">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
+    <br><br><br><br><br><br><br>
   </div>
-  <script>
-    const track = document.getElementById("image-track");
 
-    const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
-
-    const handleOnUp = () => {
-      track.dataset.mouseDownAt = "0";
-      track.dataset.prevPercentage = track.dataset.percentage;
-    }
-
-    const handleOnMove = e => {
-      if (track.dataset.mouseDownAt === "0") return;
-      console.log("hi");
-
-      const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
-        maxDelta = window.innerWidth / 2;
-
-      const percentage = (mouseDelta / maxDelta) * -50,
-        nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
-        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -33.25);
-
-      track.dataset.percentage = nextPercentage;
-
-      track.animate({
-        transform: `translate(${nextPercentage - 30}%, -50%)`
-      }, { duration: 800, fill: "forwards" });
-
-
-    }
-
-    /* -- Had to add extra lines for touch events -- */
-
-    window.onmousedown = e => handleOnDown(e);
-
-    window.ontouchstart = e => handleOnDown(e.touches[0]);
-
-    window.onmouseup = e => handleOnUp(e);
-
-    window.ontouchend = e => handleOnUp(e.touches[0]);
-
-    window.onmousemove = e => handleOnMove(e);
-
-    window.ontouchmove = e => handleOnMove(e.touches[0]);
-  </script>
+  <script src="../carousel.js"></script>
 </body>
+
 <footer>
-  <div class="footerwords">Contact us: minecraft.fanforum.com</div>
-  <Br>
-  <div class="footerwords3">Phone: 0472 217 228</div>
-  <Br>
-  <div class="footer4">Socials: </div><a href="https://www.facebook.com/"><img src="../Images/Footer.png"
-      class="footerimg"></a>
-  <div class="footerwords2"> © 2024 Minecraft_FanForum </div>
-
+  <span class="footer-site-name">Minecraft Fan Forum</span>
+  <span class="footer-copyright">&copy; 2024</span>
 </footer>
-
-</html>
-</body>
 
 </html>

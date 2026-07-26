@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
   <link rel="icon" href="../Images/Grassblock.jpg">
-
+  <link rel="stylesheet" href="../common.css">
   <link rel="stylesheet" href="./gamemodes.css">
-  <script src="../Javascript.js">
+  <script src="../Javascript.js"></script>
+  <title>Gamemodes</title>
+</head>
 
-  </script>
+<body>
   <div class="mainbar">
     <div class="topnav">
       <a href="../index.html" class="links"><img src="../Images/Homelogo.png" class="Homelogo"></a>
@@ -24,10 +25,7 @@
       <div class="progress-bar" id="myBar"></div>
     </div>
   </div>
-  <title>Gamemodes</title>
-</head>
 
-<body>
   <button type="button" class="backbutton" id="backbutton" onclick="history.back()" style="left: 0;">◄</button>
   <div class="section1">
     <h1>Gamemodes</h1>
@@ -46,37 +44,19 @@
     Minecraft has 5 main modes: Survival, Hardcore, Creative, Adventure and Spectator.
   </div>
 
-  <div draggable="false" class="stupidcarosel">
-    <div class="scrolltosee">Click and Drag to see more....</div>
-    <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0" draggable="false">
-      <img class="image" src="../Images/gamemodesgettingstartedlvl3(3).png" draggable="false" />
-      <img class="image" src="../Images/gamemodesgettingstartedlvl3(1).jpg" draggable="false" />
-      <img class="image" src="../Images/gamemodesgettingstartedlvl3(4).webp" draggable="false" />
+  <div class="carousel-container" id="carousel">
+    <div class="carousel-track" id="track">
+      <div class="item"><img src="../Images/gamemodesgettingstartedlvl3(3).png" draggable="false"></div>
+      <div class="item"><img src="../Images/gamemodesgettingstartedlvl3(1).jpg" draggable="false"></div>
+      <div class="item"><img src="../Images/gamemodesgettingstartedlvl3(4).webp" draggable="false"></div>
     </div>
   </div>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+
   <div class="heading2">Survival Mode</div>
   <div class="paragraph">
     In <i>Survival</i>, players start with no items in a fresh world. They can <b>farm, build, explore, and befriend, limited
       only by their imagination and resources</b>. The game is officially beaten when the <i>ender dragon</i> is defeated.
-   <i>Survival</i> has four difficulty levels: One being <i>Peaceful</i> where no hostile mobs spawn, the hunger bar never depletes,
+    <i>Survival</i> has four difficulty levels: One being <i>Peaceful</i> where no hostile mobs spawn, the hunger bar never depletes,
     and health regenerates quickly. <i>Easy</i>, where hostile mobs spawn without inflicting harmful status effects. They also
     deal half the damage of normal mode, and hunger only depletes to 5 hearts, preventing death by starvation. <i>Normal</i> is
     the mode where mobs deal standard damage and inflict effects. Hunger depletes to 0.5 hearts, but players can't die from
@@ -86,8 +66,8 @@
 
   <div class="heading2">Hardcore Mode</div>
   <div class="paragraph">
-    <i>Hardcore</i> is known for its brutal difficulty as players can't respawn. <b>>Once you die, all progress is lost, and the
-    game is locked to <i>hard mode</i></b>. Upon death, instead of respawning, you can view your world in <i>spectator mode </i> before it
+    <i>Hardcore</i> is known for its brutal difficulty as players can't respawn. <b>Once you die, all progress is lost, and the
+    game is locked to <i>hard mode</i></b>. Upon death, instead of respawning, you can view your world in <i>spectator mode</i> before it
     is deleted. In multiplayer, dying results in a ban from the server.
   </div>
 
@@ -114,72 +94,15 @@
   <br>
   <div class="bodyback">
     <img src="../Images/gamemodesgettingstartedlvl3(2).png" class="image2">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
+    <br><br><br><br><br><br><br>
   </div>
-  <script>
-    const track = document.getElementById("image-track");
 
-    const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
-
-    const handleOnUp = () => {
-      track.dataset.mouseDownAt = "0";
-      track.dataset.prevPercentage = track.dataset.percentage;
-    }
-
-    const handleOnMove = e => {
-      if (track.dataset.mouseDownAt === "0") return;
-      console.log("hi");
-
-      const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
-        maxDelta = window.innerWidth / 2;
-
-      const percentage = (mouseDelta / maxDelta) * -50,
-        nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
-        nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -33.25);
-
-      track.dataset.percentage = nextPercentage;
-
-      track.animate({
-        transform: `translate(${nextPercentage - 30}%, -50%)`
-      }, { duration: 800, fill: "forwards" });
-
-
-    }
-
-    /* -- Had to add extra lines for touch events -- */
-
-    window.onmousedown = e => handleOnDown(e);
-
-    window.ontouchstart = e => handleOnDown(e.touches[0]);
-
-    window.onmouseup = e => handleOnUp(e);
-
-    window.ontouchend = e => handleOnUp(e.touches[0]);
-
-    window.onmousemove = e => handleOnMove(e);
-
-    window.ontouchmove = e => handleOnMove(e.touches[0]);
-  </script>
+  <script src="../carousel.js"></script>
 </body>
+
 <footer>
-  <div class="footerwords">Contact us: minecraft.fanforum.com</div>
-  <Br>
-  <div class="footerwords3">Phone: 0472 217 228</div>
-  <Br>
-  <div class="footer4">Socials: </div><a href="https://www.facebook.com/"><img src="../Images/Footer.png"
-      class="footerimg"></a>
-  <div class="footerwords2"> © 2024 Minecraft_FanForum </div>
-
+  <span class="footer-site-name">Minecraft Fan Forum</span>
+  <span class="footer-copyright">&copy; 2024</span>
 </footer>
-
-</html>
-</body>
 
 </html>

@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-@import url('https://fonts.cdnfonts.com/css/minecraft-4');
-@import url('https://fonts.google.com/specimen/PT+Serif?preview.text');
-@import url('https://fonts.google.com/specimen/Nunito+Sans?preview.text');
-@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* Questions (Quiz) - Page-specific styles only */
+/* Shared styles loaded from ../common.css */
 
 body {
   background-image: url(../Images/mbquestionbg.webp);
@@ -11,172 +8,6 @@ body {
   text-align: center;
   font-family: 'PT Serif';
   padding-top: 0px;
-}
-
-body::-webkit-scrollbar {
-  display: none;
-}
-
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-  width: 100%;
-  margin-top: 0px;
-}
-
-.links {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: "Minecraft", sans-serif;
-  margin-bottom: 0px;
-}
-
-.links:hover {
-  background-color: white;
-  color: black;
-}
-
-.glitch {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: "Minecraft", sans-serif;
-  margin-bottom: 0px;
-  text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
-    0.025em 0.04em 0 #fffc00;
-  animation: glitch 725ms infinite;
-}
-
-#glitched:hover {
-  text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
-    0.025em 0.04em 0 #fffc00;
-  animation: glitch 725ms infinite;
-  background-color: white;
-}
-
-@keyframes glitch {
-  0% {
-    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
-      0.025em 0.04em 0 #fffc00;
-  }
-
-  15% {
-    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
-      0.025em 0.04em 0 #fffc00;
-  }
-
-  16% {
-    text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
-      -0.05em -0.05em 0 #fffc00;
-  }
-
-  49% {
-    text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
-      -0.05em -0.05em 0 #fffc00;
-  }
-
-  50% {
-    text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
-      0 -0.04em 0 #fffc00;
-  }
-
-  99% {
-    text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
-      0 -0.04em 0 #fffc00;
-  }
-
-  100% {
-    text-shadow: -0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff,
-      -0.04em -0.025em 0 #fffc00;
-  }
-}
-
-.Homelogo {
-  width: 20px;
-  height: 20px;
-  margin: 0px;
-  border-radius: 0%;
-  border: none;
-  padding: 0px;
-
-}
-
-.progress-container {
-  width: 100%;
-  height: 8px;
-  background: #ccc;
-  top: 0;
-  z-index: 1;
-  border-radius: 15px 15px 15px 15px;
-}
-
-.progress-bar {
-  height: 8px;
-  background: #98FB98;
-  width: 0%;
-  border-radius: 15px 15px 15px 15px;
-}
-
-.mainbar {
-  position: fixed;
-  z-index: 4;
-  width: 100%;
-  opacity: 95%;
-  padding-top: 0px;
-  top: 0;
-  left: 0;
-}
-
-.sitelogo {
-  width: 30px;
-  height: 30px;
-  margin: 0px;
-  border-radius: 0%;
-  border: none;
-  padding: 0px;
-  float: left;
-
-}
-
-
-.map {
-  font-family: "Minecraft", sans-serif;
-  color: white;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 0px;
-  float: right;
-}
-
-.map:hover {
-  background-color: white;
-  color: black;
-}
-
-a {
-  text-decoration: none;
-}
-
-.linky {
-  float: right;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: "Minecraft", sans-serif;
-  margin-bottom: 0px;
-  padding-left: 5px;
-  padding-top: 3px;
 }
 
 .hidden {
@@ -194,17 +25,7 @@ a {
   border-radius: 10px;
   border: 5px solid black;
   transform: translateY(-100%);
-  -webkit-transform: translateY(-100%);
   animation: slide-down 1s forwards;
-  -webkit-animation: slide-down 1s forwards;
-}
-
-@keyframes slide-down {
-  100% { transform: translateY(0%); }
-}
-
-@-webkit-keyframes slide-down {
-  100% { -webkit-transform: translateY(0%); }
 }
 
 .q1words {
@@ -243,13 +64,13 @@ a {
   cursor: pointer;
 }
 
-.button1:hover{
+.button1:hover {
   background-color: rgb(102, 201, 4);
 }
 
-option{
+option {
   font-family: 'Arsenal SC', sans-serif;
-  font-weight:500;
+  font-weight: 500;
   font-size: 18px;
   text-align: center;
 }
@@ -265,10 +86,7 @@ option{
   border-radius: 10px;
   border: 5px solid black;
   transform: translateY(-100%);
-  -webkit-transform: translateY(-100%);
   animation: slide-down 1s forwards;
-  -webkit-animation: slide-down 1s forwards;
-  
 }
 
 .q2words {
@@ -293,6 +111,7 @@ option{
   font-weight: bold;
   background-image: url(../Images/overworldquestion.webp);
 }
+
 .netherbutton1 {
   display: inline-block;
   height: 300px;
@@ -309,13 +128,14 @@ option{
   font-weight: bold;
   background-image: url(../Images/netherquestion.webp);
 }
+
 .endbutton1 {
   display: inline-block;
   height: 300px;
   width: 23%;
   background-color: purple;
   border-radius: 10px;
-  border: 3px solid white;  
+  border: 3px solid white;
   margin-top: 100px;
   margin-right: 2%;
   text-align: center;
@@ -328,35 +148,12 @@ option{
 
 .endbutton1:hover, .netherbutton1:hover, .overworldbutton1:hover {
   border: 3px solid green;
-    background-color: rgb(169, 169, 169, 0.5);
-    -webkit-animation: glow 1.0s infinite alternate;
-    -webkit-transition: border 0.5s linear, box-shadow 0.5s linear;
-    -moz-transition: border 0.5s linear, box-shadow 0.5s linear;
-    transition: border 0.5s linear, box-shadow 0.5s linear;
-    animation: glow 0.5s infinite alternate;
-    color: rgb(2, 153, 2);
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  background-color: rgb(169, 169, 169, 0.5);
+  transition: border 0.5s linear, box-shadow 0.5s linear;
+  animation: glow 0.5s infinite alternate;
+  color: rgb(2, 153, 2);
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
-
-@-webkit-keyframes glow {
-  to {
-    border-color: #69c800;
-    -webkit-box-shadow: 0 0 5px #69c800;
-    -moz-box-shadow: 0 0 5px #69c800;
-    box-shadow: 0 0 5px #69c800;
-  }
-}
-
-@keyframes glow {
-  to {
-    border-color: #69c800;
-    -webkit-box-shadow: 0 0 5px #69c800;
-    -moz-box-shadow: 0 0 5px #69c800;
-    box-shadow: 0 0 5px #69c800;
-  }
-}
-
-
 
 span {
   display: inline-block;
@@ -375,9 +172,7 @@ span {
   border-radius: 10px;
   border: 5px solid black;
   transform: translateY(-100%);
-  -webkit-transform: translateY(-100%);
   animation: slide-down 1s forwards;
-  -webkit-animation: slide-down 1s forwards;
 }
 
 .q3words {
@@ -391,7 +186,7 @@ span {
 
 .filltheblank1 {
   margin-top: 100px;
-  font-size: 40px;  
+  font-size: 40px;
   font-family: 'Arsenal SC', sans-serif;
   font-weight: bold;
   padding-left: 20px;
@@ -404,7 +199,7 @@ span {
 }
 
 input {
-  font-size: 20px;  
+  font-size: 20px;
   font-family: 'Arsenal SC', sans-serif;
   text-align: center;
   display: inline-block;
@@ -425,11 +220,11 @@ input {
   border-color: black;
 }
 
-.button2:hover{
+.button2:hover {
   background-color: rgb(102, 201, 4);
 }
 
-/*Question 4*/
+/* Question 4 */
 .question4 {
   margin-top: 80px;
   background-color: rgba(100, 100, 100, 0.5);
@@ -440,9 +235,7 @@ input {
   border-radius: 10px;
   border: 5px solid black;
   transform: translateY(-100%);
-  -webkit-transform: translateY(-100%);
   animation: slide-down 1s forwards;
-  -webkit-animation: slide-down 1s forwards;
 }
 
 .q4words {
@@ -476,11 +269,11 @@ input[type=checkbox] {
   border-color: black;
 }
 
-.button3:hover{
+.button3:hover {
   background-color: rgb(102, 201, 4);
 }
 
-/*Question 5*/
+/* Question 5 */
 .question5 {
   margin-top: 80px;
   background-color: rgba(100, 100, 100, 0.5);
@@ -491,9 +284,7 @@ input[type=checkbox] {
   border-radius: 10px;
   border: 5px solid black;
   transform: translateY(-100%);
-  -webkit-transform: translateY(-100%);
   animation: slide-down 1s forwards;
-  -webkit-animation: slide-down 1s forwards;
 }
 
 .q5words {
@@ -537,51 +328,34 @@ input[type=checkbox] {
   margin-bottom: 10px;
 }
 
-.true1:hover{
+.true1:hover {
   border: 3px solid green;
-    background-color: rgb(169, 169, 169, 0.5);
-    background-image: url(../Images/check-mark-vector-seamless-pattern_547110-1724-removebg-preview.webp);
-    -webkit-animation: glow 1.0s infinite alternate;
-    -webkit-transition: border 0.5s linear, box-shadow 0.5s linear;
-    -moz-transition: border 0.5s linear, box-shadow 0.5s linear;
-    transition: border 0.5s linear, box-shadow 0.5s linear;
-    animation: glow 0.5s infinite alternate;
-    color: rgb(2, 153, 2);
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  background-color: rgb(169, 169, 169, 0.5);
+  background-image: url(../Images/check-mark-vector-seamless-pattern_547110-1724-removebg-preview.webp);
+  transition: border 0.5s linear, box-shadow 0.5s linear;
+  animation: glow 0.5s infinite alternate;
+  color: rgb(2, 153, 2);
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
-.false1:hover{
+.false1:hover {
   border: 3px solid red;
-    background-color: rgb(169, 169, 169, 0.5);
-    background-image: url(../Images/pattern-background-wrong-mark-icon-vector-removebg-preview.webp);
-    -webkit-animation: glowbad 1.0s infinite alternate;
-    -webkit-transition: border 0.5s linear, box-shadow 0.5s linear;
-    -moz-transition: border 0.5s linear, box-shadow 0.5s linear;
-    transition: border 0.5s linear, box-shadow 0.5s linear;
-    animation: glowbad 0.5s infinite alternate;
-    color: red;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-}
-
-@-webkit-keyframes glowbad {
-  to {
-    border-color: rgb(252, 97, 97);
-    -webkit-box-shadow: 0 0 5px rgb(252, 97, 97);
-    -moz-box-shadow: 0 0 5px rgb(252, 97, 97);
-    box-shadow: 0 0 5px rgb(252, 97, 97);
-  }
+  background-color: rgb(169, 169, 169, 0.5);
+  background-image: url(../Images/pattern-background-wrong-mark-icon-vector-removebg-preview.webp);
+  transition: border 0.5s linear, box-shadow 0.5s linear;
+  animation: glowbad 0.5s infinite alternate;
+  color: red;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 @keyframes glowbad {
   to {
     border-color: rgb(252, 97, 97);
-    -webkit-box-shadow: 0 0 5px rgb(252, 97, 97);
-    -moz-box-shadow: 0 0 5px rgb(252, 97, 97);
     box-shadow: 0 0 5px rgb(252, 97, 97);
   }
 }
 
-/*Question 6*/
+/* Question 6 */
 .question6 {
   margin-top: 80px;
   background-color: rgba(100, 100, 100, 0.5);
@@ -592,9 +366,7 @@ input[type=checkbox] {
   border-radius: 10px;
   border: 5px solid black;
   transform: translateY(-100%);
-  -webkit-transform: translateY(-100%);
   animation: slide-down 1s forwards;
-  -webkit-animation: slide-down 1s forwards;
 }
 
 .dropdown2 {
@@ -624,11 +396,11 @@ input[type=checkbox] {
   margin-bottom: 10px;
 }
 
-.button6:hover{
+.button6:hover {
   background-color: rgb(102, 201, 4);
 }
 
-/*Question 7*/
+/* Question 7 */
 .question7 {
   margin-top: 80px;
   background-color: rgba(100, 100, 100, 0.5);
@@ -639,10 +411,7 @@ input[type=checkbox] {
   border-radius: 10px;
   border: 5px solid black;
   transform: translateY(-100%);
-  -webkit-transform: translateY(-100%);
   animation: slide-down 1s forwards;
-  -webkit-animation: slide-down 1s forwards;
-  
 }
 
 .q7words {
@@ -669,6 +438,7 @@ input[type=checkbox] {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .cobblestonebutton {
   display: inline-block;
   height: 300px;
@@ -686,15 +456,15 @@ input[type=checkbox] {
   background-image: url(../Images/Cobblestone.webp);
   background-size: cover;
   background-repeat: no-repeat;
-  
 }
+
 .smoothstonebutton {
   display: inline-block;
   height: 300px;
   width: 23%;
   background-color: lightgrey;
   border-radius: 10px;
-  border: 3px solid white;  
+  border: 3px solid white;
   margin-top: 100px;
   margin-right: 2%;
   text-align: center;
@@ -709,17 +479,14 @@ input[type=checkbox] {
 
 .smoothstonebutton:hover, .cobblestonebutton:hover, .stonebutton:hover {
   border: 3px solid green;
-    background-color: rgb(169, 169, 169, 0.5);
-    -webkit-animation: glow 1.0s infinite alternate;
-    -webkit-transition: border 0.5s linear, box-shadow 0.5s linear;
-    -moz-transition: border 0.5s linear, box-shadow 0.5s linear;
-    transition: border 0.5s linear, box-shadow 0.5s linear;
-    animation: glow 0.5s infinite alternate;
-    color: rgb(2, 153, 2);
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  background-color: rgb(169, 169, 169, 0.5);
+  transition: border 0.5s linear, box-shadow 0.5s linear;
+  animation: glow 0.5s infinite alternate;
+  color: rgb(2, 153, 2);
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
-/*Question 8*/
+/* Question 8 */
 .question8 {
   margin-top: 80px;
   background-color: rgba(100, 100, 100, 0.5);
@@ -730,12 +497,10 @@ input[type=checkbox] {
   border-radius: 10px;
   border: 5px solid black;
   transform: translateY(-100%);
-  -webkit-transform: translateY(-100%);
   animation: slide-down 1s forwards;
-  -webkit-animation: slide-down 1s forwards;
 }
 
-/*Question 9*/
+/* Question 9 */
 .question9 {
   margin-top: 75px;
   background-color: rgba(100, 100, 100, 0.5);
@@ -746,9 +511,7 @@ input[type=checkbox] {
   border-radius: 10px;
   border: 5px solid black;
   transform: translateY(-100%);
-  -webkit-transform: translateY(-100%);
   animation: slide-down 1s forwards;
-  -webkit-animation: slide-down 1s forwards;
 }
 
 .q9words {
@@ -758,17 +521,11 @@ input[type=checkbox] {
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
-input[type=checkbox] {
-  vertical-align: middle;
-  position: relative;
-  bottom: 111px;
-}
-
 .checkboxes2 {
   margin-top: 25px;
 }
 
-/*Question 10*/
+/* Question 10 */
 .question10 {
   margin-top: 80px;
   background-color: rgba(100, 100, 100, 0.5);
@@ -779,9 +536,7 @@ input[type=checkbox] {
   border-radius: 10px;
   border: 5px solid black;
   transform: translateY(-100%);
-  -webkit-transform: translateY(-100%);
   animation: slide-down 1s forwards;
-  -webkit-animation: slide-down 1s forwards;
 }
 
 .q10words {
@@ -798,9 +553,10 @@ input[type=checkbox] {
   display: inline;
   padding: 0;
   margin: 0;
-  vertical-align: center;
+  vertical-align: middle;
 }
 
+/* Final screen */
 .final {
   margin-top: 80px;
 }
@@ -813,54 +569,26 @@ input[type=checkbox] {
 }
 
 .finalwordssub {
-font-size: 40px;
-color: white;
-text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-font-family: "Minecraft", sans-serif;
-margin-bottom: 10px;
+  font-size: 40px;
+  color: white;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  font-family: "Minecraft", sans-serif;
+  margin-bottom: 10px;
 }
 
 .buttons {
-  margin-top: 5%;    
-  animation: fadeInAnimation ease 4s;  
+  margin-top: 5%;
+  animation: fadeInAnimation ease 4s;
 }
 
 .middlecake {
   margin-top: 5%;
   transform: translateX(-100%);
-  -webkit-transform: translateX(-100%);
   animation: slide-right 1s forwards;
-  -webkit-animation: slide-right 1s forwards;
-}
-
-@keyframes slide-down {
-  100% { transform: translateY(0%); }
-
-}
-
-@-webkit-keyframes slide-down {
-  100% { -webkit-transform: translateY(0%); }
-
 }
 
 @keyframes slide-right {
   100% { transform: translateX(0%); }
-
-}
-
-@-webkit-keyframes slide-right {
-  100% { -webkit-transform: translateX(0%); }
-
-}
-
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
 }
 
 .last {
@@ -868,9 +596,7 @@ margin-bottom: 10px;
   border-radius: 10px;
   background-color: rgba(51, 51, 51, 0.5);
   transform: translateY(-100%);
-  -webkit-transform: translateY(-100%);
   animation: slide-down 1s forwards;
-  -webkit-animation: slide-down 1s forwards;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -888,24 +614,23 @@ button {
   text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color:darkgrey;
+  background-color: darkgrey;
   font-size: 25px;
   border-color: black;
   color: white;
   letter-spacing: 3px;
-  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; 
-
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 .title {
-  font-family: "Minecraft", sans-serif;     
+  font-family: "Minecraft", sans-serif;
   display: inline-block;
-  border: 3px solid black;    
+  border: 3px solid black;
   width: 500px;
   text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color:darkgrey;
+  background-color: darkgrey;
   font-size: 25px;
   border-color: black;
   color: white;
@@ -914,16 +639,13 @@ button {
 }
 
 .respawn:hover {
-  background-color:lightblue;
+  background-color: lightblue;
   font-size: 25px;
   color: rgb(245, 245, 85);
 }
 
 .title:hover {
-  background-color:lightblue;
+  background-color: lightblue;
   font-size: 25px;
   color: rgb(245, 245, 85);
 }
-
-
-
