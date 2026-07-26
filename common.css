@@ -15,6 +15,18 @@
 /* ----------------------------------------
    2. Global Resets & Utility
    ---------------------------------------- */
+html, body {
+  min-height: 100vh !important;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: auto !important;
+  padding-top: 48px;
+}
+
 body::-webkit-scrollbar {
   display: none;
 }
@@ -43,7 +55,8 @@ a {
    ---------------------------------------- */
 .topnav {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  align-items: center;
   background-color: #333;
   width: 100%;
 }
@@ -63,13 +76,9 @@ a {
 }
 
 .linky {
-  float: right;
   text-decoration: none;
   font-size: 20px;
   font-family: "Minecraft", sans-serif;
-  margin-bottom: 0px;
-  padding-left: 5px;
-  padding-top: 3px;
 }
 
 .Homelogo {
@@ -88,14 +97,18 @@ a {
   border-radius: 0;
   border: none;
   padding: 0;
-  float: left;
+  order: -1;
+  margin-right: 5px;
 }
 
 .map {
   font-family: "Minecraft", sans-serif;
   color: white;
   padding: 10px;
-  float: right;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
 }
 
 .map:hover {
@@ -110,7 +123,7 @@ a {
   position: fixed;
   z-index: 600;
   width: 100%;
-  opacity: 0.95;
+  opacity: 1;
   padding-top: 0;
   top: 0;
   left: 0;
@@ -127,7 +140,7 @@ a {
 
 .progress-bar {
   height: 8px;
-  background: #98FB98;
+  background: #009900;
   width: 0%;
   border-radius: 15px;
 }
@@ -143,7 +156,7 @@ footer {
   height: 50px;
   width: 100%;
   margin: 0;
-  margin-top: 10px;
+  margin-top: auto;
   padding: 0 20px;
   box-sizing: border-box;
 }

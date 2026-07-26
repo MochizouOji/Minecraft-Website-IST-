@@ -6,10 +6,8 @@
 
 body {
   cursor: url('./Images/Cursor.png'), auto;
-  height: 100%;
   text-align: center;
   font-family: 'PT Serif';
-  top: 0;
 }
 
 h1 {
@@ -18,11 +16,12 @@ h1 {
 
 .bannersection1 {
   background-image: url(./Images/bg.webp);
-  margin: -10px -10px -10px -10px;
   background-size: cover;
-  height: 650px;
+  min-height: 650px;
   padding-top: 0px;
-  bottom: 0;
+  padding-bottom: 40px;
+  flex: 1;
+  overflow-x: hidden;
 }
 
 .sub {
@@ -41,10 +40,6 @@ h1 {
 .Classic {
   background-color: rgb(255, 255, 255, 0);
   position: relative;
-  bottom: 80px;
-  right: 200px;
-  left: 35px;
-  top: 10px;
   width: 300px;
   border: 3px solid white;
   border-radius: 10px;
@@ -73,21 +68,22 @@ h2 {
   height: 200px;
 }
 
-.linkbuttons,
-.linkbuttons2 {
+.linkbuttons {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   gap: 20px;
+  padding: 0 40px;
+}
+
+.linkbuttons > a:nth-child(-n+2) {
+  transform: translateX(-100%);
   animation: slide-in 1s forwards;
 }
 
-.linkbuttons {
-  transform: translateX(-100%);
-}
-
-.linkbuttons2 {
+.linkbuttons > a:nth-child(n+3) {
   transform: translateX(100%);
+  animation: slide-in-right 1s forwards;
 }
 
 .titleimg {
@@ -106,10 +102,6 @@ h2 {
 }
 
 .bigclassic {
-  bottom: 80px;
-  right: 200px;
-  left: 0px;
-  top: 10px;
   width: 300px;
 }
 
@@ -269,6 +261,12 @@ h2 {
   }
 }
 
+@keyframes slide-in-right {
+  100% {
+    transform: translateX(0%);
+  }
+}
+
 .paragraph {
   font-family: 'Arsenal SC', sans-serif;
   text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
@@ -326,4 +324,18 @@ h2 {
   height: 30px;
   position: flex;
   display: inline;
+}
+
+/* Slide-in animation for paragraph panel */
+@keyframes slidey {
+  0% {
+    opacity: 0;
+    max-height: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    max-height: 600px;
+    transform: translateY(0);
+  }
 }
