@@ -119,7 +119,7 @@ p {
   background-color: white;
   position: relative;
   border-radius: 6px;
-  background-image: url(../Images/images.jfif);
+  background-image: url(../Images/librarythumb.avif);
   background-repeat: no-repeat;
   background-size: cover;
   border: 5px solid darkgrey;
@@ -168,7 +168,7 @@ p {
   background-color: white;
   position: relative;
   border-radius: 6px;
-  background-image: url(../Images/images\ \(1\).jfif);
+  background-image: url(../Images/cavethumb.avif);
   background-repeat: no-repeat;
   background-size: cover;
   border: 5px solid rgb(87, 25, 25);
