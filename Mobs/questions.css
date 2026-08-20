@@ -2,7 +2,7 @@
 /* Shared styles loaded from ../common.css */
 
 body {
-  background-image: url(../Images/mbquestionbg.webp);
+  background-image: url(../Images/mbquestionbg.avif);
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
   text-align: center;
@@ -109,7 +109,7 @@ option {
   font-size: 30px;
   color: white;
   font-weight: bold;
-  background-image: url(../Images/overworldquestion.webp);
+  background-image: url(../Images/overworldquestion.avif);
 }
 
 .netherbutton1 {
@@ -126,7 +126,7 @@ option {
   font-size: 30px;
   color: white;
   font-weight: bold;
-  background-image: url(../Images/netherquestion.webp);
+  background-image: url(../Images/netherquestion.avif);
 }
 
 .endbutton1 {
@@ -143,7 +143,7 @@ option {
   font-size: 30px;
   color: white;
   font-weight: bold;
-  background-image: url(../Images/endquestion.webp);
+  background-image: url(../Images/endquestion.avif);
 }
 
 .endbutton1:hover, .netherbutton1:hover, .overworldbutton1:hover {
@@ -331,7 +331,7 @@ input[type=checkbox] {
 .true1:hover {
   border: 3px solid green;
   background-color: rgb(169, 169, 169, 0.5);
-  background-image: url(../Images/check-mark-vector-seamless-pattern_547110-1724-removebg-preview.webp);
+  background-image: url(../Images/check-mark-vector-seamless-pattern_547110-1724-removebg-preview.avif);
   transition: border 0.5s linear, box-shadow 0.5s linear;
   animation: glow 0.5s infinite alternate;
   color: rgb(2, 153, 2);
@@ -341,7 +341,7 @@ input[type=checkbox] {
 .false1:hover {
   border: 3px solid red;
   background-color: rgb(169, 169, 169, 0.5);
-  background-image: url(../Images/pattern-background-wrong-mark-icon-vector-removebg-preview.webp);
+  background-image: url(../Images/pattern-background-wrong-mark-icon-vector-removebg-preview.avif);
   transition: border 0.5s linear, box-shadow 0.5s linear;
   animation: glowbad 0.5s infinite alternate;
   color: red;
@@ -434,7 +434,7 @@ input[type=checkbox] {
   font-size: 30px;
   color: white;
   font-weight: bold;
-  background-image: url(../Images/Stone.webp);
+  background-image: url(../Images/Stone.avif);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -453,7 +453,7 @@ input[type=checkbox] {
   font-size: 30px;
   color: white;
   font-weight: bold;
-  background-image: url(../Images/Cobblestone.webp);
+  background-image: url(../Images/Cobblestone.avif);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -472,7 +472,7 @@ input[type=checkbox] {
   font-size: 30px;
   color: white;
   font-weight: bold;
-  background-image: url(../Images/Smooth_Stone_JE2_BE2.webp);
+  background-image: url(../Images/Smooth_Stone_JE2_BE2.avif);
   background-size: cover;
   background-repeat: no-repeat;
 }

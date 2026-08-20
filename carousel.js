@@ -20,7 +20,34 @@ document.addEventListener('DOMContentLoaded', function () {
     var track = carousel.querySelector('.carousel-track');
     if (!track || !track.firstElementChild) return;
 
-    // Independent state for this carousel instance
+    // Wait a frame for layout to settle before measuring
+    requestAnimationFrame(function () {
+      initCarousel(carousel, track);
+    });
+  });
+
+  function initCarousel(carousel, track) {
+    // Measure item width from the first rendered item
+    var firstItem = track.firstElementChild;
+    var style = window.getComputedStyle(firstItem);
+    var itemWidth = firstItem.offsetWidth + parseFloat(style.marginLeft) + parseFloat(style.marginRight);
+
+    // If item has no width yet, bail (shouldn't happen after rAF)
+    if (itemWidth <= 0) return;
+
+    // Clone items until we have enough to fill 3x the container
+    var originalItems = Array.from(track.children);
+    var originalCount = originalItems.length;
+    var containerWidth = carousel.offsetWidth;
+    var neededItems = Math.ceil((containerWidth * 3) / itemWidth);
+
+    while (track.children.length < neededItems) {
+      for (var i = 0; i < originalCount; i++) {
+        track.appendChild(originalItems[i].cloneNode(true));
+      }
+    }
+
+    // State
     var state = {
       isPaused: false,
       isDragging: false,
@@ -28,43 +55,22 @@ document.addEventListener('DOMContentLoaded', function () {
       scrollLeft: 0
     };
 
-    /**
-     * Calculate the full width of one item including its horizontal margins.
-     */
-    function getItemWidth() {
-      var item = track.firstElementChild;
-      var style = window.getComputedStyle(item);
-      var margin = parseFloat(style.marginLeft) + parseFloat(style.marginRight);
-      return item.offsetWidth + margin;
-    }
-
-    /**
-     * Seamless infinite looping — moves DOM elements and adjusts scroll
-     * position so the carousel appears to loop endlessly in both directions.
-     */
     function handleInfinite() {
-      var itemWidth = getItemWidth();
-
-      // Moving right-to-left (auto-scroll or dragging left)
+      // Moving right-to-left (auto-scroll direction)
       if (carousel.scrollLeft >= itemWidth) {
         track.appendChild(track.firstElementChild);
         carousel.scrollLeft -= itemWidth;
-        // Adjust drag anchor so the user doesn't feel a jump
         if (state.isDragging) state.startX -= itemWidth;
       }
 
-      // Moving left-to-right (dragging right)
+      // Moving left-to-right (drag right)
       if (carousel.scrollLeft <= 0) {
         track.prepend(track.lastElementChild);
         carousel.scrollLeft += itemWidth;
-        // Adjust drag anchor for the opposite direction
         if (state.isDragging) state.startX += itemWidth;
       }
     }
 
-    /**
-     * Animation loop — auto-scrolls 1px per frame when not paused/dragging.
-     */
     function animate() {
       if (!state.isPaused && !state.isDragging) {
         carousel.scrollLeft += 1;
@@ -73,8 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
       requestAnimationFrame(animate);
     }
 
-    // --- Mouse drag controls ---
-
+    // Mouse drag
     carousel.addEventListener('mousedown', function (e) {
       state.isDragging = true;
       carousel.style.cursor = 'grabbing';
@@ -84,10 +89,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener('mousemove', function (e) {
       if (!state.isDragging) return;
-
-      var walk = e.clientX - state.startX; // 1:1 movement ratio
+      var walk = e.clientX - state.startX;
       carousel.scrollLeft = state.scrollLeft - walk;
-
       handleInfinite();
     });
 
@@ -97,8 +100,7 @@ document.addEventListener('DOMContentLoaded', function () {
       carousel.style.cursor = 'grab';
     });
 
-    // --- Pause on hover ---
-
+    // Pause on hover
     carousel.addEventListener('mouseenter', function () {
       state.isPaused = true;
     });
@@ -107,11 +109,8 @@ document.addEventListener('DOMContentLoaded', function () {
       state.isPaused = false;
     });
 
-    // --- Initialize ---
-
-    // Start at 1px so the "prepend" logic doesn't trigger immediately on load
-    carousel.scrollLeft = 1;
+    // Start scrolled one item in so prepend logic doesn't fire immediately
+    carousel.scrollLeft = itemWidth;
     requestAnimationFrame(animate);
-  });
-
+  }
 });

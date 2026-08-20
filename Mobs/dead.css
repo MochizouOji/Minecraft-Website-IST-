@@ -19,23 +19,20 @@ body {
 }
 
 .everything {
-  background-image: url(../Images/explodehole.webp);
+  background-image: url(../Images/explodehole.avif);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
   overflow-y: clip;
-  padding-top: 30px;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
   animation: cssAnimation 0s 2s forwards;
   visibility: hidden;
 }
 
 .subeverything {
   background-color: rgba(241, 81, 81, 0.5);
-  padding-top: 10px;
-  padding-bottom: 24px;
-  height: 100%;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 9%;
 }
 
 .youdiedtext {
@@ -53,10 +50,6 @@ body {
   color: white;
   text-align: center;
   margin-top: 20px;
-}
-
-.maintextwrapper {
-  margin-top: 20vh;
 }
 
 .respawn {
@@ -105,7 +98,10 @@ body {
 
 .buttons {
   margin-top: 20%;
-  margin-left: 165px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap : 50px;
 }
 
 @keyframes cssAnimation {

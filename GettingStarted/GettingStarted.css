@@ -11,9 +11,10 @@ body {
 .container {
   position: relative;
   width: 100%;
-  height: 92.5vh;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
+
 }
 
 .corner {
@@ -33,7 +34,7 @@ body {
   top: 0;
   left: 0;
   width: 49%;
-  background-image: url('../Images/redstonegettingstarted.webp');
+  background-image: url('../Images/redstonegettingstarted.avif');
   transform: translateX(-100%);
   animation: slide-down 1s forwards;
 }
@@ -41,8 +42,8 @@ body {
 .top-right {
   top: 0;
   right: 0;
-  height: 43.5vh;
-  background-image: url('../Images/pvpgettingstarted.webp');
+  height: 49%;
+  background-image: url('../Images/pvpgettingstarted.avif');
   z-index: 1;
   transform: translateY(-100%);
   animation: slide-down 1s forwards;
@@ -51,7 +52,7 @@ body {
 .bottom-left {
   bottom: 0;
   left: 0;
-  background-image: url('../Images/gamemodesgettingstarted.webp');
+  background-image: url('../Images/gamemodesgettingstarted.avif');
   transform: translateY(100%);
   animation: slide-down 1s forwards;
 }
@@ -59,7 +60,7 @@ body {
 .bottom-right {
   bottom: 0;
   right: 0;
-  background-image: url('../Images/craftinggettingstarted.webp');
+  background-image: url('../Images/craftinggettingstarted.avif');
   transform: translateX(100%);
   animation: slide-down 1s forwards;
 }

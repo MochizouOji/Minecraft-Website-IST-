@@ -1,7 +1,7 @@
 /* Biomes Hub — Page-Specific Styles Only */
 
 body {
-  background-image: url(../Images/the-battle-of-the-end-has-begun-4k-v0-bgyf1nz2dg691.webp);
+  background-image: url(../Images/the-battle-of-the-end-has-begun-4k-v0-bgyf1nz2dg691.avif);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -9,12 +9,11 @@ body {
   font-family: 'PT Serif';
   padding-top: 0px;
   margin-top: 70px;
-  margin-left: 80px;
 }
 
 .overworld {
-  margin-left: 15%;
-  margin-top: 70px;
+  margin-top: -40px;
+  margin-left: 18%;
   position: absolute;
   height: fit-content;
   width: fit-content;
@@ -32,8 +31,8 @@ body {
 }
 
 .end {
-  margin-top: 70px;
-  margin-right: 44%;
+  margin-top: 100px;
+  margin-right: 42.5%;
   float: right;
   height: fit-content;
   width: fit-content;
@@ -52,9 +51,9 @@ body {
 
 .nether {
   right: 0;
-  margin-right: 18%;
+  margin-top: -40px;
+  margin-right: 17%;
   position: absolute;
-  margin-top: 70px;
   height: fit-content;
   width: fit-content;
   color: white;
@@ -93,9 +92,11 @@ body {
 }
 
 .outside {
+  width: 100%;
+  text-align: center;
   position: absolute;
-  right: 41%;
   top: 70%;
+  left: 0;
   transform: translateY(200%);
   animation: slide-down 2s forwards;
 }

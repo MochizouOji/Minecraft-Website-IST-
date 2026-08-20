@@ -4,7 +4,7 @@
    ============================================================ */
 
 /* ----------------------------------------
-   1. Font Imports (valid URLs only)
+   1. Font Imports
    ---------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 @import url('https://fonts.cdnfonts.com/css/minecraft-4');
@@ -18,6 +18,7 @@
 html, body {
   min-height: 100vh !important;
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -39,6 +40,7 @@ audio::-webkit-media-controls {
   height: 0px;
   line-height: 0px;
   font-size: 0px;
+  overflow: hidden;
 }
 
 ::selection {
@@ -159,6 +161,7 @@ footer {
   margin-top: auto;
   padding: 0 20px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .footer-site-name {
@@ -258,8 +261,21 @@ footer {
 
 .item {
   width: 250px;
+  min-width: 250px;
+  max-width: 250px;
   height: 150px;
   margin: 10px;
+  flex-shrink: 0;
+  overflow: hidden;
+  background-color: #1a1a1a;
+  border-radius: 5px;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* ----------------------------------------

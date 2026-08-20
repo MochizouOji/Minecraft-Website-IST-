@@ -2,12 +2,10 @@
 /* Shared styles loaded from ../common.css */
 
 .section1 {
-  background-image: url(../Images/Versions-Background.webp);
+  background-image: url(../Images/Versions-Background.avif);
   background-size: cover;
   background-repeat: no-repeat;
-  margin-left: -10px;
-  margin-right: -10px;
-  margin-top: -20px;
+  margin-top: -48px;
   height: 650px;
   padding-top: 0px;
 }
@@ -28,7 +26,7 @@ h1 {
   position: relative;
   text-align: center;
   margin-top: 80px;
-  margin-left: 400px;
+  margin-left: 31%;
   border: 5px white solid;
   border-radius: 10px;
 }
@@ -71,7 +69,7 @@ h1 {
 }
 
 .image2 {
-  transform: translateX(45%);
+  margin-left: 27%;
   border: 4px rgb(65, 65, 65) solid;
   border-radius: 10px;
   height: 450px;
@@ -82,5 +80,4 @@ h1 {
   background-image: linear-gradient(rgba(255, 0, 0, 0), rgb(22, 22, 22));
   background-repeat: no-repeat;
   background-size: contain;
-  margin: -10px;
 }

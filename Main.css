@@ -5,7 +5,6 @@
    ============================================================ */
 
 body {
-  cursor: url('./Images/Cursor.png'), auto;
   text-align: center;
   font-family: 'PT Serif';
 }
@@ -15,7 +14,7 @@ h1 {
 }
 
 .bannersection1 {
-  background-image: url(./Images/bg.webp);
+  background-image: url(./Images/bg.avif);
   background-size: cover;
   min-height: 650px;
   padding-top: 0px;
