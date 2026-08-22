@@ -140,7 +140,7 @@ function hidemeagainagain() {
     body = document.body;
     question10.classList.add("hidden");
     final.classList.remove("hidden");
-    document.body.style.backgroundImage = "url('../Images/congratsbg.jpg')";
+    document.body.style.backgroundImage = "url('../Images/congratsbg.avif')";
     audio2.play();
 }
 
